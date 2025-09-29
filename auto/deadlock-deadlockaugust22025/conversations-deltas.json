@@ -1,8 +1,8 @@
 {
   "meta": {
     "config": "Games/Deadlock/DeadlockAugust22025/config.json",
-    "generated_at": "2025-09-29T04:18:28.552Z",
-    "downsampled_before": "2025-09-24T04:18:28.548Z",
+    "generated_at": "2025-09-29T04:26:56.480Z",
+    "downsampled_before": "2025-09-24T04:26:56.476Z",
     "source_repo": "mcallbosco/vlviewer-stats"
   },
   "series": {
@@ -74,6 +74,11 @@
         "t": "2025-09-29T04:17:04.821Z",
         "d": 2,
         "c": 2
+      },
+      {
+        "t": "2025-09-29T04:25:59.118Z",
+        "d": 3,
+        "c": 5
       }
     ],
     "abrams_dynamo_convo01_oathkeeper": [
