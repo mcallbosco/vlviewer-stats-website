@@ -1,7 +1,6 @@
 {
   "meta": {
     "config": "Games/Apex/S25/config.json",
-    "generated_at": "2025-09-29T16:21:36.407Z",
     "sources": [
       "Games/Apex/S25/VoiceLines.json",
       "Games/Apex/S25/Convos.json"

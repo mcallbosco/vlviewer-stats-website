@@ -1,8 +1,6 @@
 {
   "meta": {
     "config": "Games/Deadlock/DeadlockAugust22025/config.json",
-    "generated_at": "2025-09-29T16:21:37.017Z",
-    "downsampled_before": "2025-09-24T16:21:37.017Z",
     "source_repo": "mcallbosco/vlviewer-stats"
   },
   "series": {}

@@ -13,7 +13,7 @@ Contents:
 Delta files structure:
 
 {
-  "meta": { "config": "Games/.../config.json", "generated_at": "ISO", "downsampled_before": "ISO", "source_repo": "owner/repo" },
+  "meta": { "config": "Games/.../config.json", "source_repo": "owner/repo" },
   "series": {
     "<id>": [ { "t": "ISO-timestamp", "d": <deltaNumber>, "c": <currentCountOptional> }, ... ]
   }

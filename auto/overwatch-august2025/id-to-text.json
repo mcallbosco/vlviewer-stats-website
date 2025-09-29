@@ -1,7 +1,6 @@
 {
   "meta": {
     "config": "Games/Overwatch/August2025/config.json",
-    "generated_at": "2025-09-29T16:21:37.146Z",
     "sources": [
       "Games/Overwatch/August2025/all_voicelines.json",
       "Games/Overwatch/August2025/all_conversations.json"
