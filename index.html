@@ -1,0 +1,254 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>VLViewer Stats Website</title>
+  <meta name="description" content="Track character plays over time across configs" />
+  <link rel="icon" href="auto/deadlock-deadlockaugust22025/icon.png" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    // Tailwind config to get a dark style similar vibe
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              50: '#f2f6ff',
+              100: '#dde7ff',
+              200: '#b6c8ff',
+              300: '#8fa8ff',
+              400: '#6d8fff',
+              500: '#4a76ff',
+              600: '#335de6',
+              700: '#2949b4',
+              800: '#213a8c',
+              900: '#1a2e6e'
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-date-fns@3.0.0"></script>
+  <style>
+    html, body { height: 100%; }
+  </style>
+</head>
+<body class="min-h-screen bg-gradient-to-br from-slate-950 via-slate-900 to-slate-800 text-slate-100">
+  <header class="border-b border-white/10 bg-slate-900/50 backdrop-blur sticky top-0 z-10">
+    <div class="max-w-6xl mx-auto px-4 py-4 flex items-center gap-3">
+      <img id="configIcon" src="auto/deadlock-deadlockaugust22025/icon.png" alt="Config Icon" class="h-8 w-8 rounded" />
+      <h1 class="text-xl font-semibold tracking-wide">VLViewer Stats</h1>
+      <span class="ml-auto text-xs text-slate-400">Static prototype</span>
+    </div>
+  </header>
+
+  <main class="max-w-6xl mx-auto px-4 py-6">
+    <section class="mb-4 grid grid-cols-1 md:grid-cols-3 gap-3">
+      <div class="col-span-2 bg-slate-900/60 border border-white/10 rounded-lg p-4">
+        <label for="configSelect" class="block text-sm mb-1 text-slate-300">Select Config</label>
+        <select id="configSelect" class="w-full bg-slate-800 border border-white/10 rounded px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-brand-500"></select>
+        <p id="configMeta" class="mt-2 text-xs text-slate-400"></p>
+      </div>
+      <div class="bg-slate-900/60 border border-white/10 rounded-lg p-4">
+        <label for="characterSelect" class="block text-sm mb-1 text-slate-300">Select Character</label>
+        <select id="characterSelect" class="w-full bg-slate-800 border border-white/10 rounded px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-brand-500" disabled>
+          <option>Loading…</option>
+        </select>
+        <p id="characterHint" class="mt-2 text-xs text-slate-400">Choose a config to load characters.</p>
+      </div>
+    </section>
+
+    <section class="bg-slate-900/60 border border-white/10 rounded-lg p-4">
+      <div class="flex items-center gap-3 mb-3">
+        <h2 class="text-lg font-medium">Character Plays Over Time</h2>
+        <span id="chartSubtitle" class="text-xs text-slate-400"></span>
+      </div>
+      <div class="h-[420px]">
+        <canvas id="chart"></canvas>
+      </div>
+      <p id="emptyState" class="hidden mt-3 text-sm text-slate-400">No data found for this selection.</p>
+    </section>
+
+    <footer class="mt-8 text-xs text-slate-500">
+      Data driven by GitHub Action exports. Files are read directly from this repository; no build required.
+    </footer>
+  </main>
+
+  <script>
+    const els = {
+      configSelect: document.getElementById('configSelect'),
+      characterSelect: document.getElementById('characterSelect'),
+      chartCanvas: document.getElementById('chart'),
+      chartSubtitle: document.getElementById('chartSubtitle'),
+      emptyState: document.getElementById('emptyState'),
+      configMeta: document.getElementById('configMeta'),
+      configIcon: document.getElementById('configIcon'),
+      characterHint: document.getElementById('characterHint'),
+    };
+
+    let chart;
+    let autoIndex;
+
+    async function loadAutoIndex() {
+      const res = await fetch('auto-index.json');
+      if (!res.ok) throw new Error('Failed to load auto-index.json');
+      autoIndex = await res.json();
+      populateConfigSelect(autoIndex.configs || []);
+      // Choose default: first config with non-empty character_totals-deltas series
+      const findDefault = async () => {
+        for (const cfg of autoIndex.configs || []) {
+          const path = cfg.paths?.character_totals_deltas;
+          if (!path) continue;
+          try {
+            const r = await fetch(path);
+            if (!r.ok) continue;
+            const data = await r.json();
+            if (data && data.series && Object.keys(data.series).length > 0) return cfg.slug;
+          } catch {}
+        }
+        return autoIndex.configs?.[0]?.slug;
+      };
+      const defSlug = await findDefault();
+      if (defSlug) {
+        els.configSelect.value = defSlug;
+        handleConfigChange();
+      }
+    }
+
+    function populateConfigSelect(configs) {
+      els.configSelect.innerHTML = '';
+      for (const cfg of configs) {
+        const opt = document.createElement('option');
+        opt.value = cfg.slug;
+        opt.textContent = (cfg.config?.split('/')?.slice(-2)?.join(' / ')) || cfg.slug;
+        els.configSelect.appendChild(opt);
+      }
+    }
+
+    async function handleConfigChange() {
+      const slug = els.configSelect.value;
+      const cfg = (autoIndex.configs || []).find(c => c.slug === slug);
+      if (!cfg) return;
+      els.configIcon.src = cfg.icon || '';
+      els.configIcon.classList.toggle('hidden', !cfg.icon);
+      els.configMeta.textContent = cfg.config || '';
+      // Load character totals
+      const path = cfg.paths?.character_totals_deltas;
+      let data;
+      try {
+        const res = await fetch(path);
+        data = await res.json();
+      } catch (e) {
+        data = { series: {} };
+      }
+      const series = data?.series || {};
+      populateCharacterSelect(series, cfg);
+    }
+
+    function populateCharacterSelect(series, cfg) {
+      const names = Object.keys(series).sort();
+      els.characterSelect.innerHTML = '';
+      if (names.length === 0) {
+        const opt = document.createElement('option');
+        opt.textContent = 'No characters in this config yet';
+        els.characterSelect.appendChild(opt);
+        els.characterSelect.disabled = true;
+        els.characterHint.textContent = 'No data available for this config yet.';
+        updateChart([], cfg);
+        return;
+      }
+      for (const name of names) {
+        const opt = document.createElement('option');
+        opt.value = name;
+        opt.textContent = name;
+        els.characterSelect.appendChild(opt);
+      }
+      els.characterSelect.disabled = false;
+      els.characterHint.textContent = 'Showing cumulative plays (c) over time.';
+      els.characterSelect.value = names[0];
+      handleCharacterChange(series, cfg);
+    }
+
+    function handleCharacterChange(series, cfg) {
+      const name = els.characterSelect.value;
+      const points = (series[name] || []).slice().sort((a,b) => new Date(a.t) - new Date(b.t));
+      const data = points.map(p => ({ x: new Date(p.t), y: Number(p.c ?? p.d ?? 0) }));
+      updateChart(data, cfg, name);
+    }
+
+    function updateChart(data, cfg, name) {
+      els.emptyState.classList.toggle('hidden', data.length > 0);
+      els.chartSubtitle.textContent = name ? `${name} — ${cfg?.slug || ''}` : (cfg?.slug || '');
+
+      const gradient = (() => {
+        const ctx = els.chartCanvas.getContext('2d');
+        const g = ctx.createLinearGradient(0, 0, 0, 400);
+        g.addColorStop(0, 'rgba(74,118,255,0.35)');
+        g.addColorStop(1, 'rgba(74,118,255,0.03)');
+        return g;
+      })();
+
+      const ds = {
+        label: 'Plays (cumulative)',
+        data,
+        fill: true,
+        borderColor: '#4a76ff',
+        backgroundColor: gradient,
+        pointRadius: 2,
+        tension: 0.25,
+      };
+
+      if (chart) chart.destroy();
+      chart = new Chart(els.chartCanvas, {
+        type: 'line',
+        data: { datasets: [ds] },
+        options: {
+          responsive: true,
+          maintainAspectRatio: false,
+          scales: {
+            x: {
+              type: 'time',
+              time: { tooltipFormat: 'PPpp' },
+              grid: { color: 'rgba(255,255,255,0.06)' },
+              ticks: { color: 'rgba(255,255,255,0.7)' }
+            },
+            y: {
+              beginAtZero: true,
+              grid: { color: 'rgba(255,255,255,0.06)' },
+              ticks: { color: 'rgba(255,255,255,0.7)' }
+            }
+          },
+          plugins: {
+            legend: { labels: { color: 'rgba(255,255,255,0.8)' } },
+            tooltip: {
+              callbacks: {
+                label: (ctx) => ` ${ctx.dataset.label}: ${ctx.parsed.y}`
+              }
+            }
+          }
+        }
+      });
+    }
+
+    // Events
+    els.configSelect.addEventListener('change', handleConfigChange);
+    els.characterSelect.addEventListener('change', () => {
+      const slug = els.configSelect.value;
+      const cfg = (autoIndex.configs || []).find(c => c.slug === slug);
+      if (!cfg) return;
+      fetch(cfg.paths.character_totals_deltas)
+        .then(r => r.json())
+        .then(data => handleCharacterChange(data.series || {}, cfg));
+    });
+
+    // Init
+    loadAutoIndex().catch(err => {
+      console.error(err);
+      els.configSelect.innerHTML = '<option>Failed to load auto-index.json</option>';
+    });
+  </script>
+</body>
+</html>
