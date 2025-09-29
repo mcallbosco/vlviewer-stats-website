@@ -1,5 +1,5 @@
 {
-  "generated_at": "2025-09-29T03:30:29.376Z",
+  "generated_at": "2025-09-29T03:32:45.473Z",
   "owner": "mcallbosco",
   "stats_repo": "vlviewer-stats",
   "website_repo": "vlviewer-stats-website",
@@ -24,7 +24,7 @@
         "character_totals_deltas": "auto/deadlock-deadlockapril2025/character_totals-deltas.json",
         "id_to_text": "auto/deadlock-deadlockapril2025/id-to-text.json"
       },
-      "icon": null
+      "icon": "auto/deadlock-deadlockapril2025/icon.png"
     },
     {
       "config": "Games/Deadlock/DeadlockAugust2025/config.json",
@@ -35,7 +35,7 @@
         "character_totals_deltas": "auto/deadlock-deadlockaugust2025/character_totals-deltas.json",
         "id_to_text": "auto/deadlock-deadlockaugust2025/id-to-text.json"
       },
-      "icon": null
+      "icon": "auto/deadlock-deadlockaugust2025/icon.png"
     },
     {
       "config": "Games/Deadlock/DeadlockAugust22025/config.json",
@@ -46,7 +46,7 @@
         "character_totals_deltas": "auto/deadlock-deadlockaugust22025/character_totals-deltas.json",
         "id_to_text": "auto/deadlock-deadlockaugust22025/id-to-text.json"
       },
-      "icon": null
+      "icon": "auto/deadlock-deadlockaugust22025/icon.png"
     },
     {
       "config": "Games/Overwatch/August2025/config.json",
@@ -57,7 +57,7 @@
         "character_totals_deltas": "auto/overwatch-august2025/character_totals-deltas.json",
         "id_to_text": "auto/overwatch-august2025/id-to-text.json"
       },
-      "icon": null
+      "icon": "auto/overwatch-august2025/icon.png"
     },
     {
       "config": "Games/Overwatch/Sept2025/config.json",
@@ -68,7 +68,7 @@
         "character_totals_deltas": "auto/overwatch-sept2025/character_totals-deltas.json",
         "id_to_text": "auto/overwatch-sept2025/id-to-text.json"
       },
-      "icon": null
+      "icon": "auto/overwatch-sept2025/icon.png"
     }
   ]
 }
