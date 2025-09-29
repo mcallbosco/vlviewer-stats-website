@@ -647,6 +647,342 @@
         "d": 1,
         "c": 4
       }
+    ],
+    "bookworm_ally_mirage_pass_on_zipline_01.mp3": [
+      {
+        "t": "2025-09-29T17:34:13.211Z",
+        "d": 1,
+        "c": 1
+      }
+    ],
+    "bookworm_ally_yamato_pass_on_zipline_01.mp3": [
+      {
+        "t": "2025-09-29T17:34:13.211Z",
+        "d": 1,
+        "c": 1
+      }
+    ],
+    "bookworm_kill_doorman_03.mp3": [
+      {
+        "t": "2025-09-29T17:34:13.211Z",
+        "d": 1,
+        "c": 1
+      }
+    ],
+    "bookworm_kill_dynamo_02.mp3": [
+      {
+        "t": "2025-09-29T17:34:13.211Z",
+        "d": 1,
+        "c": 1
+      }
+    ],
+    "bookworm_kill_dynamo_04.mp3": [
+      {
+        "t": "2025-09-29T17:34:13.211Z",
+        "d": 1,
+        "c": 1
+      }
+    ],
+    "bookworm_kill_frank_01.mp3": [
+      {
+        "t": "2025-09-29T17:34:13.211Z",
+        "d": 4,
+        "c": 4
+      }
+    ],
+    "bookworm_kill_frank_02.mp3": [
+      {
+        "t": "2025-09-29T17:34:13.211Z",
+        "d": 4,
+        "c": 4
+      }
+    ],
+    "bookworm_kill_frank_03.mp3": [
+      {
+        "t": "2025-09-29T17:34:13.211Z",
+        "d": 4,
+        "c": 4
+      }
+    ],
+    "bookworm_kill_frank_04.mp3": [
+      {
+        "t": "2025-09-29T17:34:13.211Z",
+        "d": 4,
+        "c": 4
+      }
+    ],
+    "bookworm_kill_frank_05.mp3": [
+      {
+        "t": "2025-09-29T17:34:13.211Z",
+        "d": 4,
+        "c": 4
+      }
+    ],
+    "bookworm_kill_krill_01.mp3": [
+      {
+        "t": "2025-09-29T17:34:13.211Z",
+        "d": 1,
+        "c": 1
+      }
+    ],
+    "bookworm_kill_krill_02.mp3": [
+      {
+        "t": "2025-09-29T17:34:13.211Z",
+        "d": 1,
+        "c": 1
+      }
+    ],
+    "bookworm_kill_mirage_05.mp3": [
+      {
+        "t": "2025-09-29T17:34:13.211Z",
+        "d": 1,
+        "c": 1
+      }
+    ],
+    "bookworm_kill_nano_01.mp3": [
+      {
+        "t": "2025-09-29T17:34:13.211Z",
+        "d": 1,
+        "c": 1
+      }
+    ],
+    "bookworm_kill_punkgoat_02.mp3": [
+      {
+        "t": "2025-09-29T17:34:13.211Z",
+        "d": 1,
+        "c": 1
+      }
+    ],
+    "bookworm_kill_punkgoat_03.mp3": [
+      {
+        "t": "2025-09-29T17:34:13.211Z",
+        "d": 1,
+        "c": 2
+      }
+    ],
+    "bookworm_kill_viper_02.mp3": [
+      {
+        "t": "2025-09-29T17:34:13.211Z",
+        "d": 1,
+        "c": 1
+      }
+    ],
+    "bookworm_kill_viscous_05.mp3": [
+      {
+        "t": "2025-09-29T17:34:13.211Z",
+        "d": 1,
+        "c": 1
+      }
+    ],
+    "bookworm_match_start_punkgoat_bookworm_convo02_01.mp3": [
+      {
+        "t": "2025-09-29T17:34:13.211Z",
+        "d": 1,
+        "c": 6
+      }
+    ],
+    "bookworm_match_start_punkgoat_bookworm_convo02_03.mp3": [
+      {
+        "t": "2025-09-29T17:34:13.211Z",
+        "d": 1,
+        "c": 4
+      }
+    ],
+    "bookworm_match_start_punkgoat_bookworm_convo02_05.mp3": [
+      {
+        "t": "2025-09-29T17:34:13.211Z",
+        "d": 1,
+        "c": 5
+      }
+    ],
+    "bookworm_match_start_punkgoat_bookworm_convo02_07.mp3": [
+      {
+        "t": "2025-09-29T17:34:13.211Z",
+        "d": 1,
+        "c": 4
+      }
+    ],
+    "bookworm_match_start_punkgoat_bookworm_convo02_09.mp3": [
+      {
+        "t": "2025-09-29T17:34:13.211Z",
+        "d": 1,
+        "c": 6
+      }
+    ],
+    "bookworm_match_start_punkgoat_bookworm_convo03_01.mp3": [
+      {
+        "t": "2025-09-29T17:34:13.211Z",
+        "d": 1,
+        "c": 4
+      }
+    ],
+    "bookworm_match_start_punkgoat_bookworm_convo03_03.mp3": [
+      {
+        "t": "2025-09-29T17:34:13.211Z",
+        "d": 1,
+        "c": 4
+      }
+    ],
+    "frank_kill_bookworm_02.mp3": [
+      {
+        "t": "2025-09-29T17:34:13.211Z",
+        "d": 1,
+        "c": 1
+      }
+    ],
+    "frank_kill_bookworm_04.mp3": [
+      {
+        "t": "2025-09-29T17:34:13.211Z",
+        "d": 1,
+        "c": 1
+      }
+    ],
+    "frank_kill_bookworm_05.mp3": [
+      {
+        "t": "2025-09-29T17:34:13.211Z",
+        "d": 1,
+        "c": 1
+      }
+    ],
+    "frank_kill_nano_04.mp3": [
+      {
+        "t": "2025-09-29T17:34:13.211Z",
+        "d": 1,
+        "c": 1
+      }
+    ],
+    "frank_kill_punkgoat_04.mp3": [
+      {
+        "t": "2025-09-29T17:34:13.211Z",
+        "d": 1,
+        "c": 2
+      }
+    ],
+    "frank_kill_punkgoat_05.mp3": [
+      {
+        "t": "2025-09-29T17:34:13.211Z",
+        "d": 1,
+        "c": 2
+      }
+    ],
+    "patron_male_ally_doorman_start_01.mp3": [
+      {
+        "t": "2025-09-29T17:34:13.211Z",
+        "d": 1,
+        "c": 3
+      }
+    ],
+    "patron_male_ally_doorman_start_02.mp3": [
+      {
+        "t": "2025-09-29T17:34:13.211Z",
+        "d": 1,
+        "c": 3
+      }
+    ],
+    "patron_male_ally_doorman_start_03.mp3": [
+      {
+        "t": "2025-09-29T17:34:13.211Z",
+        "d": 1,
+        "c": 2
+      }
+    ],
+    "patron_male_ally_doorman_start_04.mp3": [
+      {
+        "t": "2025-09-29T17:34:13.211Z",
+        "d": 1,
+        "c": 2
+      }
+    ],
+    "patron_male_ally_doorman_start_05.mp3": [
+      {
+        "t": "2025-09-29T17:34:13.211Z",
+        "d": 1,
+        "c": 2
+      }
+    ],
+    "patron_male_ally_gigawatt_start_01.mp3": [
+      {
+        "t": "2025-09-29T17:34:13.211Z",
+        "d": 1,
+        "c": 2
+      }
+    ],
+    "patron_male_ally_gigawatt_start_03.mp3": [
+      {
+        "t": "2025-09-29T17:34:13.211Z",
+        "d": 1,
+        "c": 1
+      }
+    ],
+    "patron_male_ally_punkgoat_start_01.mp3": [
+      {
+        "t": "2025-09-29T17:34:13.211Z",
+        "d": 2,
+        "c": 3
+      }
+    ],
+    "patron_male_ally_punkgoat_start_02.mp3": [
+      {
+        "t": "2025-09-29T17:34:13.211Z",
+        "d": 1,
+        "c": 1
+      }
+    ],
+    "patron_male_ally_punkgoat_start_03.mp3": [
+      {
+        "t": "2025-09-29T17:34:13.211Z",
+        "d": 1,
+        "c": 1
+      }
+    ],
+    "patron_male_ally_punkgoat_start_04.mp3": [
+      {
+        "t": "2025-09-29T17:34:13.211Z",
+        "d": 1,
+        "c": 1
+      }
+    ],
+    "punkgoat_match_start_punkgoat_bookworm_convo02_02.mp3": [
+      {
+        "t": "2025-09-29T17:34:13.211Z",
+        "d": 1,
+        "c": 5
+      }
+    ],
+    "punkgoat_match_start_punkgoat_bookworm_convo02_04.mp3": [
+      {
+        "t": "2025-09-29T17:34:13.211Z",
+        "d": 1,
+        "c": 6
+      }
+    ],
+    "punkgoat_match_start_punkgoat_bookworm_convo02_06.mp3": [
+      {
+        "t": "2025-09-29T17:34:13.211Z",
+        "d": 1,
+        "c": 6
+      }
+    ],
+    "punkgoat_match_start_punkgoat_bookworm_convo02_08.mp3": [
+      {
+        "t": "2025-09-29T17:34:13.211Z",
+        "d": 1,
+        "c": 6
+      }
+    ],
+    "punkgoat_match_start_punkgoat_bookworm_convo03_02.mp3": [
+      {
+        "t": "2025-09-29T17:34:13.211Z",
+        "d": 1,
+        "c": 4
+      }
+    ],
+    "punkgoat_match_start_punkgoat_bookworm_convo03_04.mp3": [
+      {
+        "t": "2025-09-29T17:34:13.211Z",
+        "d": 1,
+        "c": 4
+      }
     ]
   }
 }
