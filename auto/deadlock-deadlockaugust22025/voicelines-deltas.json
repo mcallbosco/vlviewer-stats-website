@@ -1,9 +1,7010 @@
 {
   "meta": {
     "config": "Games/Deadlock/DeadlockAugust22025/config.json",
-    "generated_at": "2025-09-29T04:07:19.031Z",
-    "downsampled_before": "2025-09-24T04:07:19.031Z",
+    "generated_at": "2025-09-29T04:18:28.549Z",
+    "downsampled_before": "2025-09-24T04:18:28.548Z",
     "source_repo": "mcallbosco/vlviewer-stats"
   },
-  "series": {}
+  "series": {
+    "astro_ally_atlas_big_stun_01.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ally_atlas_big_stun_02.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ally_atlas_big_stun_03.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ally_atlas_killed_in_lane_01.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ally_atlas_pass_on_zipline_01.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ally_atlas_unkillable_01.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ally_atlas_unkillable_02.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ally_atlas_unkillable_03.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ally_bebop_far_hook_01.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ally_bebop_far_hook_02.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ally_bebop_far_hook_03.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ally_bebop_killed_in_lane_01.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ally_bebop_pass_on_zipline_01.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ally_bebop_uppercut_towards_boss_01.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ally_bebop_uppercut_towards_boss_02.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ally_bebop_uppercut_towards_boss_03.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ally_cadence_killed_in_lane_01.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ally_chrono_killed_in_lane_01.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ally_chrono_pass_on_zipline_01.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ally_chrono_swap_to_boss_01.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ally_chrono_swap_to_boss_02.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ally_chrono_swap_to_boss_03.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ally_dynamo_big_blackhole_01.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ally_dynamo_big_blackhole_02.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ally_dynamo_big_blackhole_03.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ally_dynamo_clutch_heal_01.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ally_dynamo_clutch_heal_02.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ally_dynamo_clutch_heal_03.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ally_dynamo_killed_in_lane_01.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ally_dynamo_pass_on_zipline_01.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ally_forge_clutch_heal_01.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ally_forge_clutch_heal_02.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ally_forge_clutch_heal_03.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ally_forge_killed_in_lane_01.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ally_forge_pass_on_zipline_01.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ally_forge_wall_stun_kill_01.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ally_forge_wall_stun_kill_02.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ally_forge_wall_stun_kill_03.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ally_ghost_killed_in_lane_01.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ally_ghost_pass_on_zipline_01.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ally_ghost_see_big_swap_01.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ally_ghost_see_big_swap_02.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ally_ghost_see_big_swap_03.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ally_gigawatt_killed_in_lane_01.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ally_gigawatt_multi_kill_ult_01.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 1,
+        "c": 1
+      }
+    ],
+    "astro_ally_gigawatt_multi_kill_ult_02.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ally_gigawatt_multi_kill_ult_03.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ally_gigawatt_pass_on_zipline_01.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ally_haze_big_ult_01.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ally_haze_big_ult_02.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ally_haze_big_ult_03.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ally_haze_interrupt_with_finesse_01.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ally_haze_interrupt_with_finesse_02.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ally_haze_interrupt_with_finesse_03.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ally_haze_killed_in_lane_01.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ally_haze_pass_on_zipline_01.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ally_hornet_far_snipe_01.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ally_hornet_far_snipe_02.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ally_hornet_far_snipe_03.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ally_hornet_killed_in_lane_01.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ally_hornet_pass_on_zipline_01.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ally_inferno_burns_down_objective_01.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ally_inferno_burns_down_objective_02.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ally_inferno_burns_down_objective_03.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ally_inferno_killed_in_lane_01.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ally_inferno_pass_on_zipline_01.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ally_kelvin_clutch_heal_01.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ally_kelvin_clutch_heal_02.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ally_kelvin_clutch_heal_03.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ally_kelvin_killed_in_lane_01.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ally_kelvin_pass_on_zipline_01.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ally_krill_grab_mid_enemy_ult_01.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ally_krill_grab_mid_enemy_ult_02.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ally_krill_grab_mid_enemy_ult_03.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ally_krill_killed_in_lane_01.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ally_krill_pass_on_zipline_01.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ally_lash_killed_in_lane_01.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ally_lash_pass_on_zipline_01.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ally_lash_see_massive_stomp_01.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ally_lash_see_massive_stomp_02.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 1,
+        "c": 1
+      }
+    ],
+    "astro_ally_lash_see_massive_stomp_03.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 1,
+        "c": 1
+      }
+    ],
+    "astro_ally_magician_killed_in_lane_01.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ally_magician_pass_on_zipline_01.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ally_mirage_killed_in_lane_01.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ally_mirage_pass_on_zipline_01.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ally_nano_killed_in_lane_01.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ally_nano_pass_on_zipline_01.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ally_operative_killed_in_lane_01.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ally_operative_pass_on_zipline_01_alt_01.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ally_operative_pass_on_zipline_01.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ally_orion_far_shot_01.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ally_orion_far_shot_02.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ally_orion_far_shot_03.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ally_orion_killed_in_lane_01.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ally_orion_missile_stops_ult_01.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ally_orion_missile_stops_ult_02.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ally_orion_missile_stops_ult_03.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ally_orion_pass_on_zipline_01.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ally_shiv_killed_in_lane_01.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ally_shiv_multikill_01.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ally_shiv_multikill_02.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ally_shiv_multikill_03.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ally_shiv_pass_on_zipline_01.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ally_shiv_unkillable_01.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ally_shiv_unkillable_02.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ally_shiv_unkillable_03.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ally_slork_killed_in_lane_01.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ally_slork_pass_on_zipline_01.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ally_synth_killed_in_lane_01.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ally_synth_pass_on_zipline_01.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ally_tengu_killed_in_lane_01.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ally_tengu_pass_on_zipline_01.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ally_tengu_take_objective_with_teather_01.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ally_tengu_take_objective_with_teather_02.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ally_tengu_take_objective_with_teather_03.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ally_trapper_killed_in_lane_01.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ally_trapper_pass_on_zipline_01.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ally_viper_killed_in_lane_01.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ally_viper_pass_on_zipline_01.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ally_viscous_clutch_cube_01.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ally_viscous_clutch_cube_02.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ally_viscous_clutch_cube_03.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ally_viscous_killed_in_lane_01.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ally_viscous_pass_on_zipline_01.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ally_warden_big_ult_01.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ally_warden_big_ult_02.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ally_warden_big_ult_03.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ally_warden_killed_in_lane_01.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ally_warden_pass_on_zipline_01.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ally_wraith_killed_in_lane_01.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ally_wraith_kill_in_lift_01.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ally_wraith_kill_in_lift_02.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ally_wraith_kill_in_lift_03.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ally_wraith_pass_on_zipline_01.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ally_wrecker_killed_in_lane_01.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ally_wrecker_pass_on_zipline_01.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ally_yamato_killed_in_lane_01.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ally_yamato_kills_with_hook_01.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ally_yamato_kills_with_hook_02.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ally_yamato_kills_with_hook_03.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ally_yamato_pass_on_zipline_01.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_angry_01.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_angry_02.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_angry_03.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_angry_04.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_angry_05.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_angry_06.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_angry_07.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_angry_08.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_angry_09.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_angry_10.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_assisted_gigawatt_02.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 1,
+        "c": 1
+      }
+    ],
+    "astro_assisted_gigawatt_03.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 1,
+        "c": 1
+      }
+    ],
+    "astro_close_call_01.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_close_call_02.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_close_call_03.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_close_call_04.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_close_call_05.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_concerned_01.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_concerned_02.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_concerned_03.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_concerned_04.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_concerned_05.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_concerned_06.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_concerned_07.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_concerned_08.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_concerned_09.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_concerned_10.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_desperation_power1_01.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 1,
+        "c": 1
+      }
+    ],
+    "astro_desperation_power1_02.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 1,
+        "c": 1
+      }
+    ],
+    "astro_desperation_power1_03.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 1,
+        "c": 1
+      }
+    ],
+    "astro_desperation_power1_04.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 1,
+        "c": 1
+      }
+    ],
+    "astro_desperation_power1_05.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 1,
+        "c": 1
+      }
+    ],
+    "astro_desperation_power2_01_02.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 1,
+        "c": 1
+      }
+    ],
+    "astro_desperation_power2_01.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 1,
+        "c": 1
+      }
+    ],
+    "astro_desperation_power2_02.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 1,
+        "c": 1
+      }
+    ],
+    "astro_desperation_power2_03.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_desperation_power2_04.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 1,
+        "c": 1
+      }
+    ],
+    "astro_desperation_power2_05.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_desperation_power3_01.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 1,
+        "c": 1
+      }
+    ],
+    "astro_desperation_power3_02.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 1,
+        "c": 1
+      }
+    ],
+    "astro_desperation_power3_03.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 1,
+        "c": 1
+      }
+    ],
+    "astro_desperation_power3_04.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 1,
+        "c": 1
+      }
+    ],
+    "astro_desperation_power3_05.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 1,
+        "c": 1
+      }
+    ],
+    "astro_desperation_power4_01.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 1,
+        "c": 1
+      }
+    ],
+    "astro_desperation_power4_02.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 1,
+        "c": 1
+      }
+    ],
+    "astro_desperation_power4_03.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 1,
+        "c": 1
+      }
+    ],
+    "astro_desperation_power4_04.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 1,
+        "c": 1
+      }
+    ],
+    "astro_desperation_power4_05.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 1,
+        "c": 1
+      }
+    ],
+    "astro_enemy_atlas_unkillable_01.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_enemy_atlas_unkillable_02.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_enemy_atlas_unkillable_03.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_enemy_bebop_hooked_01.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_enemy_bebop_hooked_02_02.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_enemy_bebop_hooked_02.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_enemy_bebop_hooked_03.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_enemy_bebop_kill_mid_laser_01.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_enemy_bebop_kill_mid_laser_02.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_enemy_bebop_kill_mid_laser_03.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_enemy_chrono_kill_post_swap_01.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_enemy_chrono_kill_post_swap_02.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_enemy_chrono_kill_post_swap_03.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_enemy_dynamo_charges_01.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_enemy_dynamo_charges_02.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_enemy_dynamo_charges_03.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_enemy_forge_destroy_turrets_01.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_enemy_forge_destroy_turrets_02.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_enemy_forge_destroy_turrets_03.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_enemy_ghost_ping_with_swap_01.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_enemy_ghost_ping_with_swap_02.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_enemy_ghost_ping_with_swap_03.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_enemy_gigawatt_hide_from_ult_01.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_enemy_gigawatt_hide_from_ult_02.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_enemy_gigawatt_hide_from_ult_03.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_enemy_haze_kill_when_invisible_01.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_enemy_haze_kill_when_invisible_02.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_enemy_haze_kill_when_invisible_03.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_enemy_hornet_damaged_by_snipe_01.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_enemy_hornet_damaged_by_snipe_02.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_enemy_hornet_damaged_by_snipe_03.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_enemy_hornet_killed_mid_air_01.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_enemy_hornet_killed_mid_air_02.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_enemy_hornet_killed_mid_air_03.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_enemy_inferno_killed_mid_ult_01.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_enemy_inferno_killed_mid_ult_02.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_enemy_inferno_killed_mid_ult_03.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_enemy_kelvin_kill_on_ice_path_01.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_enemy_kelvin_kill_on_ice_path_02.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_enemy_kelvin_kill_on_ice_path_03.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_enemy_krill_grabbed_01.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_enemy_krill_grabbed_02.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_enemy_krill_grabbed_03.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_enemy_lash_mid_air_kill_01.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 1,
+        "c": 1
+      }
+    ],
+    "astro_enemy_lash_mid_air_kill_02.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_enemy_lash_mid_air_kill_03.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 1,
+        "c": 1
+      }
+    ],
+    "astro_enemy_orion_see_missile_01.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_enemy_orion_see_missile_02.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_enemy_orion_see_missile_03.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_enemy_shiv_unkillable_01.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_enemy_shiv_unkillable_02.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_enemy_shiv_unkillable_03.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_enemy_tengu_flies_away_01.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_enemy_tengu_flies_away_02.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_enemy_tengu_flies_away_03.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_enemy_warden_see_ult_01.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_enemy_warden_see_ult_02.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_enemy_warden_see_ult_03.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_enemy_wraith_lifts_01.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_enemy_wraith_lifts_02.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_enemy_wraith_lifts_03.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_enemy_yamato_starts_ult_01.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_enemy_yamato_starts_ult_02.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_enemy_yamato_starts_ult_03.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_happy_01.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_happy_02.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_happy_03.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_happy_04.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_happy_05.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_happy_06.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_happy_07.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_happy_08.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_happy_09.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_happy_10.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_hunt_01.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_hunt_02.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_hunt_03.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_interrupt_01.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_interrupt_02.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_interrupt_03.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_interrupt_04.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_interrupt_05.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_kill_anyhero_01.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_kill_anyhero_02.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_kill_anyhero_03.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_kill_anyhero_04.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_kill_anyhero_05.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_kill_anyhero_06.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_kill_anyhero_07.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_kill_anyhero_08.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_kill_anyhero_09.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_kill_anyhero_10.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_kill_atlas_01.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_kill_atlas_02.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_kill_atlas_03.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_kill_atlas_04.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_kill_atlas_05.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_kill_bebop_01.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_kill_bebop_02.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_kill_bebop_03.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_kill_bebop_04.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_kill_bebop_05.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_kill_cadence_01.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_kill_cadence_02.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_kill_cadence_03.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_kill_cadence_04.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_kill_cadence_05.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_kill_chrono_01.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_kill_chrono_02.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_kill_chrono_03.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_kill_chrono_04.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_kill_chrono_05.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_kill_dynamo_01.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_kill_dynamo_02.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_kill_dynamo_03.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_kill_dynamo_04.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_kill_dynamo_05.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_kill_forge_01.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_kill_forge_02.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_kill_forge_03.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_kill_forge_04.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_kill_forge_05.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_kill_forge_06.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_kill_ghost_01.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_kill_ghost_02.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_kill_ghost_03.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_kill_ghost_04.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_kill_ghost_05.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_kill_gigawatt_01.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 1,
+        "c": 1
+      }
+    ],
+    "astro_kill_gigawatt_02.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 1,
+        "c": 1
+      }
+    ],
+    "astro_kill_gigawatt_03.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_kill_gigawatt_04.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 1,
+        "c": 1
+      }
+    ],
+    "astro_kill_gigawatt_05.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 1,
+        "c": 1
+      }
+    ],
+    "astro_kill_haze_01.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_kill_haze_02.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_kill_haze_03.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_kill_haze_04.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_kill_haze_05.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_kill_hornet_01.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_kill_hornet_02.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_kill_hornet_03.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_kill_hornet_04.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_kill_hornet_05.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_kill_inferno_01.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_kill_inferno_02.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_kill_inferno_03.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_kill_inferno_04.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_kill_inferno_05.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_kill_kelvin_01.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_kill_kelvin_02.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_kill_kelvin_03.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_kill_kelvin_04.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_kill_kelvin_05.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_kill_krill_01.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_kill_krill_02.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_kill_krill_03.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_kill_krill_04.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_kill_krill_05.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_kill_lash_01.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 1,
+        "c": 1
+      }
+    ],
+    "astro_kill_lash_02.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 1,
+        "c": 1
+      }
+    ],
+    "astro_kill_lash_03.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 1,
+        "c": 1
+      }
+    ],
+    "astro_kill_lash_04.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 1,
+        "c": 1
+      }
+    ],
+    "astro_kill_lash_05.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_kill_magician_01.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_kill_magician_02.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_kill_magician_03.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_kill_magician_04.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_kill_magician_05.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_kill_mirage_01.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_kill_mirage_02.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_kill_mirage_03.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_kill_mirage_04.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_kill_mirage_05.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_kill_nano_01.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_kill_nano_02.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_kill_nano_03.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_kill_nano_04.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_kill_nano_05.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_kill_operative_01.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_kill_operative_02.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_kill_operative_03.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_kill_operative_04.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_kill_operative_05_alt_01.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_kill_operative_05.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_kill_orion_01.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_kill_orion_02.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_kill_orion_03.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_kill_orion_04.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_kill_orion_05.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_kill_shiv_01.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_kill_shiv_02.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_kill_shiv_03.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_kill_shiv_04.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_kill_shiv_05.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_kill_slork_01.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_kill_slork_02.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_kill_slork_03.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_kill_slork_04.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_kill_slork_05.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_killstreak_high_01.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_killstreak_high_02.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_killstreak_high_03.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_killstreak_mid_01.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_killstreak_mid_02.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_killstreak_mid_03.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_killstreak_start_01.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_killstreak_start_02.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_killstreak_start_03.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_killstreak_start_04.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_killstreak_start_05.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_kill_synth_01.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_kill_synth_02.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_kill_synth_03.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_kill_synth_04.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_kill_synth_05.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_kill_tengu_01.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_kill_tengu_02.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_kill_tengu_03.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_kill_tengu_04.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_kill_tengu_05.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_kill_trapper_01.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_kill_trapper_02.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_kill_trapper_03.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_kill_trapper_04.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_kill_trapper_05.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_kill_viper_01.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_kill_viper_02.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_kill_viper_03.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_kill_viper_04.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_kill_viper_05.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_kill_viscous_01.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_kill_viscous_02.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_kill_viscous_03.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_kill_viscous_04.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_kill_viscous_05.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_kill_warden_01.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_kill_warden_02.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_kill_warden_03.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_kill_warden_04.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_kill_warden_05.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_kill_wraith_01.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_kill_wraith_02.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_kill_wraith_03.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_kill_wraith_04.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_kill_wraith_05.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_kill_wrecker_01.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_kill_wrecker_02.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_kill_wrecker_03.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_kill_wrecker_04.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_kill_wrecker_05.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_kill_yamato_01.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_kill_yamato_02.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_kill_yamato_03.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_kill_yamato_04.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_kill_yamato_05.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_last_one_standing_01.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_last_one_standing_02.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_last_one_standing_03.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_leave_base_01.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_leave_base_02.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_leave_base_03.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_leave_base_04.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_leave_base_05.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_leaving_area_01.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_leaving_area_02.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_leaving_area_03.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_low_health_warning.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_match_start_astro_forge_convo01_03.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 1,
+        "c": 1
+      }
+    ],
+    "astro_match_start_astro_forge_convo02_01.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 1,
+        "c": 1
+      }
+    ],
+    "astro_match_start_astro_lash_convo02_04.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 1,
+        "c": 1
+      }
+    ],
+    "astro_match_start_astro_orion_convo01_02.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 1,
+        "c": 1
+      }
+    ],
+    "astro_match_start_astro_orion_convo02_02.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 1,
+        "c": 1
+      }
+    ],
+    "astro_match_start_astro_orion_convo02_04.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 1,
+        "c": 1
+      }
+    ],
+    "astro_match_start_astro_orion_convo03_01.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 1,
+        "c": 1
+      }
+    ],
+    "astro_match_start_astro_orion_convo03_03.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 1,
+        "c": 1
+      }
+    ],
+    "astro_match_start_astro_shiv_convo02_03.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 1,
+        "c": 1
+      }
+    ],
+    "astro_match_start_astro_viscous_convo01_02.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 1,
+        "c": 1
+      }
+    ],
+    "astro_match_start_astro_viscous_convo01_04.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 1,
+        "c": 1
+      }
+    ],
+    "astro_match_start_astro_viscous_convo02_01.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 1,
+        "c": 1
+      }
+    ],
+    "astro_match_start_astro_viscous_convo02_03.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 1,
+        "c": 1
+      }
+    ],
+    "astro_match_start_astro_viscous_convo03_08.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 1,
+        "c": 1
+      }
+    ],
+    "astro_match_start_astro_warden_convo02_03.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 1,
+        "c": 1
+      }
+    ],
+    "astro_match_start_astro_warden_convo02_05.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 1,
+        "c": 1
+      }
+    ],
+    "astro_match_start_astro_wrecker_convo02_03.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 1,
+        "c": 1
+      }
+    ],
+    "astro_match_start_atlas_astro_convo01_02_02.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 1,
+        "c": 1
+      }
+    ],
+    "astro_match_start_atlas_astro_convo01_02.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 2,
+        "c": 2
+      }
+    ],
+    "astro_match_start_atlas_astro_convo01_04_02.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 2,
+        "c": 2
+      }
+    ],
+    "astro_match_start_atlas_astro_convo01_04.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 2,
+        "c": 2
+      }
+    ],
+    "astro_match_start_atlas_astro_convo02_01.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 1,
+        "c": 1
+      }
+    ],
+    "astro_match_start_atlas_astro_convo02_03.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 1,
+        "c": 1
+      }
+    ],
+    "astro_match_start_atlas_astro_convo03_02.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 1,
+        "c": 1
+      }
+    ],
+    "astro_match_start_atlas_astro_convo03_04.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 1,
+        "c": 1
+      }
+    ],
+    "astro_match_start_bebop_astro_convo01_01.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 1,
+        "c": 1
+      }
+    ],
+    "astro_match_start_bebop_astro_convo01_03.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 1,
+        "c": 1
+      }
+    ],
+    "astro_match_start_bebop_astro_convo01_05.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 1,
+        "c": 1
+      }
+    ],
+    "astro_match_start_bebop_astro_convo01_07.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 1,
+        "c": 1
+      }
+    ],
+    "astro_match_start_bebop_astro_convo02_01.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 1,
+        "c": 1
+      }
+    ],
+    "astro_match_start_bebop_astro_convo02_03.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 1,
+        "c": 1
+      }
+    ],
+    "astro_match_start_bebop_astro_convo03_01.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 1,
+        "c": 1
+      }
+    ],
+    "astro_match_start_bebop_astro_convo03_03.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 1,
+        "c": 1
+      }
+    ],
+    "astro_match_start_dynamo_astro_convo01_02.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 1,
+        "c": 1
+      }
+    ],
+    "astro_match_start_dynamo_astro_convo02_02.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 1,
+        "c": 1
+      }
+    ],
+    "astro_match_start_dynamo_astro_convo03_02.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 1,
+        "c": 1
+      }
+    ],
+    "astro_match_start_dynamo_astro_convo03_04.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 1,
+        "c": 1
+      }
+    ],
+    "astro_match_start_nano_astro_convo01_01.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 2,
+        "c": 2
+      }
+    ],
+    "astro_match_start_nano_astro_convo01_03.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 2,
+        "c": 2
+      }
+    ],
+    "astro_match_start_nano_astro_convo02_01.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 2,
+        "c": 2
+      }
+    ],
+    "astro_match_start_nano_astro_convo02_03.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 2,
+        "c": 2
+      }
+    ],
+    "astro_match_start_nano_astro_convo03_02.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 2,
+        "c": 2
+      }
+    ],
+    "astro_match_start_operative_astro_convo01_01.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 2,
+        "c": 2
+      }
+    ],
+    "astro_match_start_operative_astro_convo02_02.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 1,
+        "c": 1
+      }
+    ],
+    "astro_match_start_operative_astro_convo03_02.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 1,
+        "c": 1
+      }
+    ],
+    "astro_match_start_slork_astro_convo03_02.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 1,
+        "c": 1
+      }
+    ],
+    "astro_match_start_trapper_astro_convo02_02.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 1,
+        "c": 1
+      }
+    ],
+    "astro_match_start_viper_astro_convo02_08.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 1,
+        "c": 1
+      }
+    ],
+    "astro_match_start_viper_astro_convo03_05.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 1,
+        "c": 1
+      }
+    ],
+    "astro_melee_kill_01.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_melee_kill_02.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_melee_kill_03.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_melee_kill_04.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_melee_kill_05.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_near_miss_01.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_near_miss_02.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_near_miss_03.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_near_miss_04.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_near_miss_05.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_outnumbered_01.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_outnumbered_02.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_outnumbered_03.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_parry_01.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_parry_02.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_parry_03.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_pick_up_gold_01.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_pick_up_gold_02.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_pick_up_gold_03.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_pick_up_gold_04.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_pick_up_gold_05.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_pick_up_rejuv_01.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_pick_up_rejuv_02.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_pick_up_rejuv_03.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_ability1_almost_ready.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_ability1_not_ready.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_ability2_almost_ready.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_ability2_not_ready.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_ability3_almost_ready.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_ability3_not_ready.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_ability4_almost_ready.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_ability4_not_ready.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_affermative_01.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_affermative_02.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_affermative_03.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_atlas_almost_respawn.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_atlas_check_items.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_atlas_dead.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_atlas_in_mid.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_atlas_missing_01.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_atlas_on_top_of_garage.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_atlas_on_top_of_mid.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_atlas_under_garage.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_atlas_was_here.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_attack_atlas.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_attack_bebop.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_attack_cadence.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_attack_chrono.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_attack_dynamo.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_attack_enemy.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_attack_forge.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_attack_ghost.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_attack_gigawatt.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_attack_haze.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_attack_hornet.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_attack_inferno.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_attack_kelvin.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_attack_krill.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_attack_lash.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_attack_magician.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_attack_mirage.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_attack_nano.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_attack_operative.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_attack_orion.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_attack_shiv.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_attack_slork.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_attack_synth.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_attack_tengu.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_attack_trapper.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_attack_viper.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_attack_viscous.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_attack_warden.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_attack_wraith.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_attack_wrecker.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_attack_yamato.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_avatar_under_attack.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_be_back_soon.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_bebop_almost_respawn.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_bebop_check_items.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_bebop_dead.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_bebop_in_mid.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_bebop_missing_01.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_bebop_on_top_of_garage.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_bebop_on_top_of_mid.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_bebop_under_garage.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_bebop_was_here.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_blue_help_01.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_blue_help_02.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_cadence_in_mid.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_cadence_missing_01.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_cadence_on_top_of_garage.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_cadence_on_top_of_mid.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_cadence_under_garage.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_cadence_was_here.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_can_heal_atlas.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_can_heal_bebop.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_can_heal_cadence.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_can_heal_chrono.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_can_heal_dynamo.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_can_heal_forge.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_can_heal_ghost.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_can_heal_gigawatt.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_can_heal_haze.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_can_heal_hornet.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_can_heal_inferno.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_can_heal_kelvin.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_can_heal_krill.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_can_heal_lash.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_can_heal_magician.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_can_heal_mirage.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_can_heal_nano.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_can_heal_operative.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_can_heal_orion.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_can_heal_shiv.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_can_heal_slork.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_can_heal_synth.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_can_heal_tengu.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_can_heal_trapper.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_can_heal_viper.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_can_heal_viscous.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_can_heal_warden.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_can_heal_wraith.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_can_heal_wrecker.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_can_heal_yamato.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_careful_atlas_01.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_careful_atlas_02.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_careful_atlas_03.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_careful_bebop_01.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_careful_bebop_02.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_careful_bebop_03.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_careful_cadence_01.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_careful_cadence_02.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_careful_cadence_03.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_careful_chrono_01.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_careful_chrono_02.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_careful_chrono_03.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_careful_dynamo_01.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_careful_dynamo_02.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_careful_dynamo_03.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_careful_forge_01.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_careful_forge_02.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_careful_forge_03.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_careful_ghost_01.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_careful_ghost_02.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_careful_ghost_03.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_careful_gigawatt_01.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_careful_gigawatt_02.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_careful_gigawatt_03.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_careful_haze_01.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_careful_haze_02.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_careful_haze_03.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_careful_hornet_01.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_careful_hornet_02.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_careful_hornet_03.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_careful_inferno_01.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_careful_inferno_02.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_careful_inferno_03.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_careful_kelvin_01.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_careful_kelvin_02.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_careful_kelvin_03.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_careful_krill_01.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_careful_krill_02.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_careful_krill_03.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_careful_lash_01.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_careful_lash_02.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_careful_lash_03.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_careful_magician_01.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_careful_magician_02.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_careful_magician_03.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_careful_mirage_01.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_careful_mirage_02.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_careful_mirage_03.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_careful_nano_01.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_careful_nano_02.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_careful_nano_03.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_careful_operative_01.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_careful_operative_02.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_careful_operative_03.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_careful_orion_01.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_careful_orion_02.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_careful_orion_03.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_careful_shiv_01.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_careful_shiv_02.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_careful_shiv_03.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_careful_slork_01.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_careful_slork_02.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_careful_slork_03.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_careful_synth_01.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_careful_synth_02.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_careful_synth_03.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_careful_tengu_01.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_careful_tengu_02.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_careful_tengu_03.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_careful_trapper_01.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_careful_trapper_02.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_careful_trapper_03.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_careful_viper_01.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_careful_viper_02.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_careful_viper_03.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_careful_viscous_01.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_careful_viscous_02.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_careful_viscous_03.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_careful_warden_01.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_careful_warden_02.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_careful_warden_03.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_careful_wraith_01.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_careful_wraith_02.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_careful_wraith_03.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_careful_wrecker_01.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_careful_wrecker_02.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_careful_wrecker_03.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_careful_yamato_01.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_careful_yamato_02.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_careful_yamato_03.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_chrono_almost_respawn.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_chrono_check_items.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_chrono_dead.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_chrono_in_mid.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_chrono_missing_01.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_chrono_on_top_of_garage.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_chrono_on_top_of_mid.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_chrono_under_garage.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_chrono_was_here.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_clear_troopers.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_danger_area.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_defend_base_01.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_defend_blue_01.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_defend_blue_02.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_defend_green_01.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_defend_green_02.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_defend_purple_01.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_defend_purple_02.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_defend_yellow_01.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_defend_yellow_02.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_dynamo_almost_respawn.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_dynamo_check_items.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_dynamo_dead.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_dynamo_in_mid.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_dynamo_missing_01.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_dynamo_on_top_of_garage.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_dynamo_on_top_of_mid.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_dynamo_under_garage.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_dynamo_was_here.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_flank.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_forge_almost_respawn.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_forge_check_items.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_forge_dead.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_forge_in_mid.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_forge_missing_01.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_forge_on_top_of_garage.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_forge_on_top_of_mid.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_forge_under_garage.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_forge_was_here.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_gank.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_ghost_almost_respawn.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_ghost_check_items.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_ghost_dead.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_ghost_in_mid.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_ghost_missing_01.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_ghost_on_top_of_garage.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_ghost_on_top_of_mid.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_ghost_under_garage.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_ghost_was_here.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_gigawatt_almost_respawn.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_gigawatt_check_items.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_gigawatt_dead.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_gigawatt_in_mid.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_gigawatt_missing_01.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_gigawatt_on_top_of_garage.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_gigawatt_on_top_of_mid.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_gigawatt_under_garage.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_gigawatt_was_here.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_glitch_almost_ready.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_glitch_not_ready.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_going_in_01.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_going_in.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_going_shop_01.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_good_game_01.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_good_game_02.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_good_game_03.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_good_job_01.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_green_help_01.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_green_help_02.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_haze_almost_respawn.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_haze_check_items.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_haze_dead.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_haze_in_mid.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_haze_missing_01.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_haze_on_top_of_garage.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_haze_on_top_of_mid.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_haze_under_garage.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_haze_was_here.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_headed_blue_01.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_headed_blue_02.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_headed_green_01.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_headed_green_02.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_headed_purple_01.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_headed_purple_02.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_headed_this_way.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_headed_yellow_01.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_headed_yellow_02.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_heal_ready.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_health_nova_almost_ready.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_health_nova_not_ready.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_help_with_idol.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_hornet_almost_respawn.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_hornet_check_items.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_hornet_dead.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_hornet_in_mid.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_hornet_missing_01.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_hornet_on_top_of_garage.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_hornet_on_top_of_mid.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_hornet_under_garage.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_hornet_was_here.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_ignore_atlas.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_ignore_bebop.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_ignore_chrono.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_ignore_forge.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_ignore_ghost.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_ignore_gigawatt.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_ignore_haze.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_ignore_hornet.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_ignore_inferno.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_ignore_kelvin.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_ignore_krill.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_ignore_lash.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_ignore_magician.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_ignore_mirage.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_ignore_nano.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_ignore_operative.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_ignore_orion.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_ignore_shiv.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_ignore_slork.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_ignore_synth.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_ignore_tengu.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_ignore_trapper.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_ignore_viper.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_ignore_viscous.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_ignore_warden.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_ignore_wraith.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_ignore_wrecker.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_ignore_yamato.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_inferno_almost_respawn.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_inferno_check_items.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_inferno_dead.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_inferno_in_mid.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_inferno_missing_01.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_inferno_on_top_of_garage.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_inferno_on_top_of_mid.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_inferno_under_garage.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_inferno_was_here.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_item_almost_ready.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_item_not_ready.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_jar_call_01.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_jar_call_02.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_kelvin_almost_respawn.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_kelvin_check_items.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_kelvin_dead.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_kelvin_in_mid.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_kelvin_missing_01.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_kelvin_on_top_of_garage.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_kelvin_on_top_of_mid.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_kelvin_under_garage.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_kelvin_was_here.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_kncokdown_almost_ready.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_kncokdown_not_ready.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_krill_almost_respawn.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_krill_check_items.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_krill_dead.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_krill_in_mid.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_krill_missing_01.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_krill_on_top_of_garage.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_krill_on_top_of_mid.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_krill_under_garage.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_krill_was_here.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_lash_almost_respawn.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_lash_check_items.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_lash_dead.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_lash_in_mid.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_lash_missing_01.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_lash_on_top_of_garage.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_lash_on_top_of_mid.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_lash_under_garage.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_lash_was_here.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_leaving_area_01.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_leaving_area_02.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_leaving_area_03.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_lets_go_blue_alt.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_lets_go_blue.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_lets_go_green_alt.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_lets_go_green.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_lets_go_purple_alt.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_lets_go_purple.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_lets_go_yellow_alt.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_lets_go_yellow.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_lets_hide.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_magician_almost_respawn.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_magician_check_items.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_magician_dead.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_magician_in_mid.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_magician_missing_01.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_magician_on_top_of_garage.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_magician_on_top_of_mid.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_magician_under_garage.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_magician_was_here.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_meet_here.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_mirage_almost_respawn.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_mirage_check_items.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_mirage_dead.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_mirage_in_mid.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_mirage_missing_01.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_mirage_on_top_of_garage.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_mirage_on_top_of_mid.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_mirage_under_garage.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_mirage_was_here.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_missing_blue_01.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_missing_blue_02.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_missing_green_01.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_missing_green_02.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_missing_purple_01.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_missing_purple_02.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_missing_yellow_01.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_missing_yellow_02.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_nano_almost_respawn.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_nano_check_items.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_nano_dead.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_nano_in_mid.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_nano_missing_01.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_nano_on_top_of_garage.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_nano_on_top_of_mid.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_nano_under_garage.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_nano_was_here.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_need_cover.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_need_heal.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_need_help_blue_alt.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_need_help_blue.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_need_help_green_alt.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_need_help_green.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_need_help_purple_alt.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_need_help_purple.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_need_help_yellow_alt.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_need_help_yellow.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_need_plan.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_negative_01.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_negative_02.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_negative_03.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_nice_work_01.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_no_teamfight.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_on_way.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_operative_almost_respawn.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_operative_check_items.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_operative_dead.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_operative_in_mid.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_operative_missing_01.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_operative_on_top_of_garage.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_operative_on_top_of_mid.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_operative_under_garage.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_operative_was_here.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_orion_almost_respawn.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_orion_check_items.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_orion_dead.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_orion_in_mid.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_orion_missing_01.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_orion_on_top_of_garage.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_orion_on_top_of_mid.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_orion_under_garage.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_orion_was_here.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_post_game_01.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_post_game_02.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_post_game_03.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_post_game_04.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_post_game_05.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_post_game_06.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_pre_game_01.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_pre_game_02.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_pre_game_03.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_pre_game_04.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_pre_game_05.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_pre_game_06.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_press_advantage.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_purple_help_01.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_purple_help_02.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_push_blue_01.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_push_blue_02.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_push_green_01.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_push_green_02.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_push_purple_01.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_push_purple_02.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_push_yellow_01.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_push_yellow_02.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_refresher_almost_ready.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_refresher_not_ready.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_rejuv_drop.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_request_follow.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "astro_ping_retreat_02.mp3": [
+      {
+        "t": "2025-09-29T04:17:04.821Z",
+        "d": 0,
+        "c": 0
+      }
+    ]
+  }
 }
