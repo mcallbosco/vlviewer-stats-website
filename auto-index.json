@@ -1,5 +1,5 @@
 {
-  "generated_at": "2025-09-29T03:21:48.268Z",
+  "generated_at": "2025-09-29T03:28:36.175Z",
   "owner": "mcallbosco",
   "stats_repo": "vlviewer-stats",
   "website_repo": "vlviewer-stats-website",
@@ -12,7 +12,8 @@
         "conversations_deltas": "auto/apex-s25/conversations-deltas.json",
         "character_totals_deltas": "auto/apex-s25/character_totals-deltas.json",
         "id_to_text": "auto/apex-s25/id-to-text.json"
-      }
+      },
+      "icon": null
     },
     {
       "config": "Games/Deadlock/DeadlockApril2025/config.json",
@@ -22,7 +23,8 @@
         "conversations_deltas": "auto/deadlock-deadlockapril2025/conversations-deltas.json",
         "character_totals_deltas": "auto/deadlock-deadlockapril2025/character_totals-deltas.json",
         "id_to_text": "auto/deadlock-deadlockapril2025/id-to-text.json"
-      }
+      },
+      "icon": null
     },
     {
       "config": "Games/Deadlock/DeadlockAugust2025/config.json",
@@ -32,7 +34,8 @@
         "conversations_deltas": "auto/deadlock-deadlockaugust2025/conversations-deltas.json",
         "character_totals_deltas": "auto/deadlock-deadlockaugust2025/character_totals-deltas.json",
         "id_to_text": "auto/deadlock-deadlockaugust2025/id-to-text.json"
-      }
+      },
+      "icon": null
     },
     {
       "config": "Games/Deadlock/DeadlockAugust22025/config.json",
@@ -42,7 +45,8 @@
         "conversations_deltas": "auto/deadlock-deadlockaugust22025/conversations-deltas.json",
         "character_totals_deltas": "auto/deadlock-deadlockaugust22025/character_totals-deltas.json",
         "id_to_text": "auto/deadlock-deadlockaugust22025/id-to-text.json"
-      }
+      },
+      "icon": null
     },
     {
       "config": "Games/Overwatch/August2025/config.json",
@@ -52,7 +56,8 @@
         "conversations_deltas": "auto/overwatch-august2025/conversations-deltas.json",
         "character_totals_deltas": "auto/overwatch-august2025/character_totals-deltas.json",
         "id_to_text": "auto/overwatch-august2025/id-to-text.json"
-      }
+      },
+      "icon": null
     },
     {
       "config": "Games/Overwatch/Sept2025/config.json",
@@ -62,7 +67,8 @@
         "conversations_deltas": "auto/overwatch-sept2025/conversations-deltas.json",
         "character_totals_deltas": "auto/overwatch-sept2025/character_totals-deltas.json",
         "id_to_text": "auto/overwatch-sept2025/id-to-text.json"
-      }
+      },
+      "icon": null
     }
   ]
 }
