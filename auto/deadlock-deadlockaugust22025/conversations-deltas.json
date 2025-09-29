@@ -3,5 +3,97 @@
     "config": "Games/Deadlock/DeadlockAugust22025/config.json",
     "source_repo": "mcallbosco/vlviewer-stats"
   },
-  "series": {}
+  "series": {
+    "bebop_viscous_convo02": [
+      {
+        "t": "2025-09-29T16:40:24.588Z",
+        "d": 1,
+        "c": 9
+      }
+    ],
+    "holliday_magician_convo02": [
+      {
+        "t": "2025-09-29T16:40:24.588Z",
+        "d": 1,
+        "c": 2
+      }
+    ],
+    "abrams_grey talon_convo01": [
+      {
+        "t": "2025-09-29T16:48:03.988Z",
+        "d": 1,
+        "c": 3
+      }
+    ],
+    "abrams_grey talon_convo02": [
+      {
+        "t": "2025-09-29T16:48:03.988Z",
+        "d": 1,
+        "c": 3
+      }
+    ],
+    "abrams_grey talon_convo03": [
+      {
+        "t": "2025-09-29T16:48:03.988Z",
+        "d": 1,
+        "c": 2
+      }
+    ],
+    "bebop_grey talon_convo01": [
+      {
+        "t": "2025-09-29T16:48:03.988Z",
+        "d": 1,
+        "c": 3
+      }
+    ],
+    "bebop_grey talon_convo02": [
+      {
+        "t": "2025-09-29T16:48:03.988Z",
+        "d": 1,
+        "c": 4
+      }
+    ],
+    "bebop_grey talon_convo03": [
+      {
+        "t": "2025-09-29T16:48:03.988Z",
+        "d": 1,
+        "c": 3
+      }
+    ],
+    "billy_grey talon_convo01": [
+      {
+        "t": "2025-09-29T16:48:03.988Z",
+        "d": 1,
+        "c": 4
+      }
+    ],
+    "billy_grey talon_convo02": [
+      {
+        "t": "2025-09-29T16:48:03.988Z",
+        "d": 1,
+        "c": 4
+      }
+    ],
+    "billy_grey talon_convo03": [
+      {
+        "t": "2025-09-29T16:48:03.988Z",
+        "d": 1,
+        "c": 4
+      }
+    ],
+    "doorman_grey talon_convo01": [
+      {
+        "t": "2025-09-29T16:48:03.988Z",
+        "d": 1,
+        "c": 4
+      }
+    ],
+    "doorman_grey talon_convo02": [
+      {
+        "t": "2025-09-29T16:48:03.988Z",
+        "d": 1,
+        "c": 1
+      }
+    ]
+  }
 }
