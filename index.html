@@ -53,17 +53,47 @@
         <p id="configMeta" class="mt-2 text-xs text-slate-400"></p>
       </div>
       <div class="bg-slate-900/60 border border-white/10 rounded-lg p-4">
-        <label for="characterSelect" class="block text-sm mb-1 text-slate-300">Select Character</label>
-        <select id="characterSelect" class="w-full bg-slate-800 border border-white/10 rounded px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-brand-500" disabled>
-          <option>Loading…</option>
+        <label for="viewMode" class="block text-sm mb-1 text-slate-300">View Mode</label>
+        <select id="viewMode" class="w-full bg-slate-800 border border-white/10 rounded px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-brand-500">
+          <option value="single">Single Character</option>
+          <option value="all">All Characters</option>
+          <option value="allLines">All Characters (Lines)</option>
+          <option value="slope">Slope Chart (Trends)</option>
         </select>
-        <p id="characterHint" class="mt-2 text-xs text-slate-400">Choose a config to load characters.</p>
+        <p class="mt-2 text-xs text-slate-400">Choose how to visualize the data.</p>
       </div>
+    </section>
+
+    <section id="singleCharacterSection" class="mb-4 bg-slate-900/60 border border-white/10 rounded-lg p-4">
+      <label for="characterSelect" class="block text-sm mb-1 text-slate-300">Select Character</label>
+      <select id="characterSelect" class="w-full bg-slate-800 border border-white/10 rounded px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-brand-500" disabled>
+        <option>Loading…</option>
+      </select>
+      <p id="characterHint" class="mt-2 text-xs text-slate-400">Choose a config to load characters.</p>
+    </section>
+
+    <section id="dateRangeSection" class="mb-4 bg-slate-900/60 border border-white/10 rounded-lg p-4">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-3">
+        <div>
+          <label for="startDate" class="block text-sm mb-1 text-slate-300">Start Date</label>
+          <input type="date" id="startDate" class="w-full bg-slate-800 border border-white/10 rounded px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-brand-500" />
+        </div>
+        <div>
+          <label for="endDate" class="block text-sm mb-1 text-slate-300">End Date</label>
+          <input type="date" id="endDate" class="w-full bg-slate-800 border border-white/10 rounded px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-brand-500" />
+        </div>
+        <div class="flex items-end">
+          <button id="resetDateRange" class="w-full bg-slate-800 hover:bg-slate-700 border border-white/10 rounded px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-brand-500 transition-colors">
+            Reset Range
+          </button>
+        </div>
+      </div>
+      <p class="mt-2 text-xs text-slate-400">Filter data by date range (leave empty for all data).</p>
     </section>
 
     <section class="bg-slate-900/60 border border-white/10 rounded-lg p-4">
       <div class="flex items-center gap-3 mb-3">
-        <h2 class="text-lg font-medium">Character Plays Over Time</h2>
+        <h2 class="text-lg font-medium" id="chartTitle">Character Plays Over Time</h2>
         <span id="chartSubtitle" class="text-xs text-slate-400"></span>
       </div>
       <div class="h-[420px]">
@@ -81,7 +111,14 @@
     const els = {
       configSelect: document.getElementById('configSelect'),
       characterSelect: document.getElementById('characterSelect'),
+      viewMode: document.getElementById('viewMode'),
+      singleCharacterSection: document.getElementById('singleCharacterSection'),
+      dateRangeSection: document.getElementById('dateRangeSection'),
+      startDate: document.getElementById('startDate'),
+      endDate: document.getElementById('endDate'),
+      resetDateRange: document.getElementById('resetDateRange'),
       chartCanvas: document.getElementById('chart'),
+      chartTitle: document.getElementById('chartTitle'),
       chartSubtitle: document.getElementById('chartSubtitle'),
       emptyState: document.getElementById('emptyState'),
       configMeta: document.getElementById('configMeta'),
@@ -91,6 +128,8 @@
 
     let chart;
     let autoIndex;
+    let currentSeries = {};
+    let currentCfg = null;
 
     async function loadAutoIndex() {
       const res = await fetch('auto-index.json');
@@ -151,6 +190,12 @@
     function populateCharacterSelect(series, cfg) {
       const names = Object.keys(series).sort();
       els.characterSelect.innerHTML = '';
+      currentSeries = series;
+      currentCfg = cfg;
+      
+      // Set date range based on data
+      updateDateRangeLimits(series);
+      
       if (names.length === 0) {
         const opt = document.createElement('option');
         opt.textContent = 'No characters in this config yet';
@@ -172,15 +217,63 @@
       handleCharacterChange(series, cfg);
     }
 
+    function updateDateRangeLimits(series) {
+      let minDate = null;
+      let maxDate = null;
+      
+      for (const points of Object.values(series)) {
+        for (const point of points) {
+          const date = new Date(point.t);
+          if (!minDate || date < minDate) minDate = date;
+          if (!maxDate || date > maxDate) maxDate = date;
+        }
+      }
+      
+      if (minDate && maxDate) {
+        els.startDate.min = minDate.toISOString().split('T')[0];
+        els.startDate.max = maxDate.toISOString().split('T')[0];
+        els.endDate.min = minDate.toISOString().split('T')[0];
+        els.endDate.max = maxDate.toISOString().split('T')[0];
+      }
+    }
+
+    function filterDataByDateRange(points) {
+      if (!els.startDate.value && !els.endDate.value) return points;
+      
+      const startTime = els.startDate.value ? new Date(els.startDate.value).getTime() : -Infinity;
+      const endTime = els.endDate.value ? new Date(els.endDate.value + 'T23:59:59').getTime() : Infinity;
+      
+      return points.filter(p => {
+        const t = new Date(p.t).getTime();
+        return t >= startTime && t <= endTime;
+      });
+    }
+
     function handleCharacterChange(series, cfg) {
       const name = els.characterSelect.value;
-      const points = (series[name] || []).slice().sort((a,b) => new Date(a.t) - new Date(b.t));
+      const allPoints = (series[name] || []).slice().sort((a,b) => new Date(a.t) - new Date(b.t));
+      const points = filterDataByDateRange(allPoints);
       const data = points.map(p => ({ x: new Date(p.t), y: Number(p.c ?? p.d ?? 0) }));
       updateChart(data, cfg, name);
     }
 
     function updateChart(data, cfg, name) {
+      const viewMode = els.viewMode.value;
+      
+      if (viewMode === 'single') {
+        updateSingleCharacterChart(data, cfg, name);
+      } else if (viewMode === 'all') {
+        updateAllCharactersChart(currentSeries, cfg);
+      } else if (viewMode === 'allLines') {
+        updateAllCharactersLineChart(currentSeries, cfg);
+      } else if (viewMode === 'slope') {
+        updateSlopeChart(currentSeries, cfg);
+      }
+    }
+
+    function updateSingleCharacterChart(data, cfg, name) {
       els.emptyState.classList.toggle('hidden', data.length > 0);
+      els.chartTitle.textContent = 'Character Plays Over Time';
       els.chartSubtitle.textContent = name ? `${name} — ${cfg?.slug || ''}` : (cfg?.slug || '');
 
       const gradient = (() => {
@@ -233,6 +326,315 @@
       });
     }
 
+    function updateAllCharactersChart(series, cfg) {
+      els.chartTitle.textContent = 'All Characters Popularity';
+      els.chartSubtitle.textContent = cfg?.slug || '';
+      
+      // Get the latest cumulative value for each character
+      const characterData = [];
+      for (const [name, allPoints] of Object.entries(series)) {
+        const points = filterDataByDateRange(allPoints);
+        if (points.length === 0) continue;
+        const sortedPoints = points.slice().sort((a,b) => new Date(b.t) - new Date(a.t));
+        const latestValue = Number(sortedPoints[0].c ?? 0);
+        characterData.push({ name, value: latestValue });
+      }
+      
+      // Sort by value descending
+      characterData.sort((a, b) => b.value - a.value);
+      
+      els.emptyState.classList.toggle('hidden', characterData.length > 0);
+      
+      const labels = characterData.map(d => d.name);
+      const values = characterData.map(d => d.value);
+      
+      // Create color gradient based on popularity
+      const colors = values.map((v, i) => {
+        const ratio = i / Math.max(1, values.length - 1);
+        const hue = 220 + (ratio * 60); // Blue to cyan gradient
+        const saturation = 80 - (ratio * 30);
+        const lightness = 60 - (ratio * 20);
+        return `hsl(${hue}, ${saturation}%, ${lightness}%)`;
+      });
+
+      if (chart) chart.destroy();
+      chart = new Chart(els.chartCanvas, {
+        type: 'bar',
+        data: {
+          labels,
+          datasets: [{
+            label: 'Total Plays',
+            data: values,
+            backgroundColor: colors,
+            borderColor: colors.map(c => c.replace('60%', '70%')),
+            borderWidth: 1
+          }]
+        },
+        options: {
+          indexAxis: 'y',
+          responsive: true,
+          maintainAspectRatio: false,
+          scales: {
+            x: {
+              beginAtZero: true,
+              grid: { color: 'rgba(255,255,255,0.06)' },
+              ticks: { color: 'rgba(255,255,255,0.7)' }
+            },
+            y: {
+              grid: { color: 'rgba(255,255,255,0.06)' },
+              ticks: { 
+                color: 'rgba(255,255,255,0.7)',
+                font: { size: 10 }
+              }
+            }
+          },
+          plugins: {
+            legend: { 
+              display: false
+            },
+            tooltip: {
+              callbacks: {
+                label: (ctx) => ` Total Plays: ${ctx.parsed.x.toLocaleString()}`
+              }
+            }
+          }
+        }
+      });
+    }
+
+    function updateAllCharactersLineChart(series, cfg) {
+      els.chartTitle.textContent = 'All Characters - Rate of Change Over Time';
+      els.chartSubtitle.textContent = cfg?.slug || '';
+      
+      // First, collect all unique timestamps across all characters
+      const allTimestamps = new Set();
+      const filteredSeries = {};
+      
+      for (const [name, allPoints] of Object.entries(series)) {
+        const points = filterDataByDateRange(allPoints);
+        if (points.length < 1) continue;
+        filteredSeries[name] = points.slice().sort((a,b) => new Date(a.t) - new Date(b.t));
+        filteredSeries[name].forEach(p => allTimestamps.add(p.t));
+      }
+      
+      // Convert to sorted array
+      const timestamps = Array.from(allTimestamps).sort((a, b) => new Date(a) - new Date(b));
+      
+      if (timestamps.length < 2) {
+        els.emptyState.classList.toggle('hidden', false);
+        if (chart) chart.destroy();
+        return;
+      }
+      
+      const datasets = [];
+      const colorPalette = [
+        '#4a76ff', '#ff6b6b', '#51cf66', '#ffd93d', '#a78bfa', 
+        '#fb7185', '#60a5fa', '#34d399', '#fbbf24', '#c084fc',
+        '#f472b6', '#38bdf8', '#6ee7b7', '#fdba74', '#e879f9',
+        '#fb923c', '#67e8f9', '#86efac', '#fca5a5', '#d8b4fe'
+      ];
+      
+      let colorIndex = 0;
+      for (const [name, points] of Object.entries(filteredSeries)) {
+        // Create a map of timestamp -> point data
+        const pointMap = new Map();
+        points.forEach(p => pointMap.set(p.t, p));
+        
+        // Fill in all timestamps, carrying forward cumulative values
+        const normalizedPoints = [];
+        let lastCumulative = 0;
+        
+        for (const timestamp of timestamps) {
+          if (pointMap.has(timestamp)) {
+            const point = pointMap.get(timestamp);
+            lastCumulative = Number(point.c ?? lastCumulative);
+            normalizedPoints.push({ t: timestamp, c: lastCumulative });
+          } else {
+            // Missing data point - use last cumulative value (delta = 0)
+            normalizedPoints.push({ t: timestamp, c: lastCumulative });
+          }
+        }
+        
+        // Calculate rate of change with normalized data
+        const rateData = [];
+        for (let i = 1; i < normalizedPoints.length; i++) {
+          const prevPoint = normalizedPoints[i - 1];
+          const currPoint = normalizedPoints[i];
+          
+          const timeDiff = (new Date(currPoint.t) - new Date(prevPoint.t)) / (1000 * 60 * 60); // hours
+          const valueDiff = currPoint.c - prevPoint.c;
+          const rate = timeDiff > 0 ? valueDiff / timeDiff : 0; // plays per hour
+          
+          rateData.push({
+            x: new Date(currPoint.t),
+            y: rate
+          });
+        }
+        
+        if (rateData.length > 0) {
+          const color = colorPalette[colorIndex % colorPalette.length];
+          datasets.push({
+            label: name,
+            data: rateData,
+            borderColor: color,
+            backgroundColor: color + '20',
+            borderWidth: 2,
+            pointRadius: 1,
+            pointHoverRadius: 4,
+            tension: 0.3,
+            fill: false
+          });
+          colorIndex++;
+        }
+      }
+      
+      els.emptyState.classList.toggle('hidden', datasets.length > 0);
+      
+      if (chart) chart.destroy();
+      chart = new Chart(els.chartCanvas, {
+        type: 'line',
+        data: { datasets },
+        options: {
+          responsive: true,
+          maintainAspectRatio: false,
+          interaction: {
+            mode: 'index',
+            intersect: false,
+          },
+          scales: {
+            x: {
+              type: 'time',
+              time: { tooltipFormat: 'PPpp' },
+              grid: { color: 'rgba(255,255,255,0.06)' },
+              ticks: { color: 'rgba(255,255,255,0.7)' }
+            },
+            y: {
+              beginAtZero: true,
+              grid: { color: 'rgba(255,255,255,0.06)' },
+              ticks: { color: 'rgba(255,255,255,0.7)' },
+              title: {
+                display: true,
+                text: 'Plays per Hour',
+                color: 'rgba(255,255,255,0.8)'
+              }
+            }
+          },
+          plugins: {
+            legend: { 
+              labels: { color: 'rgba(255,255,255,0.8)', font: { size: 10 } },
+              position: 'top',
+              maxHeight: 100
+            },
+            tooltip: {
+              callbacks: {
+                label: (ctx) => ` ${ctx.dataset.label}: ${ctx.parsed.y.toFixed(2)} plays/hour`
+              }
+            }
+          }
+        }
+      });
+    }
+
+    function updateSlopeChart(series, cfg) {
+      els.chartTitle.textContent = 'Character Popularity Trends (Slope)';
+      els.chartSubtitle.textContent = cfg?.slug || '';
+      
+      // Calculate slope (growth rate) for each character
+      const characterSlopes = [];
+      for (const [name, allPoints] of Object.entries(series)) {
+        const points = filterDataByDateRange(allPoints);
+        if (points.length < 2) continue;
+        const sortedPoints = points.slice().sort((a,b) => new Date(a.t) - new Date(b.t));
+        
+        // Calculate simple linear regression slope
+        const n = sortedPoints.length;
+        let sumX = 0, sumY = 0, sumXY = 0, sumX2 = 0;
+        
+        sortedPoints.forEach((point, idx) => {
+          const x = idx;
+          const y = Number(point.c ?? 0);
+          sumX += x;
+          sumY += y;
+          sumXY += x * y;
+          sumX2 += x * x;
+        });
+        
+        const slope = (n * sumXY - sumX * sumY) / (n * sumX2 - sumX * sumX);
+        const latestValue = Number(sortedPoints[sortedPoints.length - 1].c ?? 0);
+        
+        characterSlopes.push({ name, slope, latestValue });
+      }
+      
+      // Sort by slope descending
+      characterSlopes.sort((a, b) => b.slope - a.slope);
+      
+      els.emptyState.classList.toggle('hidden', characterSlopes.length > 0);
+      
+      const labels = characterSlopes.map(d => d.name);
+      const slopes = characterSlopes.map(d => d.slope);
+      
+      // Color based on slope (positive = green, negative = red)
+      const colors = slopes.map(slope => {
+        if (slope > 0) {
+          const intensity = Math.min(slope / Math.max(...slopes), 1);
+          return `rgba(74, 222, 128, ${0.4 + intensity * 0.6})`;
+        } else {
+          const intensity = Math.min(Math.abs(slope) / Math.max(...slopes.map(Math.abs)), 1);
+          return `rgba(248, 113, 113, ${0.4 + intensity * 0.6})`;
+        }
+      });
+
+      if (chart) chart.destroy();
+      chart = new Chart(els.chartCanvas, {
+        type: 'bar',
+        data: {
+          labels,
+          datasets: [{
+            label: 'Growth Rate (plays/datapoint)',
+            data: slopes,
+            backgroundColor: colors,
+            borderColor: colors.map(c => c.replace(/[\d.]+\)$/, '1)')),
+            borderWidth: 1
+          }]
+        },
+        options: {
+          indexAxis: 'y',
+          responsive: true,
+          maintainAspectRatio: false,
+          scales: {
+            x: {
+              grid: { color: 'rgba(255,255,255,0.06)' },
+              ticks: { color: 'rgba(255,255,255,0.7)' }
+            },
+            y: {
+              grid: { color: 'rgba(255,255,255,0.06)' },
+              ticks: { 
+                color: 'rgba(255,255,255,0.7)',
+                font: { size: 10 }
+              }
+            }
+          },
+          plugins: {
+            legend: { 
+              display: false
+            },
+            tooltip: {
+              callbacks: {
+                label: (ctx) => {
+                  const idx = ctx.dataIndex;
+                  const charData = characterSlopes[idx];
+                  return [
+                    ` Growth Rate: ${ctx.parsed.x.toFixed(2)} plays/point`,
+                    ` Current Total: ${charData.latestValue.toLocaleString()} plays`
+                  ];
+                }
+              }
+            }
+          }
+        }
+      });
+    }
+
     // Events
     els.configSelect.addEventListener('change', handleConfigChange);
     els.characterSelect.addEventListener('change', () => {
@@ -242,6 +644,62 @@
       fetch(cfg.paths.character_totals_deltas)
         .then(r => r.json())
         .then(data => handleCharacterChange(data.series || {}, cfg));
+    });
+    
+    els.viewMode.addEventListener('change', () => {
+      const viewMode = els.viewMode.value;
+      els.singleCharacterSection.style.display = viewMode === 'single' ? 'block' : 'none';
+      
+      const slug = els.configSelect.value;
+      const cfg = (autoIndex.configs || []).find(c => c.slug === slug);
+      if (!cfg) return;
+      
+      if (viewMode === 'single') {
+        // Reload current character
+        const name = els.characterSelect.value;
+        const allPoints = (currentSeries[name] || []).slice().sort((a,b) => new Date(a.t) - new Date(b.t));
+        const points = filterDataByDateRange(allPoints);
+        const data = points.map(p => ({ x: new Date(p.t), y: Number(p.c ?? p.d ?? 0) }));
+        updateChart(data, cfg, name);
+      } else {
+        // Show all characters or slope view
+        updateChart([], cfg);
+      }
+    });
+    
+    els.startDate.addEventListener('change', () => {
+      if (currentCfg) {
+        const viewMode = els.viewMode.value;
+        if (viewMode === 'single') {
+          handleCharacterChange(currentSeries, currentCfg);
+        } else {
+          updateChart([], currentCfg);
+        }
+      }
+    });
+    
+    els.endDate.addEventListener('change', () => {
+      if (currentCfg) {
+        const viewMode = els.viewMode.value;
+        if (viewMode === 'single') {
+          handleCharacterChange(currentSeries, currentCfg);
+        } else {
+          updateChart([], currentCfg);
+        }
+      }
+    });
+    
+    els.resetDateRange.addEventListener('click', () => {
+      els.startDate.value = '';
+      els.endDate.value = '';
+      if (currentCfg) {
+        const viewMode = els.viewMode.value;
+        if (viewMode === 'single') {
+          handleCharacterChange(currentSeries, currentCfg);
+        } else {
+          updateChart([], currentCfg);
+        }
+      }
     });
 
     // Init
