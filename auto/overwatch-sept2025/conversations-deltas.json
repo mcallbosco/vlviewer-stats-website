@@ -1,7 +1,1 @@
-{
-  "meta": {
-    "config": "Games/Overwatch/Sept2025/config.json",
-    "source_repo": "mcallbosco/vlviewer-stats"
-  },
-  "series": {}
-}
+{"meta":{"config":"Games/Overwatch/Sept2025/config.json","source_repo":"mcallbosco/vlviewer-stats"},"series":{}}

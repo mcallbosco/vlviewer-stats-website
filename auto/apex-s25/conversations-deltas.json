@@ -1,7 +1,1 @@
-{
-  "meta": {
-    "config": "Games/Apex/S25/config.json",
-    "source_repo": "mcallbosco/vlviewer-stats"
-  },
-  "series": {}
-}
+{"meta":{"config":"Games/Apex/S25/config.json","source_repo":"mcallbosco/vlviewer-stats"},"series":{}}

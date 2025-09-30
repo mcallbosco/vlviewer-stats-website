@@ -1,7 +1,1 @@
-{
-  "meta": {
-    "config": "Games/Deadlock/DeadlockAugust2025/config.json",
-    "source_repo": "mcallbosco/vlviewer-stats"
-  },
-  "series": {}
-}
+{"meta":{"config":"Games/Deadlock/DeadlockAugust2025/config.json","source_repo":"mcallbosco/vlviewer-stats"},"series":{}}
