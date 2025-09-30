@@ -709,6 +709,11 @@
         "t": "2025-09-29T17:05:31.284Z",
         "d": 1,
         "c": 1
+      },
+      {
+        "t": "2025-09-30T12:08:15.379Z",
+        "d": 1,
+        "c": 2
       }
     ],
     "frank_ally_astro_bounce_pad_02.mp3": [
@@ -716,6 +721,11 @@
         "t": "2025-09-29T17:05:31.284Z",
         "d": 1,
         "c": 1
+      },
+      {
+        "t": "2025-09-30T12:08:15.379Z",
+        "d": 1,
+        "c": 2
       }
     ],
     "frank_ally_astro_bounce_pad_03.mp3": [
@@ -723,6 +733,11 @@
         "t": "2025-09-29T17:05:31.284Z",
         "d": 1,
         "c": 1
+      },
+      {
+        "t": "2025-09-30T12:08:15.379Z",
+        "d": 1,
+        "c": 2
       }
     ],
     "frank_ally_astro_killed_in_lane_01.mp3": [
@@ -730,6 +745,11 @@
         "t": "2025-09-29T17:05:31.284Z",
         "d": 1,
         "c": 1
+      },
+      {
+        "t": "2025-09-30T12:08:15.379Z",
+        "d": 1,
+        "c": 2
       }
     ],
     "frank_ally_haze_big_ult_01.mp3": [
@@ -1411,6 +1431,11 @@
         "t": "2025-09-29T17:34:13.211Z",
         "d": 1,
         "c": 2
+      },
+      {
+        "t": "2025-09-30T12:08:15.379Z",
+        "d": 1,
+        "c": 3
       }
     ],
     "frank_kill_punkgoat_05.mp3": [
@@ -1418,6 +1443,11 @@
         "t": "2025-09-29T17:34:13.211Z",
         "d": 1,
         "c": 2
+      },
+      {
+        "t": "2025-09-30T12:08:15.379Z",
+        "d": 1,
+        "c": 3
       }
     ],
     "patron_male_ally_doorman_start_01.mp3": [
@@ -17419,6 +17449,11 @@
         "t": "2025-09-29T21:04:17.631Z",
         "d": 1,
         "c": 4
+      },
+      {
+        "t": "2025-09-30T12:08:15.379Z",
+        "d": 1,
+        "c": 5
       }
     ],
     "drifter_kill_punkgoat_03.mp3": [
@@ -17426,6 +17461,11 @@
         "t": "2025-09-29T21:04:17.631Z",
         "d": 1,
         "c": 4
+      },
+      {
+        "t": "2025-09-30T12:08:15.379Z",
+        "d": 1,
+        "c": 5
       }
     ],
     "drifter_kill_punkgoat_04.mp3": [
@@ -24647,6 +24687,11 @@
         "t": "2025-09-29T23:05:25.701Z",
         "d": 1,
         "c": 1
+      },
+      {
+        "t": "2025-09-30T12:08:15.379Z",
+        "d": 1,
+        "c": 2
       }
     ],
     "bookworm_kill_punkgoat_05.mp3": [
@@ -24654,6 +24699,11 @@
         "t": "2025-09-29T23:05:25.701Z",
         "d": 1,
         "c": 1
+      },
+      {
+        "t": "2025-09-30T12:08:15.379Z",
+        "d": 1,
+        "c": 2
       }
     ],
     "bookworm_kill_shiv_01.mp3": [
@@ -26242,6 +26292,11 @@
         "t": "2025-09-30T00:19:36.303Z",
         "d": 1,
         "c": 1
+      },
+      {
+        "t": "2025-09-30T12:08:15.379Z",
+        "d": 1,
+        "c": 2
       }
     ],
     "boho_ping_attack_frank.mp3": [
@@ -26249,6 +26304,11 @@
         "t": "2025-09-30T00:19:36.303Z",
         "d": 1,
         "c": 1
+      },
+      {
+        "t": "2025-09-30T12:08:15.379Z",
+        "d": 1,
+        "c": 2
       }
     ],
     "boho_ping_careful_frank_01.mp3": [
@@ -26676,6 +26736,11 @@
         "t": "2025-09-30T00:19:36.303Z",
         "d": 2,
         "c": 2
+      },
+      {
+        "t": "2025-09-30T12:08:15.379Z",
+        "d": 1,
+        "c": 3
       }
     ],
     "haze_ping_attack_frank.mp3": [
@@ -26697,6 +26762,11 @@
         "t": "2025-09-30T00:19:36.303Z",
         "d": 1,
         "c": 1
+      },
+      {
+        "t": "2025-09-30T12:08:15.379Z",
+        "d": 1,
+        "c": 2
       }
     ],
     "inferno_match_start_dynamo_inferno_convo01_01.mp3": [
@@ -26732,6 +26802,11 @@
         "t": "2025-09-30T00:19:36.303Z",
         "d": 1,
         "c": 1
+      },
+      {
+        "t": "2025-09-30T12:08:15.379Z",
+        "d": 1,
+        "c": 2
       }
     ],
     "vampirebat_ping_attack_frank.mp3": [
@@ -26739,6 +26814,11 @@
         "t": "2025-09-30T00:19:36.303Z",
         "d": 1,
         "c": 1
+      },
+      {
+        "t": "2025-09-30T12:08:15.379Z",
+        "d": 1,
+        "c": 2
       }
     ],
     "vampirebat_ping_careful_frank_01.mp3": [
@@ -27019,6 +27099,11 @@
         "t": "2025-09-30T00:49:09.535Z",
         "d": 1,
         "c": 2
+      },
+      {
+        "t": "2025-09-30T12:08:15.379Z",
+        "d": 2,
+        "c": 4
       }
     ],
     "doorman_ally_punkgoat_pass_on_zipline_01.mp3": [
@@ -27026,6 +27111,11 @@
         "t": "2025-09-30T00:49:09.535Z",
         "d": 1,
         "c": 1
+      },
+      {
+        "t": "2025-09-30T12:08:15.379Z",
+        "d": 1,
+        "c": 2
       }
     ],
     "doorman_ally_vampirebat_killed_in_lane_01.mp3": [
@@ -27081,6 +27171,11 @@
         "t": "2025-09-30T04:37:15.072Z",
         "d": 1,
         "c": 2
+      },
+      {
+        "t": "2025-09-30T12:08:15.379Z",
+        "d": 1,
+        "c": 3
       }
     ],
     "doorman_kill_vampirebat_02.mp3": [
@@ -27176,6 +27271,11 @@
         "t": "2025-09-30T00:49:09.535Z",
         "d": 1,
         "c": 1
+      },
+      {
+        "t": "2025-09-30T12:08:15.379Z",
+        "d": 1,
+        "c": 2
       }
     ],
     "doorman_ping_vampirebat_missing_01.mp3": [
@@ -28020,6 +28120,11 @@
         "t": "2025-09-30T01:32:23.827Z",
         "d": 1,
         "c": 2
+      },
+      {
+        "t": "2025-09-30T12:08:15.379Z",
+        "d": 1,
+        "c": 3
       }
     ],
     "bookworm_killstreak_high_01.mp3": [
@@ -29843,6 +29948,11 @@
         "t": "2025-09-30T03:16:11.017Z",
         "d": 1,
         "c": 2
+      },
+      {
+        "t": "2025-09-30T12:08:15.379Z",
+        "d": 1,
+        "c": 3
       }
     ],
     "viper_ally_yamato_killed_in_lane_01.mp3": [
@@ -33583,6 +33693,11 @@
         "t": "2025-09-30T04:37:15.072Z",
         "d": 1,
         "c": 2
+      },
+      {
+        "t": "2025-09-30T12:08:15.379Z",
+        "d": 1,
+        "c": 3
       }
     ],
     "doorman_kill_punkgoat_03.mp3": [
@@ -33597,6 +33712,11 @@
         "t": "2025-09-30T04:37:15.072Z",
         "d": 1,
         "c": 1
+      },
+      {
+        "t": "2025-09-30T12:08:15.379Z",
+        "d": 1,
+        "c": 2
       }
     ],
     "doorman_kill_vampirebat_01.mp3": [
@@ -34056,6 +34176,11 @@
         "t": "2025-09-30T04:37:15.072Z",
         "d": 1,
         "c": 1
+      },
+      {
+        "t": "2025-09-30T12:08:15.379Z",
+        "d": 1,
+        "c": 2
       }
     ],
     "mirage_kill_frank_03.mp3": [
@@ -34070,6 +34195,11 @@
         "t": "2025-09-30T04:37:15.072Z",
         "d": 1,
         "c": 1
+      },
+      {
+        "t": "2025-09-30T12:08:15.379Z",
+        "d": 1,
+        "c": 2
       }
     ],
     "mirage_kill_frank_05.mp3": [
@@ -39048,6 +39178,11 @@
         "t": "2025-09-30T11:04:57.368Z",
         "d": 1,
         "c": 4
+      },
+      {
+        "t": "2025-09-30T12:08:15.379Z",
+        "d": 1,
+        "c": 5
       }
     ],
     "hornet_match_start_viper_hornet_convo01_02.mp3": [
@@ -39399,6 +39534,11 @@
         "t": "2025-09-30T11:04:57.368Z",
         "d": 1,
         "c": 5
+      },
+      {
+        "t": "2025-09-30T12:08:15.379Z",
+        "d": 1,
+        "c": 6
       }
     ],
     "lash_match_start_lash_orion_convo01_01.mp3": [
@@ -40562,6 +40702,11 @@
         "t": "2025-09-30T06:42:02.180Z",
         "d": 1,
         "c": 3
+      },
+      {
+        "t": "2025-09-30T12:08:15.379Z",
+        "d": 1,
+        "c": 4
       }
     ],
     "tengu_match_start_tengu_lash_convo02_01.mp3": [
@@ -42660,6 +42805,11 @@
         "t": "2025-09-30T10:37:45.848Z",
         "d": 1,
         "c": 3
+      },
+      {
+        "t": "2025-09-30T12:08:15.379Z",
+        "d": 1,
+        "c": 4
       }
     ],
     "vampirebat_match_start_frank_vampirebat_convo01_01.mp3": [
@@ -43456,6 +43606,11 @@
         "t": "2025-09-30T08:07:37.022Z",
         "d": 1,
         "c": 3
+      },
+      {
+        "t": "2025-09-30T12:08:15.379Z",
+        "d": 1,
+        "c": 4
       }
     ],
     "frank_kill_punkgoat_03.mp3": [
@@ -46611,6 +46766,11 @@
         "t": "2025-09-30T08:07:37.022Z",
         "d": 1,
         "c": 1
+      },
+      {
+        "t": "2025-09-30T12:08:15.379Z",
+        "d": 1,
+        "c": 2
       }
     ],
     "frank_ally_punkgoat_killed_in_lane_01.mp3": [
@@ -46618,6 +46778,11 @@
         "t": "2025-09-30T08:07:37.022Z",
         "d": 1,
         "c": 1
+      },
+      {
+        "t": "2025-09-30T12:08:15.379Z",
+        "d": 2,
+        "c": 3
       }
     ],
     "frank_ally_punkgoat_pass_on_zipline_01.mp3": [
@@ -46625,6 +46790,11 @@
         "t": "2025-09-30T08:07:37.022Z",
         "d": 1,
         "c": 3
+      },
+      {
+        "t": "2025-09-30T12:08:15.379Z",
+        "d": 1,
+        "c": 4
       }
     ],
     "frank_angry_01.mp3": [
@@ -52497,6 +52667,1203 @@
         "t": "2025-09-30T11:33:50.751Z",
         "d": 1,
         "c": 6
+      }
+    ],
+    "bebop_ally_frank_killed_in_lane_01.mp3": [
+      {
+        "t": "2025-09-30T12:08:15.379Z",
+        "d": 1,
+        "c": 1
+      }
+    ],
+    "bebop_ally_punkgoat_killed_in_lane_01.mp3": [
+      {
+        "t": "2025-09-30T12:08:15.379Z",
+        "d": 1,
+        "c": 1
+      }
+    ],
+    "bebop_ping_attack_punkgoat.mp3": [
+      {
+        "t": "2025-09-30T12:08:15.379Z",
+        "d": 1,
+        "c": 1
+      }
+    ],
+    "boho_ping_attack_punkgoat.mp3": [
+      {
+        "t": "2025-09-30T12:08:15.379Z",
+        "d": 3,
+        "c": 3
+      }
+    ],
+    "boho_ping_punkgoat_missing_01.mp3": [
+      {
+        "t": "2025-09-30T12:08:15.379Z",
+        "d": 1,
+        "c": 1
+      }
+    ],
+    "bookworm_ally_punkgoat_killed_in_lane_01.mp3": [
+      {
+        "t": "2025-09-30T12:08:15.379Z",
+        "d": 1,
+        "c": 1
+      }
+    ],
+    "bookworm_ping_attack_punkgoat.mp3": [
+      {
+        "t": "2025-09-30T12:08:15.379Z",
+        "d": 1,
+        "c": 1
+      }
+    ],
+    "bookworm_ping_see_punkgoat_01.mp3": [
+      {
+        "t": "2025-09-30T12:08:15.379Z",
+        "d": 1,
+        "c": 1
+      }
+    ],
+    "chrono_ally_frank_killed_in_lane_01.mp3": [
+      {
+        "t": "2025-09-30T12:08:15.379Z",
+        "d": 1,
+        "c": 3
+      }
+    ],
+    "chrono_ally_punkgoat_killed_in_lane_01.mp3": [
+      {
+        "t": "2025-09-30T12:08:15.379Z",
+        "d": 1,
+        "c": 2
+      }
+    ],
+    "chrono_kill_frank_01.mp3": [
+      {
+        "t": "2025-09-30T12:08:15.379Z",
+        "d": 1,
+        "c": 1
+      }
+    ],
+    "chrono_kill_frank_03.mp3": [
+      {
+        "t": "2025-09-30T12:08:15.379Z",
+        "d": 1,
+        "c": 1
+      }
+    ],
+    "chrono_kill_punkgoat_03.mp3": [
+      {
+        "t": "2025-09-30T12:08:15.379Z",
+        "d": 1,
+        "c": 2
+      }
+    ],
+    "chrono_kill_punkgoat_04.mp3": [
+      {
+        "t": "2025-09-30T12:08:15.379Z",
+        "d": 1,
+        "c": 1
+      }
+    ],
+    "chrono_ping_attack_frank.mp3": [
+      {
+        "t": "2025-09-30T12:08:15.379Z",
+        "d": 1,
+        "c": 1
+      }
+    ],
+    "chrono_ping_attack_punkgoat.mp3": [
+      {
+        "t": "2025-09-30T12:08:15.379Z",
+        "d": 1,
+        "c": 1
+      }
+    ],
+    "doorman_ally_frank_killed_in_lane_01.mp3": [
+      {
+        "t": "2025-09-30T12:08:15.379Z",
+        "d": 1,
+        "c": 1
+      }
+    ],
+    "doorman_ping_attack_frank.mp3": [
+      {
+        "t": "2025-09-30T12:08:15.379Z",
+        "d": 1,
+        "c": 1
+      }
+    ],
+    "doorman_ping_attack_punkgoat.mp3": [
+      {
+        "t": "2025-09-30T12:08:15.379Z",
+        "d": 1,
+        "c": 1
+      }
+    ],
+    "doorman_ping_see_punkgoat_01.mp3": [
+      {
+        "t": "2025-09-30T12:08:15.379Z",
+        "d": 1,
+        "c": 2
+      }
+    ],
+    "drifter_ally_frank_killed_in_lane_01.mp3": [
+      {
+        "t": "2025-09-30T12:08:15.379Z",
+        "d": 1,
+        "c": 2
+      }
+    ],
+    "drifter_ally_punkgoat_killed_in_lane_01.mp3": [
+      {
+        "t": "2025-09-30T12:08:15.379Z",
+        "d": 1,
+        "c": 1
+      }
+    ],
+    "drifter_kill_frank_04.mp3": [
+      {
+        "t": "2025-09-30T12:08:15.379Z",
+        "d": 1,
+        "c": 2
+      }
+    ],
+    "drifter_kill_punkgoat_01.mp3": [
+      {
+        "t": "2025-09-30T12:08:15.379Z",
+        "d": 1,
+        "c": 2
+      }
+    ],
+    "drifter_ping_attack_frank.mp3": [
+      {
+        "t": "2025-09-30T12:08:15.379Z",
+        "d": 1,
+        "c": 2
+      }
+    ],
+    "drifter_ping_attack_punkgoat.mp3": [
+      {
+        "t": "2025-09-30T12:08:15.379Z",
+        "d": 1,
+        "c": 1
+      }
+    ],
+    "drifter_ping_punkgoat_missing_01.mp3": [
+      {
+        "t": "2025-09-30T12:08:15.379Z",
+        "d": 1,
+        "c": 1
+      }
+    ],
+    "drifter_ping_see_punkgoat_01.mp3": [
+      {
+        "t": "2025-09-30T12:08:15.379Z",
+        "d": 1,
+        "c": 2
+      }
+    ],
+    "frank_ally_atlas_killed_in_lane_01.mp3": [
+      {
+        "t": "2025-09-30T12:08:15.379Z",
+        "d": 1,
+        "c": 1
+      }
+    ],
+    "frank_ally_bebop_killed_in_lane_01.mp3": [
+      {
+        "t": "2025-09-30T12:08:15.379Z",
+        "d": 1,
+        "c": 1
+      }
+    ],
+    "frank_ally_bookworm_killed_in_lane_01_alt.mp3": [
+      {
+        "t": "2025-09-30T12:08:15.379Z",
+        "d": 1,
+        "c": 1
+      }
+    ],
+    "frank_ally_chrono_killed_in_lane_01.mp3": [
+      {
+        "t": "2025-09-30T12:08:15.379Z",
+        "d": 1,
+        "c": 1
+      }
+    ],
+    "frank_ally_doorman_killed_in_lane_01-imported.mp3": [
+      {
+        "t": "2025-09-30T12:08:15.379Z",
+        "d": 1,
+        "c": 1
+      }
+    ],
+    "frank_ally_doorman_pass_on_zipline_01.mp3": [
+      {
+        "t": "2025-09-30T12:08:15.379Z",
+        "d": 1,
+        "c": 1
+      }
+    ],
+    "frank_ally_drifter_killed_in_lane_01-imported.mp3": [
+      {
+        "t": "2025-09-30T12:08:15.379Z",
+        "d": 1,
+        "c": 1
+      }
+    ],
+    "frank_ally_druid_killed_in_lane_01.mp3": [
+      {
+        "t": "2025-09-30T12:08:15.379Z",
+        "d": 1,
+        "c": 1
+      }
+    ],
+    "frank_ally_dynamo_killed_in_lane_01.mp3": [
+      {
+        "t": "2025-09-30T12:08:15.379Z",
+        "d": 1,
+        "c": 1
+      }
+    ],
+    "frank_ally_forge_killed_in_lane_01.mp3": [
+      {
+        "t": "2025-09-30T12:08:15.379Z",
+        "d": 1,
+        "c": 1
+      }
+    ],
+    "frank_ally_fortuna_killed_in_lane_01.mp3": [
+      {
+        "t": "2025-09-30T12:08:15.379Z",
+        "d": 1,
+        "c": 1
+      }
+    ],
+    "frank_ally_ghost_killed_in_lane_01.mp3": [
+      {
+        "t": "2025-09-30T12:08:15.379Z",
+        "d": 1,
+        "c": 1
+      }
+    ],
+    "frank_ally_gigawatt_killed_in_lane_01.mp3": [
+      {
+        "t": "2025-09-30T12:08:15.379Z",
+        "d": 1,
+        "c": 1
+      }
+    ],
+    "frank_ally_graf_killed_in_lane_01.mp3": [
+      {
+        "t": "2025-09-30T12:08:15.379Z",
+        "d": 1,
+        "c": 1
+      }
+    ],
+    "frank_ally_haze_killed_in_lane_01.mp3": [
+      {
+        "t": "2025-09-30T12:08:15.379Z",
+        "d": 1,
+        "c": 1
+      }
+    ],
+    "frank_ally_incubus_killed_in_lane_01.mp3": [
+      {
+        "t": "2025-09-30T12:08:15.379Z",
+        "d": 1,
+        "c": 1
+      }
+    ],
+    "frank_ally_inferno_killed_in_lane_01.mp3": [
+      {
+        "t": "2025-09-30T12:08:15.379Z",
+        "d": 1,
+        "c": 1
+      }
+    ],
+    "frank_ally_kelvin_killed_in_lane_01.mp3": [
+      {
+        "t": "2025-09-30T12:08:15.379Z",
+        "d": 1,
+        "c": 1
+      }
+    ],
+    "frank_ally_krill_killed_in_lane_01.mp3": [
+      {
+        "t": "2025-09-30T12:08:15.379Z",
+        "d": 1,
+        "c": 1
+      }
+    ],
+    "frank_ally_lash_killed_in_lane_01.mp3": [
+      {
+        "t": "2025-09-30T12:08:15.379Z",
+        "d": 1,
+        "c": 1
+      }
+    ],
+    "frank_ally_lash_see_massive_stomp_02.mp3": [
+      {
+        "t": "2025-09-30T12:08:15.379Z",
+        "d": 1,
+        "c": 2
+      }
+    ],
+    "frank_ally_mirage_killed_in_lane_01.mp3": [
+      {
+        "t": "2025-09-30T12:08:15.379Z",
+        "d": 1,
+        "c": 1
+      }
+    ],
+    "frank_ally_nano_killed_in_lane_01.mp3": [
+      {
+        "t": "2025-09-30T12:08:15.379Z",
+        "d": 1,
+        "c": 1
+      }
+    ],
+    "frank_ally_orion_far_shot_01.mp3": [
+      {
+        "t": "2025-09-30T12:08:15.379Z",
+        "d": 1,
+        "c": 1
+      }
+    ],
+    "frank_ally_orion_killed_in_lane_01.mp3": [
+      {
+        "t": "2025-09-30T12:08:15.379Z",
+        "d": 1,
+        "c": 1
+      }
+    ],
+    "frank_ally_priest_killed_in_lane_01-imported.mp3": [
+      {
+        "t": "2025-09-30T12:08:15.379Z",
+        "d": 1,
+        "c": 1
+      }
+    ],
+    "frank_ally_punkgoat_killed_in_lane_01-imported.mp3": [
+      {
+        "t": "2025-09-30T12:08:15.379Z",
+        "d": 1,
+        "c": 2
+      }
+    ],
+    "frank_ally_shiv_killed_in_lane_01.mp3": [
+      {
+        "t": "2025-09-30T12:08:15.379Z",
+        "d": 1,
+        "c": 1
+      }
+    ],
+    "frank_ally_slork_killed_in_lane_01.mp3": [
+      {
+        "t": "2025-09-30T12:08:15.379Z",
+        "d": 1,
+        "c": 1
+      }
+    ],
+    "frank_ally_synth_killed_in_lane_01.mp3": [
+      {
+        "t": "2025-09-30T12:08:15.379Z",
+        "d": 1,
+        "c": 2
+      }
+    ],
+    "frank_ally_tengu_killed_in_lane_01.mp3": [
+      {
+        "t": "2025-09-30T12:08:15.379Z",
+        "d": 1,
+        "c": 1
+      }
+    ],
+    "frank_ally_vampirebat_killed_in_lane_01-imported.mp3": [
+      {
+        "t": "2025-09-30T12:08:15.379Z",
+        "d": 1,
+        "c": 1
+      }
+    ],
+    "frank_ally_viscous_killed_in_lane_01.mp3": [
+      {
+        "t": "2025-09-30T12:08:15.379Z",
+        "d": 1,
+        "c": 1
+      }
+    ],
+    "frank_ally_warden_killed_in_lane_01.mp3": [
+      {
+        "t": "2025-09-30T12:08:15.379Z",
+        "d": 1,
+        "c": 1
+      }
+    ],
+    "frank_ally_wraith_killed_in_lane_01.mp3": [
+      {
+        "t": "2025-09-30T12:08:15.379Z",
+        "d": 1,
+        "c": 1
+      }
+    ],
+    "frank_ally_yamato_killed_in_lane_01.mp3": [
+      {
+        "t": "2025-09-30T12:08:15.379Z",
+        "d": 1,
+        "c": 1
+      }
+    ],
+    "frank_kill_doorman_01.mp3": [
+      {
+        "t": "2025-09-30T12:08:15.379Z",
+        "d": 1,
+        "c": 1
+      }
+    ],
+    "frank_kill_drifter_01.mp3": [
+      {
+        "t": "2025-09-30T12:08:15.379Z",
+        "d": 1,
+        "c": 1
+      }
+    ],
+    "frank_kill_drifter_02.mp3": [
+      {
+        "t": "2025-09-30T12:08:15.379Z",
+        "d": 1,
+        "c": 1
+      }
+    ],
+    "frank_kill_drifter_04.mp3": [
+      {
+        "t": "2025-09-30T12:08:15.379Z",
+        "d": 1,
+        "c": 1
+      }
+    ],
+    "frank_kill_gigawatt_01.mp3": [
+      {
+        "t": "2025-09-30T12:08:15.379Z",
+        "d": 1,
+        "c": 2
+      }
+    ],
+    "frank_kill_gigawatt_02.mp3": [
+      {
+        "t": "2025-09-30T12:08:15.379Z",
+        "d": 1,
+        "c": 1
+      }
+    ],
+    "frank_kill_shiv_01.mp3": [
+      {
+        "t": "2025-09-30T12:08:15.379Z",
+        "d": 1,
+        "c": 1
+      }
+    ],
+    "frank_kill_shiv_03.mp3": [
+      {
+        "t": "2025-09-30T12:08:15.379Z",
+        "d": 1,
+        "c": 1
+      }
+    ],
+    "frank_kill_viscous_02.mp3": [
+      {
+        "t": "2025-09-30T12:08:15.379Z",
+        "d": 1,
+        "c": 1
+      }
+    ],
+    "frank_ping_attack_drifter.mp3": [
+      {
+        "t": "2025-09-30T12:08:15.379Z",
+        "d": 1,
+        "c": 1
+      }
+    ],
+    "frank_ping_attack_druid.mp3": [
+      {
+        "t": "2025-09-30T12:08:15.379Z",
+        "d": 1,
+        "c": 1
+      }
+    ],
+    "frank_ping_attack_gigawatt.mp3": [
+      {
+        "t": "2025-09-30T12:08:15.379Z",
+        "d": 1,
+        "c": 1
+      }
+    ],
+    "frank_ping_attack_punkgoat_alt_01.mp3": [
+      {
+        "t": "2025-09-30T12:08:15.379Z",
+        "d": 1,
+        "c": 1
+      }
+    ],
+    "frank_ping_attack_punkgoat.mp3": [
+      {
+        "t": "2025-09-30T12:08:15.379Z",
+        "d": 1,
+        "c": 1
+      }
+    ],
+    "frank_ping_attack_shiv.mp3": [
+      {
+        "t": "2025-09-30T12:08:15.379Z",
+        "d": 1,
+        "c": 1
+      }
+    ],
+    "frank_ping_attack_vampirebat.mp3": [
+      {
+        "t": "2025-09-30T12:08:15.379Z",
+        "d": 1,
+        "c": 1
+      }
+    ],
+    "frank_ping_attack_viscous.mp3": [
+      {
+        "t": "2025-09-30T12:08:15.379Z",
+        "d": 1,
+        "c": 1
+      }
+    ],
+    "frank_ping_attack_yamato.mp3": [
+      {
+        "t": "2025-09-30T12:08:15.379Z",
+        "d": 1,
+        "c": 1
+      }
+    ],
+    "frank_ping_see_punkgoat_01.mp3": [
+      {
+        "t": "2025-09-30T12:08:15.379Z",
+        "d": 1,
+        "c": 1
+      }
+    ],
+    "ghost_ally_frank_killed_in_lane_01.mp3": [
+      {
+        "t": "2025-09-30T12:08:15.379Z",
+        "d": 1,
+        "c": 1
+      }
+    ],
+    "ghost_ally_punkgoat_killed_in_lane_01.mp3": [
+      {
+        "t": "2025-09-30T12:08:15.379Z",
+        "d": 1,
+        "c": 2
+      }
+    ],
+    "ghost_ally_punkgoat_pass_on_zipline_01.mp3": [
+      {
+        "t": "2025-09-30T12:08:15.379Z",
+        "d": 1,
+        "c": 1
+      }
+    ],
+    "ghost_kill_punkgoat_01.mp3": [
+      {
+        "t": "2025-09-30T12:08:15.379Z",
+        "d": 1,
+        "c": 2
+      }
+    ],
+    "ghost_kill_punkgoat_02.mp3": [
+      {
+        "t": "2025-09-30T12:08:15.379Z",
+        "d": 1,
+        "c": 1
+      }
+    ],
+    "ghost_ping_attack_frank.mp3": [
+      {
+        "t": "2025-09-30T12:08:15.379Z",
+        "d": 1,
+        "c": 1
+      }
+    ],
+    "ghost_ping_attack_punkgoat.mp3": [
+      {
+        "t": "2025-09-30T12:08:15.379Z",
+        "d": 1,
+        "c": 1
+      }
+    ],
+    "ghost_ping_see_punkgoat_01.mp3": [
+      {
+        "t": "2025-09-30T12:08:15.379Z",
+        "d": 1,
+        "c": 1
+      }
+    ],
+    "haze_ally_punkgoat_killed_in_lane_01.mp3": [
+      {
+        "t": "2025-09-30T12:08:15.379Z",
+        "d": 1,
+        "c": 2
+      }
+    ],
+    "haze_match_start_yamato_haze_convo02_01.mp3": [
+      {
+        "t": "2025-09-30T12:08:15.379Z",
+        "d": 1,
+        "c": 3
+      }
+    ],
+    "haze_ping_attack_punkgoat.mp3": [
+      {
+        "t": "2025-09-30T12:08:15.379Z",
+        "d": 1,
+        "c": 2
+      }
+    ],
+    "haze_ping_careful_punkgoat_01.mp3": [
+      {
+        "t": "2025-09-30T12:08:15.379Z",
+        "d": 1,
+        "c": 2
+      }
+    ],
+    "haze_ping_see_punkgoat_01.mp3": [
+      {
+        "t": "2025-09-30T12:08:15.379Z",
+        "d": 1,
+        "c": 2
+      }
+    ],
+    "hornet_ally_frank_killed_in_lane_01.mp3": [
+      {
+        "t": "2025-09-30T12:08:15.379Z",
+        "d": 1,
+        "c": 1
+      }
+    ],
+    "hornet_ally_punkgoat_killed_in_lane_01.mp3": [
+      {
+        "t": "2025-09-30T12:08:15.379Z",
+        "d": 2,
+        "c": 2
+      }
+    ],
+    "hornet_kill_frank_01.mp3": [
+      {
+        "t": "2025-09-30T12:08:15.379Z",
+        "d": 1,
+        "c": 1
+      }
+    ],
+    "hornet_kill_frank_02.mp3": [
+      {
+        "t": "2025-09-30T12:08:15.379Z",
+        "d": 1,
+        "c": 1
+      }
+    ],
+    "hornet_kill_punkgoat_02.mp3": [
+      {
+        "t": "2025-09-30T12:08:15.379Z",
+        "d": 1,
+        "c": 1
+      }
+    ],
+    "hornet_kill_punkgoat_05.mp3": [
+      {
+        "t": "2025-09-30T12:08:15.379Z",
+        "d": 1,
+        "c": 1
+      }
+    ],
+    "hornet_ping_attack_frank.mp3": [
+      {
+        "t": "2025-09-30T12:08:15.379Z",
+        "d": 1,
+        "c": 1
+      }
+    ],
+    "hornet_ping_attack_punkgoat.mp3": [
+      {
+        "t": "2025-09-30T12:08:15.379Z",
+        "d": 1,
+        "c": 1
+      }
+    ],
+    "hornet_ping_see_punkgoat_01.mp3": [
+      {
+        "t": "2025-09-30T12:08:15.379Z",
+        "d": 1,
+        "c": 1
+      }
+    ],
+    "inferno_ally_frank_killed_in_lane_01.mp3": [
+      {
+        "t": "2025-09-30T12:08:15.379Z",
+        "d": 1,
+        "c": 1
+      }
+    ],
+    "inferno_ally_punkgoat_killed_in_lane_01.mp3": [
+      {
+        "t": "2025-09-30T12:08:15.379Z",
+        "d": 1,
+        "c": 1
+      }
+    ],
+    "inferno_kill_punkgoat_01.mp3": [
+      {
+        "t": "2025-09-30T12:08:15.379Z",
+        "d": 1,
+        "c": 1
+      }
+    ],
+    "inferno_kill_punkgoat_03.mp3": [
+      {
+        "t": "2025-09-30T12:08:15.379Z",
+        "d": 1,
+        "c": 2
+      }
+    ],
+    "inferno_kill_punkgoat_04.mp3": [
+      {
+        "t": "2025-09-30T12:08:15.379Z",
+        "d": 1,
+        "c": 2
+      }
+    ],
+    "inferno_ping_attack_punkgoat.mp3": [
+      {
+        "t": "2025-09-30T12:08:15.379Z",
+        "d": 1,
+        "c": 1
+      }
+    ],
+    "kelvin_ally_punkgoat_killed_in_lane_01.mp3": [
+      {
+        "t": "2025-09-30T12:08:15.379Z",
+        "d": 1,
+        "c": 2
+      }
+    ],
+    "kelvin_kill_frank_01.mp3": [
+      {
+        "t": "2025-09-30T12:08:15.379Z",
+        "d": 1,
+        "c": 2
+      }
+    ],
+    "kelvin_kill_punkgoat_01.mp3": [
+      {
+        "t": "2025-09-30T12:08:15.379Z",
+        "d": 1,
+        "c": 2
+      }
+    ],
+    "kelvin_kill_punkgoat_02.mp3": [
+      {
+        "t": "2025-09-30T12:08:15.379Z",
+        "d": 1,
+        "c": 2
+      }
+    ],
+    "kelvin_kill_punkgoat_04.mp3": [
+      {
+        "t": "2025-09-30T12:08:15.379Z",
+        "d": 1,
+        "c": 2
+      }
+    ],
+    "kelvin_kill_punkgoat_05.mp3": [
+      {
+        "t": "2025-09-30T12:08:15.379Z",
+        "d": 1,
+        "c": 2
+      }
+    ],
+    "kelvin_ping_attack_frank.mp3": [
+      {
+        "t": "2025-09-30T12:08:15.379Z",
+        "d": 1,
+        "c": 1
+      }
+    ],
+    "kelvin_ping_attack_punkgoat.mp3": [
+      {
+        "t": "2025-09-30T12:08:15.379Z",
+        "d": 1,
+        "c": 1
+      }
+    ],
+    "lash_ally_frank_killed_in_lane_01.mp3": [
+      {
+        "t": "2025-09-30T12:08:15.379Z",
+        "d": 1,
+        "c": 1
+      }
+    ],
+    "lash_ally_punkgoat_killed_in_lane_01.mp3": [
+      {
+        "t": "2025-09-30T12:08:15.379Z",
+        "d": 1,
+        "c": 2
+      }
+    ],
+    "lash_ping_attack_punkgoat.mp3": [
+      {
+        "t": "2025-09-30T12:08:15.379Z",
+        "d": 1,
+        "c": 1
+      }
+    ],
+    "lash_ping_see_punkgoat_01.mp3": [
+      {
+        "t": "2025-09-30T12:08:15.379Z",
+        "d": 1,
+        "c": 1
+      }
+    ],
+    "mirage_ally_frank_killed_in_lane_01.mp3": [
+      {
+        "t": "2025-09-30T12:08:15.379Z",
+        "d": 1,
+        "c": 1
+      }
+    ],
+    "mirage_ally_punkgoat_killed_in_lane_01.mp3": [
+      {
+        "t": "2025-09-30T12:08:15.379Z",
+        "d": 1,
+        "c": 1
+      }
+    ],
+    "mirage_kill_punkgoat_01.mp3": [
+      {
+        "t": "2025-09-30T12:08:15.379Z",
+        "d": 1,
+        "c": 1
+      }
+    ],
+    "mirage_kill_punkgoat_02.mp3": [
+      {
+        "t": "2025-09-30T12:08:15.379Z",
+        "d": 1,
+        "c": 1
+      }
+    ],
+    "mirage_kill_punkgoat_05.mp3": [
+      {
+        "t": "2025-09-30T12:08:15.379Z",
+        "d": 1,
+        "c": 1
+      }
+    ],
+    "mirage_ping_attack_frank.mp3": [
+      {
+        "t": "2025-09-30T12:08:15.379Z",
+        "d": 1,
+        "c": 1
+      }
+    ],
+    "mirage_ping_attack_punkgoat.mp3": [
+      {
+        "t": "2025-09-30T12:08:15.379Z",
+        "d": 1,
+        "c": 1
+      }
+    ],
+    "mirage_ping_see_punkgoat_01.mp3": [
+      {
+        "t": "2025-09-30T12:08:15.379Z",
+        "d": 1,
+        "c": 1
+      }
+    ],
+    "mirage_ping_see_punkgoat_on_roof.mp3": [
+      {
+        "t": "2025-09-30T12:08:15.379Z",
+        "d": 1,
+        "c": 1
+      }
+    ],
+    "orion_ally_frank_killed_in_lane_01.mp3": [
+      {
+        "t": "2025-09-30T12:08:15.379Z",
+        "d": 1,
+        "c": 1
+      }
+    ],
+    "orion_ally_punkgoat_killed_in_lane_01.mp3": [
+      {
+        "t": "2025-09-30T12:08:15.379Z",
+        "d": 1,
+        "c": 1
+      }
+    ],
+    "orion_ally_punkgoat_pass_on_zipline_01.mp3": [
+      {
+        "t": "2025-09-30T12:08:15.379Z",
+        "d": 1,
+        "c": 2
+      }
+    ],
+    "orion_kill_frank_01.mp3": [
+      {
+        "t": "2025-09-30T12:08:15.379Z",
+        "d": 1,
+        "c": 1
+      }
+    ],
+    "orion_kill_frank_04.mp3": [
+      {
+        "t": "2025-09-30T12:08:15.379Z",
+        "d": 1,
+        "c": 1
+      }
+    ],
+    "orion_kill_punkgoat_01.mp3": [
+      {
+        "t": "2025-09-30T12:08:15.379Z",
+        "d": 1,
+        "c": 1
+      }
+    ],
+    "orion_kill_punkgoat_02.mp3": [
+      {
+        "t": "2025-09-30T12:08:15.379Z",
+        "d": 1,
+        "c": 1
+      }
+    ],
+    "orion_kill_punkgoat_03.mp3": [
+      {
+        "t": "2025-09-30T12:08:15.379Z",
+        "d": 1,
+        "c": 2
+      }
+    ],
+    "orion_kill_punkgoat_04.mp3": [
+      {
+        "t": "2025-09-30T12:08:15.379Z",
+        "d": 1,
+        "c": 1
+      }
+    ],
+    "orion_ping_attack_frank.mp3": [
+      {
+        "t": "2025-09-30T12:08:15.379Z",
+        "d": 1,
+        "c": 1
+      }
+    ],
+    "orion_ping_attack_punkgoat.mp3": [
+      {
+        "t": "2025-09-30T12:08:15.379Z",
+        "d": 1,
+        "c": 1
+      }
+    ],
+    "punkgoat_ally_frank_killed_in_lane_01.mp3": [
+      {
+        "t": "2025-09-30T12:08:15.379Z",
+        "d": 1,
+        "c": 1
+      }
+    ],
+    "punkgoat_ping_attack_frank.mp3": [
+      {
+        "t": "2025-09-30T12:08:15.379Z",
+        "d": 1,
+        "c": 1
+      }
+    ],
+    "tengu_kill_frank_01.mp3": [
+      {
+        "t": "2025-09-30T12:08:15.379Z",
+        "d": 1,
+        "c": 1
+      }
+    ],
+    "tengu_kill_punkgoat_01.mp3": [
+      {
+        "t": "2025-09-30T12:08:15.379Z",
+        "d": 1,
+        "c": 1
+      }
+    ],
+    "tengu_kill_punkgoat_02.mp3": [
+      {
+        "t": "2025-09-30T12:08:15.379Z",
+        "d": 1,
+        "c": 1
+      }
+    ],
+    "tengu_kill_punkgoat_04.mp3": [
+      {
+        "t": "2025-09-30T12:08:15.379Z",
+        "d": 1,
+        "c": 1
+      }
+    ],
+    "tengu_kill_punkgoat_05.mp3": [
+      {
+        "t": "2025-09-30T12:08:15.379Z",
+        "d": 1,
+        "c": 1
+      }
+    ],
+    "tengu_ping_attack_frank.mp3": [
+      {
+        "t": "2025-09-30T12:08:15.379Z",
+        "d": 1,
+        "c": 1
+      }
+    ],
+    "tengu_ping_attack_punkgoat.mp3": [
+      {
+        "t": "2025-09-30T12:08:15.379Z",
+        "d": 1,
+        "c": 1
+      }
+    ],
+    "vampirebat_ally_frank_killed_in_lane_01-imported.mp3": [
+      {
+        "t": "2025-09-30T12:08:15.379Z",
+        "d": 1,
+        "c": 1
+      }
+    ],
+    "vampirebat_ally_frank_killed_in_lane_01.mp3": [
+      {
+        "t": "2025-09-30T12:08:15.379Z",
+        "d": 1,
+        "c": 1
+      }
+    ],
+    "vampirebat_ally_punkgoat_killed_in_lane_01-imported.mp3": [
+      {
+        "t": "2025-09-30T12:08:15.379Z",
+        "d": 2,
+        "c": 2
+      }
+    ],
+    "vampirebat_ally_punkgoat_killed_in_lane_01.mp3": [
+      {
+        "t": "2025-09-30T12:08:15.379Z",
+        "d": 1,
+        "c": 1
+      }
+    ],
+    "vampirebat_ally_punkgoat_pass_on_zipline_01.mp3": [
+      {
+        "t": "2025-09-30T12:08:15.379Z",
+        "d": 1,
+        "c": 1
+      }
+    ],
+    "vampirebat_ping_attack_punkgoat.mp3": [
+      {
+        "t": "2025-09-30T12:08:15.379Z",
+        "d": 1,
+        "c": 1
+      }
+    ],
+    "vampirebat_ping_careful_punkgoat_01.mp3": [
+      {
+        "t": "2025-09-30T12:08:15.379Z",
+        "d": 1,
+        "c": 1
+      }
+    ],
+    "vampirebat_ping_careful_punkgoat_02.mp3": [
+      {
+        "t": "2025-09-30T12:08:15.379Z",
+        "d": 1,
+        "c": 1
+      }
+    ],
+    "vampirebat_ping_see_punkgoat_01.mp3": [
+      {
+        "t": "2025-09-30T12:08:15.379Z",
+        "d": 1,
+        "c": 1
+      }
+    ],
+    "viper_ally_frank_killed_in_lane_01.mp3": [
+      {
+        "t": "2025-09-30T12:08:15.379Z",
+        "d": 1,
+        "c": 1
+      }
+    ],
+    "viper_kill_frank_02.mp3": [
+      {
+        "t": "2025-09-30T12:08:15.379Z",
+        "d": 1,
+        "c": 1
+      }
+    ],
+    "viper_ping_attack_frank.mp3": [
+      {
+        "t": "2025-09-30T12:08:15.379Z",
+        "d": 1,
+        "c": 1
+      }
+    ],
+    "viper_ping_attack_punkgoat.mp3": [
+      {
+        "t": "2025-09-30T12:08:15.379Z",
+        "d": 1,
+        "c": 1
+      }
+    ],
+    "viper_ping_see_punkgoat_01.mp3": [
+      {
+        "t": "2025-09-30T12:08:15.379Z",
+        "d": 1,
+        "c": 1
+      }
+    ],
+    "wraith_ally_frank_killed_in_lane_01.mp3": [
+      {
+        "t": "2025-09-30T12:08:15.379Z",
+        "d": 1,
+        "c": 1
+      }
+    ],
+    "wraith_ally_punkgoat_killed_in_lane_01.mp3": [
+      {
+        "t": "2025-09-30T12:08:15.379Z",
+        "d": 1,
+        "c": 1
+      }
+    ],
+    "wraith_ping_attack_frank.mp3": [
+      {
+        "t": "2025-09-30T12:08:15.379Z",
+        "d": 1,
+        "c": 1
+      }
+    ],
+    "wraith_ping_attack_punkgoat.mp3": [
+      {
+        "t": "2025-09-30T12:08:15.379Z",
+        "d": 1,
+        "c": 1
+      }
+    ],
+    "wraith_ping_see_punkgoat_01.mp3": [
+      {
+        "t": "2025-09-30T12:08:15.379Z",
+        "d": 1,
+        "c": 1
       }
     ]
   }
