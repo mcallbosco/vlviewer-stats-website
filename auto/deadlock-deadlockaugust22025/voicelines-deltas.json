@@ -417,6 +417,11 @@
         "t": "2025-09-29T23:05:25.701Z",
         "d": 1,
         "c": 13
+      },
+      {
+        "t": "2025-09-30T00:19:36.303Z",
+        "d": 2,
+        "c": 15
       }
     ],
     "dynamo_match_start_dynamo_viscous_convo01_03.mp3": [
@@ -444,6 +449,11 @@
         "t": "2025-09-29T23:05:25.701Z",
         "d": 1,
         "c": 11
+      },
+      {
+        "t": "2025-09-30T00:19:36.303Z",
+        "d": 3,
+        "c": 14
       }
     ],
     "dynamo_match_start_dynamo_viscous_convo01_05.mp3": [
@@ -471,6 +481,11 @@
         "t": "2025-09-29T23:05:25.701Z",
         "d": 1,
         "c": 11
+      },
+      {
+        "t": "2025-09-30T00:19:36.303Z",
+        "d": 3,
+        "c": 14
       }
     ],
     "dynamo_match_start_dynamo_viscous_convo02_02.mp3": [
@@ -488,6 +503,11 @@
         "t": "2025-09-29T23:05:25.701Z",
         "d": 1,
         "c": 7
+      },
+      {
+        "t": "2025-09-30T00:19:36.303Z",
+        "d": 1,
+        "c": 8
       }
     ],
     "dynamo_match_start_dynamo_viscous_convo02_04.mp3": [
@@ -500,6 +520,11 @@
         "t": "2025-09-29T20:05:58.849Z",
         "d": 1,
         "c": 6
+      },
+      {
+        "t": "2025-09-30T00:19:36.303Z",
+        "d": 1,
+        "c": 7
       }
     ],
     "dynamo_match_start_dynamo_viscous_convo03_01.mp3": [
@@ -512,6 +537,11 @@
         "t": "2025-09-29T20:05:58.849Z",
         "d": 1,
         "c": 4
+      },
+      {
+        "t": "2025-09-30T00:19:36.303Z",
+        "d": 1,
+        "c": 5
       }
     ],
     "frank_ally_astro_bounce_pad_01.mp3": [
@@ -756,6 +786,11 @@
         "t": "2025-09-29T23:05:25.701Z",
         "d": 1,
         "c": 11
+      },
+      {
+        "t": "2025-09-30T00:19:36.303Z",
+        "d": 2,
+        "c": 13
       }
     ],
     "viscous_match_start_dynamo_viscous_convo01_04.mp3": [
@@ -783,6 +818,11 @@
         "t": "2025-09-29T23:05:25.701Z",
         "d": 1,
         "c": 11
+      },
+      {
+        "t": "2025-09-30T00:19:36.303Z",
+        "d": 3,
+        "c": 14
       }
     ],
     "viscous_match_start_dynamo_viscous_convo01_06.mp3": [
@@ -810,6 +850,11 @@
         "t": "2025-09-29T23:05:25.701Z",
         "d": 1,
         "c": 11
+      },
+      {
+        "t": "2025-09-30T00:19:36.303Z",
+        "d": 3,
+        "c": 14
       }
     ],
     "viscous_match_start_dynamo_viscous_convo02_01.mp3": [
@@ -827,6 +872,11 @@
         "t": "2025-09-29T23:05:25.701Z",
         "d": 1,
         "c": 7
+      },
+      {
+        "t": "2025-09-30T00:19:36.303Z",
+        "d": 1,
+        "c": 8
       }
     ],
     "viscous_match_start_dynamo_viscous_convo02_03.mp3": [
@@ -839,6 +889,11 @@
         "t": "2025-09-29T20:05:58.849Z",
         "d": 1,
         "c": 6
+      },
+      {
+        "t": "2025-09-30T00:19:36.303Z",
+        "d": 1,
+        "c": 7
       }
     ],
     "viscous_match_start_dynamo_viscous_convo03_02.mp3": [
@@ -856,6 +911,11 @@
         "t": "2025-09-29T23:05:25.701Z",
         "d": 1,
         "c": 6
+      },
+      {
+        "t": "2025-09-30T00:19:36.303Z",
+        "d": 1,
+        "c": 7
       }
     ],
     "bookworm_ally_mirage_pass_on_zipline_01.mp3": [
@@ -5263,6 +5323,11 @@
         "t": "2025-09-29T23:05:25.701Z",
         "d": 1,
         "c": 26
+      },
+      {
+        "t": "2025-09-30T00:19:36.303Z",
+        "d": 1,
+        "c": 27
       }
     ],
     "frank_match_start_frank_krill_convo01_01.mp3": [
@@ -8816,6 +8881,11 @@
         "t": "2025-09-29T20:05:58.849Z",
         "d": 1,
         "c": 11
+      },
+      {
+        "t": "2025-09-30T00:19:36.303Z",
+        "d": 1,
+        "c": 12
       }
     ],
     "ghost_match_start_ghost_viscous_convo01_02.mp3": [
@@ -12886,6 +12956,11 @@
         "t": "2025-09-29T21:04:17.631Z",
         "d": 1,
         "c": 2
+      },
+      {
+        "t": "2025-09-30T00:19:36.303Z",
+        "d": 1,
+        "c": 3
       }
     ],
     "doorman_desperation_power4_02.mp3": [
@@ -19725,6 +19800,349 @@
         "t": "2025-09-29T23:33:48.318Z",
         "d": 1,
         "c": 3
+      }
+    ],
+    "boho_ally_frank_killed_in_lane_01.mp3": [
+      {
+        "t": "2025-09-30T00:19:36.303Z",
+        "d": 1,
+        "c": 1
+      }
+    ],
+    "boho_ping_attack_frank.mp3": [
+      {
+        "t": "2025-09-30T00:19:36.303Z",
+        "d": 1,
+        "c": 1
+      }
+    ],
+    "boho_ping_careful_frank_01.mp3": [
+      {
+        "t": "2025-09-30T00:19:36.303Z",
+        "d": 2,
+        "c": 2
+      }
+    ],
+    "boho_ping_frank_missing_01.mp3": [
+      {
+        "t": "2025-09-30T00:19:36.303Z",
+        "d": 1,
+        "c": 1
+      }
+    ],
+    "boho_ping_see_frank_01.mp3": [
+      {
+        "t": "2025-09-30T00:19:36.303Z",
+        "d": 1,
+        "c": 1
+      }
+    ],
+    "doorman_killstreak_high_01.mp3": [
+      {
+        "t": "2025-09-30T00:19:36.303Z",
+        "d": 1,
+        "c": 2
+      }
+    ],
+    "doorman_killstreak_high_03.mp3": [
+      {
+        "t": "2025-09-30T00:19:36.303Z",
+        "d": 1,
+        "c": 4
+      }
+    ],
+    "doorman_match_start_doorman_atlas_convo01_01.mp3": [
+      {
+        "t": "2025-09-30T00:19:36.303Z",
+        "d": 1,
+        "c": 2
+      }
+    ],
+    "doorman_match_start_doorman_atlas_convo03_02.mp3": [
+      {
+        "t": "2025-09-30T00:19:36.303Z",
+        "d": 1,
+        "c": 2
+      }
+    ],
+    "doorman_match_start_doorman_dynamo_convo01_03.mp3": [
+      {
+        "t": "2025-09-30T00:19:36.303Z",
+        "d": 1,
+        "c": 1
+      }
+    ],
+    "doorman_match_start_doorman_dynamo_convo03_01.mp3": [
+      {
+        "t": "2025-09-30T00:19:36.303Z",
+        "d": 1,
+        "c": 1
+      }
+    ],
+    "doorman_match_start_doorman_dynamo_convo03_03.mp3": [
+      {
+        "t": "2025-09-30T00:19:36.303Z",
+        "d": 1,
+        "c": 1
+      }
+    ],
+    "doorman_match_start_doorman_nano_convo01_01.mp3": [
+      {
+        "t": "2025-09-30T00:19:36.303Z",
+        "d": 1,
+        "c": 2
+      }
+    ],
+    "doorman_match_start_doorman_nano_convo01_03.mp3": [
+      {
+        "t": "2025-09-30T00:19:36.303Z",
+        "d": 1,
+        "c": 2
+      }
+    ],
+    "doorman_match_start_doorman_nano_convo01_05.mp3": [
+      {
+        "t": "2025-09-30T00:19:36.303Z",
+        "d": 1,
+        "c": 2
+      }
+    ],
+    "doorman_match_start_doorman_nano_convo01_07.mp3": [
+      {
+        "t": "2025-09-30T00:19:36.303Z",
+        "d": 1,
+        "c": 2
+      }
+    ],
+    "doorman_match_start_doorman_nano_convo03_02.mp3": [
+      {
+        "t": "2025-09-30T00:19:36.303Z",
+        "d": 1,
+        "c": 2
+      }
+    ],
+    "doorman_match_start_doorman_nano_convo03_04.mp3": [
+      {
+        "t": "2025-09-30T00:19:36.303Z",
+        "d": 1,
+        "c": 2
+      }
+    ],
+    "doorman_pick_up_gold_01.mp3": [
+      {
+        "t": "2025-09-30T00:19:36.303Z",
+        "d": 1,
+        "c": 1
+      }
+    ],
+    "doorman_pick_up_gold_05.mp3": [
+      {
+        "t": "2025-09-30T00:19:36.303Z",
+        "d": 1,
+        "c": 1
+      }
+    ],
+    "drifter_match_start_drifter_tengu_convo03_05.mp3": [
+      {
+        "t": "2025-09-30T00:19:36.303Z",
+        "d": 1,
+        "c": 10
+      }
+    ],
+    "drifter_match_start_drifter_tengu_convo03_06.mp3": [
+      {
+        "t": "2025-09-30T00:19:36.303Z",
+        "d": 1,
+        "c": 12
+      }
+    ],
+    "dynamo_match_start_dynamo_inferno_convo01_02.mp3": [
+      {
+        "t": "2025-09-30T00:19:36.303Z",
+        "d": 1,
+        "c": 3
+      }
+    ],
+    "dynamo_match_start_dynamo_inferno_convo02_01.mp3": [
+      {
+        "t": "2025-09-30T00:19:36.303Z",
+        "d": 1,
+        "c": 3
+      }
+    ],
+    "dynamo_match_start_dynamo_inferno_convo02_03.mp3": [
+      {
+        "t": "2025-09-30T00:19:36.303Z",
+        "d": 1,
+        "c": 3
+      }
+    ],
+    "dynamo_match_start_dynamo_inferno_convo03_01.mp3": [
+      {
+        "t": "2025-09-30T00:19:36.303Z",
+        "d": 1,
+        "c": 3
+      }
+    ],
+    "dynamo_match_start_dynamo_inferno_convo03_03.mp3": [
+      {
+        "t": "2025-09-30T00:19:36.303Z",
+        "d": 1,
+        "c": 3
+      }
+    ],
+    "frank_ping_ability1_almost_ready.mp3": [
+      {
+        "t": "2025-09-30T00:19:36.303Z",
+        "d": 1,
+        "c": 1
+      }
+    ],
+    "frank_ping_ability1_not_ready.mp3": [
+      {
+        "t": "2025-09-30T00:19:36.303Z",
+        "d": 1,
+        "c": 1
+      }
+    ],
+    "frank_ping_affermative_03.mp3": [
+      {
+        "t": "2025-09-30T00:19:36.303Z",
+        "d": 1,
+        "c": 1
+      }
+    ],
+    "frank_ping_atlas_missing_01.mp3": [
+      {
+        "t": "2025-09-30T00:19:36.303Z",
+        "d": 1,
+        "c": 1
+      }
+    ],
+    "frank_ping_good_game_03.mp3": [
+      {
+        "t": "2025-09-30T00:19:36.303Z",
+        "d": 1,
+        "c": 1
+      }
+    ],
+    "frank_ping_use_ability3.mp3": [
+      {
+        "t": "2025-09-30T00:19:36.303Z",
+        "d": 1,
+        "c": 1
+      }
+    ],
+    "frank_ping_use_ability4_01.mp3": [
+      {
+        "t": "2025-09-30T00:19:36.303Z",
+        "d": 1,
+        "c": 1
+      }
+    ],
+    "frank_ping_use_ability4_02.mp3": [
+      {
+        "t": "2025-09-30T00:19:36.303Z",
+        "d": 1,
+        "c": 1
+      }
+    ],
+    "frank_ping_use_ability4_03.mp3": [
+      {
+        "t": "2025-09-30T00:19:36.303Z",
+        "d": 1,
+        "c": 1
+      }
+    ],
+    "frank_ping_use_ability4_04.mp3": [
+      {
+        "t": "2025-09-30T00:19:36.303Z",
+        "d": 1,
+        "c": 1
+      }
+    ],
+    "haze_ally_frank_killed_in_lane_01.mp3": [
+      {
+        "t": "2025-09-30T00:19:36.303Z",
+        "d": 2,
+        "c": 2
+      }
+    ],
+    "haze_ping_attack_frank.mp3": [
+      {
+        "t": "2025-09-30T00:19:36.303Z",
+        "d": 1,
+        "c": 1
+      }
+    ],
+    "haze_ping_careful_frank_01.mp3": [
+      {
+        "t": "2025-09-30T00:19:36.303Z",
+        "d": 3,
+        "c": 3
+      }
+    ],
+    "haze_ping_see_frank_01.mp3": [
+      {
+        "t": "2025-09-30T00:19:36.303Z",
+        "d": 1,
+        "c": 1
+      }
+    ],
+    "inferno_match_start_dynamo_inferno_convo01_01.mp3": [
+      {
+        "t": "2025-09-30T00:19:36.303Z",
+        "d": 1,
+        "c": 3
+      }
+    ],
+    "inferno_match_start_dynamo_inferno_convo02_02.mp3": [
+      {
+        "t": "2025-09-30T00:19:36.303Z",
+        "d": 1,
+        "c": 3
+      }
+    ],
+    "inferno_match_start_dynamo_inferno_convo02_04.mp3": [
+      {
+        "t": "2025-09-30T00:19:36.303Z",
+        "d": 1,
+        "c": 3
+      }
+    ],
+    "inferno_match_start_dynamo_inferno_convo03_02.mp3": [
+      {
+        "t": "2025-09-30T00:19:36.303Z",
+        "d": 1,
+        "c": 3
+      }
+    ],
+    "kelvin_ally_frank_killed_in_lane_01.mp3": [
+      {
+        "t": "2025-09-30T00:19:36.303Z",
+        "d": 1,
+        "c": 1
+      }
+    ],
+    "vampirebat_ping_attack_frank.mp3": [
+      {
+        "t": "2025-09-30T00:19:36.303Z",
+        "d": 1,
+        "c": 1
+      }
+    ],
+    "vampirebat_ping_careful_frank_01.mp3": [
+      {
+        "t": "2025-09-30T00:19:36.303Z",
+        "d": 1,
+        "c": 1
+      }
+    ],
+    "vampirebat_ping_see_frank_01.mp3": [
+      {
+        "t": "2025-09-30T00:19:36.303Z",
+        "d": 1,
+        "c": 1
       }
     ]
   }
