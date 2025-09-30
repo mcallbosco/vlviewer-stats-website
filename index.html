@@ -46,21 +46,30 @@
   </header>
 
   <main class="max-w-6xl mx-auto px-4 py-6">
-    <section class="mb-4 grid grid-cols-1 md:grid-cols-3 gap-3">
+    <section class="mb-4 grid grid-cols-1 md:grid-cols-4 gap-3">
       <div class="col-span-2 bg-slate-900/60 border border-white/10 rounded-lg p-4">
         <label for="configSelect" class="block text-sm mb-1 text-slate-300">Select Config</label>
         <select id="configSelect" class="w-full bg-slate-800 border border-white/10 rounded px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-brand-500"></select>
         <p id="configMeta" class="mt-2 text-xs text-slate-400"></p>
       </div>
       <div class="bg-slate-900/60 border border-white/10 rounded-lg p-4">
+        <label for="dataTypeSelect" class="block text-sm mb-1 text-slate-300">Data Type</label>
+        <select id="dataTypeSelect" class="w-full bg-slate-800 border border-white/10 rounded px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-brand-500">
+          <option value="character_totals_deltas">Characters</option>
+          <option value="voicelines_deltas">Voicelines</option>
+          <option value="conversations_deltas">Conversations</option>
+        </select>
+        <p class="mt-2 text-xs text-slate-400">Select type of data to view.</p>
+      </div>
+      <div class="bg-slate-900/60 border border-white/10 rounded-lg p-4">
         <label for="viewMode" class="block text-sm mb-1 text-slate-300">View Mode</label>
         <select id="viewMode" class="w-full bg-slate-800 border border-white/10 rounded px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-brand-500">
-          <option value="single">Single Character</option>
-          <option value="all">All Characters</option>
-          <option value="allLines">All Characters (Lines)</option>
+          <option value="single">Single Item</option>
+          <option value="all">All Items</option>
+          <option value="allLines">All Items (Lines)</option>
           <option value="slope">Slope Chart (Trends)</option>
           <option value="pie">Market Share (Pie)</option>
-          <option value="comparison">Compare Characters</option>
+          <option value="comparison">Compare Items</option>
         </select>
         <p class="mt-2 text-xs text-slate-400">Choose how to visualize the data.</p>
       </div>
@@ -69,7 +78,7 @@
     <section id="statsPanel" class="mb-4 hidden">
       <div class="grid grid-cols-2 md:grid-cols-5 gap-3">
         <div class="bg-slate-900/60 border border-white/10 rounded-lg p-4">
-          <div class="text-xs text-slate-400 mb-1">Total Characters</div>
+          <div class="text-xs text-slate-400 mb-1">Total Items</div>
           <div id="statTotalChars" class="text-2xl font-bold text-brand-400">-</div>
         </div>
         <div class="bg-slate-900/60 border border-white/10 rounded-lg p-4">
@@ -87,33 +96,33 @@
           <div id="statFastestGrowingValue" class="text-xs text-slate-400">-</div>
         </div>
         <div class="bg-slate-900/60 border border-white/10 rounded-lg p-4">
-          <div class="text-xs text-slate-400 mb-1">Avg per Character</div>
+          <div class="text-xs text-slate-400 mb-1">Avg per Item</div>
           <div id="statAvgPlays" class="text-2xl font-bold text-brand-400">-</div>
         </div>
       </div>
     </section>
 
     <section id="comparisonSection" class="mb-4 bg-slate-900/60 border border-white/10 rounded-lg p-4 hidden">
-      <label class="block text-sm mb-2 text-slate-300">Select Characters to Compare (hold Ctrl/Cmd for multiple)</label>
+      <label class="block text-sm mb-2 text-slate-300">Select Items to Compare (hold Ctrl/Cmd for multiple)</label>
       <select id="comparisonSelect" multiple size="6" class="w-full bg-slate-800 border border-white/10 rounded px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-brand-500">
       </select>
-      <p class="mt-2 text-xs text-slate-400">Select 2-6 characters to compare their trends.</p>
+      <p class="mt-2 text-xs text-slate-400">Select 2-6 items to compare their trends.</p>
     </section>
 
     <section id="topNSection" class="mb-4 bg-slate-900/60 border border-white/10 rounded-lg p-4 hidden">
-      <label for="topNSelect" class="block text-sm mb-1 text-slate-300">Show Top N Characters</label>
+      <label for="topNSelect" class="block text-sm mb-1 text-slate-300">Show Top N Items</label>
       <select id="topNSelect" class="w-full bg-slate-800 border border-white/10 rounded px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-brand-500">
-        <option value="0">All Characters</option>
+        <option value="0">All Items</option>
         <option value="5">Top 5</option>
         <option value="10" selected>Top 10</option>
         <option value="15">Top 15</option>
         <option value="20">Top 20</option>
       </select>
-      <p class="mt-2 text-xs text-slate-400">Filter to show only the most popular characters.</p>
+      <p class="mt-2 text-xs text-slate-400">Filter to show only the most popular items.</p>
     </section>
 
     <section id="singleCharacterSection" class="mb-4 bg-slate-900/60 border border-white/10 rounded-lg p-4">
-      <label for="characterSelect" class="block text-sm mb-1 text-slate-300">Select Character</label>
+      <label for="characterSelect" class="block text-sm mb-1 text-slate-300">Select Item</label>
       <select id="characterSelect" class="w-full bg-slate-800 border border-white/10 rounded px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-brand-500" disabled>
         <option>Loading…</option>
       </select>
@@ -141,13 +150,19 @@
 
     <section class="bg-slate-900/60 border border-white/10 rounded-lg p-4">
       <div class="flex items-center gap-3 mb-3">
-        <h2 class="text-lg font-medium" id="chartTitle">Character Plays Over Time</h2>
+        <h2 class="text-lg font-medium" id="chartTitle">Item Plays Over Time</h2>
         <span id="chartSubtitle" class="text-xs text-slate-400"></span>
       </div>
       <div class="h-[420px]">
         <canvas id="chart"></canvas>
       </div>
       <p id="emptyState" class="hidden mt-3 text-sm text-slate-400">No data found for this selection.</p>
+    </section>
+
+    <section id="rankingsSection" class="mt-4 bg-slate-900/60 border border-white/10 rounded-lg p-4 hidden">
+      <h3 class="text-md font-medium mb-3">Rankings</h3>
+      <div id="rankingsList" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2">
+      </div>
     </section>
 
     <footer class="mt-8 text-xs text-slate-500">
@@ -158,6 +173,7 @@
   <script>
     const els = {
       configSelect: document.getElementById('configSelect'),
+      dataTypeSelect: document.getElementById('dataTypeSelect'),
       characterSelect: document.getElementById('characterSelect'),
       viewMode: document.getElementById('viewMode'),
       singleCharacterSection: document.getElementById('singleCharacterSection'),
@@ -184,6 +200,8 @@
       comparisonSelect: document.getElementById('comparisonSelect'),
       topNSection: document.getElementById('topNSection'),
       topNSelect: document.getElementById('topNSelect'),
+      rankingsSection: document.getElementById('rankingsSection'),
+      rankingsList: document.getElementById('rankingsList'),
     };
 
     let chart;
@@ -234,8 +252,18 @@
       els.configIcon.src = cfg.icon || '';
       els.configIcon.classList.toggle('hidden', !cfg.icon);
       els.configMeta.textContent = cfg.config || '';
-      // Load character totals
-      const path = cfg.paths?.character_totals_deltas;
+      
+      // Load data based on selected type
+      await loadDataType();
+    }
+    
+    async function loadDataType() {
+      const slug = els.configSelect.value;
+      const cfg = (autoIndex.configs || []).find(c => c.slug === slug);
+      if (!cfg) return;
+      
+      const dataType = els.dataTypeSelect.value;
+      const path = cfg.paths?.[dataType];
       let data;
       try {
         const res = await fetch(path);
@@ -339,11 +367,14 @@
       
       // Update stats panel for all views
       updateStatsPanel(currentSeries, cfg);
+      
+      // Update rankings for comparison views
+      updateRankings(currentSeries, cfg, viewMode);
     }
 
     function updateSingleCharacterChart(data, cfg, name) {
       els.emptyState.classList.toggle('hidden', data.length > 0);
-      els.chartTitle.textContent = 'Character Plays Over Time';
+      els.chartTitle.textContent = 'Item Plays Over Time';
       els.chartSubtitle.textContent = name ? `${name} — ${cfg?.slug || ''}` : (cfg?.slug || '');
 
       const gradient = (() => {
@@ -397,7 +428,7 @@
     }
 
     function updateAllCharactersChart(series, cfg) {
-      els.chartTitle.textContent = 'All Characters Popularity';
+      els.chartTitle.textContent = 'All Items Popularity';
       els.chartSubtitle.textContent = cfg?.slug || '';
       
       // Get the latest cumulative value for each character
@@ -473,7 +504,7 @@
     }
 
     function updateAllCharactersLineChart(series, cfg) {
-      els.chartTitle.textContent = 'All Characters - Rate of Change Over Time';
+      els.chartTitle.textContent = 'All Items - Rate of Change Over Time';
       els.chartSubtitle.textContent = cfg?.slug || '';
       
       // First, get top N characters by total plays
@@ -622,7 +653,7 @@
     }
 
     function updateSlopeChart(series, cfg) {
-      els.chartTitle.textContent = 'Character Popularity Trends (Slope)';
+      els.chartTitle.textContent = 'Item Popularity Trends (Slope)';
       els.chartSubtitle.textContent = cfg?.slug || '';
       
       // Calculate slope (growth rate) for each character
@@ -726,7 +757,7 @@
     }
 
     function updatePieChart(series, cfg) {
-      els.chartTitle.textContent = 'Character Market Share';
+      els.chartTitle.textContent = 'Item Market Share';
       els.chartSubtitle.textContent = cfg?.slug || '';
       
       // Get the latest cumulative value for each character
@@ -799,7 +830,7 @@
     }
 
     function updateComparisonChart(series, cfg) {
-      els.chartTitle.textContent = 'Character Comparison';
+      els.chartTitle.textContent = 'Item Comparison';
       els.chartSubtitle.textContent = cfg?.slug || '';
       
       const selectedChars = Array.from(els.comparisonSelect.selectedOptions).map(opt => opt.value);
@@ -957,8 +988,87 @@
       }
     }
 
+    function updateRankings(series, cfg, viewMode) {
+      // Show rankings for comparison views
+      const shouldShowRankings = ['all', 'allLines', 'slope', 'pie'].includes(viewMode);
+      els.rankingsSection.classList.toggle('hidden', !shouldShowRankings);
+      
+      if (!shouldShowRankings) return;
+      
+      // Calculate rankings by total plays
+      const rankings = [];
+      for (const [name, allPoints] of Object.entries(series)) {
+        const points = filterDataByDateRange(allPoints);
+        if (points.length === 0) continue;
+        const sortedPoints = points.slice().sort((a,b) => new Date(b.t) - new Date(a.t));
+        const latestValue = Number(sortedPoints[0].c ?? 0);
+        
+        // Calculate growth rate
+        let growthRate = 0;
+        if (points.length >= 2) {
+          const sortedForSlope = points.slice().sort((a,b) => new Date(a.t) - new Date(b.t));
+          const n = sortedForSlope.length;
+          let sumX = 0, sumY = 0, sumXY = 0, sumX2 = 0;
+          
+          sortedForSlope.forEach((point, idx) => {
+            const x = idx;
+            const y = Number(point.c ?? 0);
+            sumX += x;
+            sumY += y;
+            sumXY += x * y;
+            sumX2 += x * x;
+          });
+          
+          growthRate = (n * sumXY - sumX * sumY) / (n * sumX2 - sumX * sumX);
+        }
+        
+        rankings.push({ name, plays: latestValue, growthRate });
+      }
+      
+      // Sort by plays descending
+      rankings.sort((a, b) => b.plays - a.plays);
+      
+      // Apply top N filter if available
+      const topN = parseInt(els.topNSelect.value) || 0;
+      const displayRankings = topN > 0 ? rankings.slice(0, topN) : rankings.slice(0, 20);
+      
+      // Update rankings display
+      els.rankingsList.innerHTML = '';
+      displayRankings.forEach((item, idx) => {
+        const div = document.createElement('div');
+        div.className = 'flex items-center justify-between p-2 bg-slate-800/50 rounded text-xs';
+        
+        const rankBadge = document.createElement('span');
+        rankBadge.className = 'flex-shrink-0 w-6 h-6 rounded-full flex items-center justify-center font-bold text-xs ' +
+          (idx === 0 ? 'bg-yellow-500 text-slate-900' : 
+           idx === 1 ? 'bg-gray-400 text-slate-900' :
+           idx === 2 ? 'bg-amber-600 text-slate-900' :
+           'bg-slate-700 text-slate-300');
+        rankBadge.textContent = idx + 1;
+        
+        const nameSpan = document.createElement('span');
+        nameSpan.className = 'flex-1 mx-2 truncate';
+        nameSpan.textContent = item.name;
+        
+        const playsSpan = document.createElement('span');
+        playsSpan.className = 'text-brand-400 font-mono';
+        playsSpan.textContent = item.plays.toLocaleString();
+        
+        const growthSpan = document.createElement('span');
+        growthSpan.className = 'ml-2 ' + (item.growthRate >= 0 ? 'text-green-400' : 'text-red-400');
+        growthSpan.textContent = (item.growthRate >= 0 ? '+' : '') + item.growthRate.toFixed(1);
+        
+        div.appendChild(rankBadge);
+        div.appendChild(nameSpan);
+        div.appendChild(playsSpan);
+        div.appendChild(growthSpan);
+        els.rankingsList.appendChild(div);
+      });
+    }
+
     // Events
     els.configSelect.addEventListener('change', handleConfigChange);
+    els.dataTypeSelect.addEventListener('change', loadDataType);
     els.characterSelect.addEventListener('change', () => {
       const slug = els.configSelect.value;
       const cfg = (autoIndex.configs || []).find(c => c.slug === slug);
