@@ -59,9 +59,57 @@
           <option value="all">All Characters</option>
           <option value="allLines">All Characters (Lines)</option>
           <option value="slope">Slope Chart (Trends)</option>
+          <option value="pie">Market Share (Pie)</option>
+          <option value="comparison">Compare Characters</option>
         </select>
         <p class="mt-2 text-xs text-slate-400">Choose how to visualize the data.</p>
       </div>
+    </section>
+
+    <section id="statsPanel" class="mb-4 hidden">
+      <div class="grid grid-cols-2 md:grid-cols-5 gap-3">
+        <div class="bg-slate-900/60 border border-white/10 rounded-lg p-4">
+          <div class="text-xs text-slate-400 mb-1">Total Characters</div>
+          <div id="statTotalChars" class="text-2xl font-bold text-brand-400">-</div>
+        </div>
+        <div class="bg-slate-900/60 border border-white/10 rounded-lg p-4">
+          <div class="text-xs text-slate-400 mb-1">Total Plays</div>
+          <div id="statTotalPlays" class="text-2xl font-bold text-brand-400">-</div>
+        </div>
+        <div class="bg-slate-900/60 border border-white/10 rounded-lg p-4">
+          <div class="text-xs text-slate-400 mb-1">Most Popular</div>
+          <div id="statMostPopular" class="text-sm font-bold text-green-400 truncate">-</div>
+          <div id="statMostPopularValue" class="text-xs text-slate-400">-</div>
+        </div>
+        <div class="bg-slate-900/60 border border-white/10 rounded-lg p-4">
+          <div class="text-xs text-slate-400 mb-1">Fastest Growing</div>
+          <div id="statFastestGrowing" class="text-sm font-bold text-purple-400 truncate">-</div>
+          <div id="statFastestGrowingValue" class="text-xs text-slate-400">-</div>
+        </div>
+        <div class="bg-slate-900/60 border border-white/10 rounded-lg p-4">
+          <div class="text-xs text-slate-400 mb-1">Avg per Character</div>
+          <div id="statAvgPlays" class="text-2xl font-bold text-brand-400">-</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="comparisonSection" class="mb-4 bg-slate-900/60 border border-white/10 rounded-lg p-4 hidden">
+      <label class="block text-sm mb-2 text-slate-300">Select Characters to Compare (hold Ctrl/Cmd for multiple)</label>
+      <select id="comparisonSelect" multiple size="6" class="w-full bg-slate-800 border border-white/10 rounded px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-brand-500">
+      </select>
+      <p class="mt-2 text-xs text-slate-400">Select 2-6 characters to compare their trends.</p>
+    </section>
+
+    <section id="topNSection" class="mb-4 bg-slate-900/60 border border-white/10 rounded-lg p-4 hidden">
+      <label for="topNSelect" class="block text-sm mb-1 text-slate-300">Show Top N Characters</label>
+      <select id="topNSelect" class="w-full bg-slate-800 border border-white/10 rounded px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-brand-500">
+        <option value="0">All Characters</option>
+        <option value="5">Top 5</option>
+        <option value="10" selected>Top 10</option>
+        <option value="15">Top 15</option>
+        <option value="20">Top 20</option>
+      </select>
+      <p class="mt-2 text-xs text-slate-400">Filter to show only the most popular characters.</p>
     </section>
 
     <section id="singleCharacterSection" class="mb-4 bg-slate-900/60 border border-white/10 rounded-lg p-4">
@@ -124,6 +172,18 @@
       configMeta: document.getElementById('configMeta'),
       configIcon: document.getElementById('configIcon'),
       characterHint: document.getElementById('characterHint'),
+      statsPanel: document.getElementById('statsPanel'),
+      statTotalChars: document.getElementById('statTotalChars'),
+      statTotalPlays: document.getElementById('statTotalPlays'),
+      statMostPopular: document.getElementById('statMostPopular'),
+      statMostPopularValue: document.getElementById('statMostPopularValue'),
+      statFastestGrowing: document.getElementById('statFastestGrowing'),
+      statFastestGrowingValue: document.getElementById('statFastestGrowingValue'),
+      statAvgPlays: document.getElementById('statAvgPlays'),
+      comparisonSection: document.getElementById('comparisonSection'),
+      comparisonSelect: document.getElementById('comparisonSelect'),
+      topNSection: document.getElementById('topNSection'),
+      topNSelect: document.getElementById('topNSelect'),
     };
 
     let chart;
@@ -195,6 +255,9 @@
       
       // Set date range based on data
       updateDateRangeLimits(series);
+      
+      // Also populate comparison select
+      populateComparisonSelect(series);
       
       if (names.length === 0) {
         const opt = document.createElement('option');
@@ -268,7 +331,14 @@
         updateAllCharactersLineChart(currentSeries, cfg);
       } else if (viewMode === 'slope') {
         updateSlopeChart(currentSeries, cfg);
+      } else if (viewMode === 'pie') {
+        updatePieChart(currentSeries, cfg);
+      } else if (viewMode === 'comparison') {
+        updateComparisonChart(currentSeries, cfg);
       }
+      
+      // Update stats panel for all views
+      updateStatsPanel(currentSeries, cfg);
     }
 
     function updateSingleCharacterChart(data, cfg, name) {
@@ -406,11 +476,27 @@
       els.chartTitle.textContent = 'All Characters - Rate of Change Over Time';
       els.chartSubtitle.textContent = cfg?.slug || '';
       
-      // First, collect all unique timestamps across all characters
+      // First, get top N characters by total plays
+      const topN = parseInt(els.topNSelect.value) || 0;
+      let charactersByPopularity = [];
+      
+      for (const [name, allPoints] of Object.entries(series)) {
+        const points = filterDataByDateRange(allPoints);
+        if (points.length < 1) continue;
+        const sortedPoints = points.slice().sort((a,b) => new Date(b.t) - new Date(a.t));
+        const latestValue = Number(sortedPoints[0].c ?? 0);
+        charactersByPopularity.push({ name, value: latestValue });
+      }
+      
+      charactersByPopularity.sort((a, b) => b.value - a.value);
+      const topCharacters = topN > 0 ? charactersByPopularity.slice(0, topN).map(c => c.name) : charactersByPopularity.map(c => c.name);
+      
+      // Now build the line chart with only top characters
       const allTimestamps = new Set();
       const filteredSeries = {};
       
       for (const [name, allPoints] of Object.entries(series)) {
+        if (!topCharacters.includes(name)) continue;
         const points = filterDataByDateRange(allPoints);
         if (points.length < 1) continue;
         filteredSeries[name] = points.slice().sort((a,b) => new Date(a.t) - new Date(b.t));
@@ -568,10 +654,14 @@
       // Sort by slope descending
       characterSlopes.sort((a, b) => b.slope - a.slope);
       
-      els.emptyState.classList.toggle('hidden', characterSlopes.length > 0);
+      // Apply top N filter
+      const topN = parseInt(els.topNSelect.value) || 0;
+      const filteredSlopes = topN > 0 ? characterSlopes.slice(0, topN) : characterSlopes;
       
-      const labels = characterSlopes.map(d => d.name);
-      const slopes = characterSlopes.map(d => d.slope);
+      els.emptyState.classList.toggle('hidden', filteredSlopes.length > 0);
+      
+      const labels = filteredSlopes.map(d => d.name);
+      const slopes = filteredSlopes.map(d => d.slope);
       
       // Color based on slope (positive = green, negative = red)
       const colors = slopes.map(slope => {
@@ -622,7 +712,7 @@
               callbacks: {
                 label: (ctx) => {
                   const idx = ctx.dataIndex;
-                  const charData = characterSlopes[idx];
+                  const charData = filteredSlopes[idx];
                   return [
                     ` Growth Rate: ${ctx.parsed.x.toFixed(2)} plays/point`,
                     ` Current Total: ${charData.latestValue.toLocaleString()} plays`
@@ -633,6 +723,238 @@
           }
         }
       });
+    }
+
+    function updatePieChart(series, cfg) {
+      els.chartTitle.textContent = 'Character Market Share';
+      els.chartSubtitle.textContent = cfg?.slug || '';
+      
+      // Get the latest cumulative value for each character
+      const characterData = [];
+      for (const [name, allPoints] of Object.entries(series)) {
+        const points = filterDataByDateRange(allPoints);
+        if (points.length === 0) continue;
+        const sortedPoints = points.slice().sort((a,b) => new Date(b.t) - new Date(a.t));
+        const latestValue = Number(sortedPoints[0].c ?? 0);
+        if (latestValue > 0) {
+          characterData.push({ name, value: latestValue });
+        }
+      }
+      
+      // Sort by value descending
+      characterData.sort((a, b) => b.value - a.value);
+      
+      // Apply top N filter
+      const topN = parseInt(els.topNSelect.value) || 0;
+      const filteredData = topN > 0 ? characterData.slice(0, topN) : characterData;
+      
+      els.emptyState.classList.toggle('hidden', filteredData.length > 0);
+      
+      const labels = filteredData.map(d => d.name);
+      const values = filteredData.map(d => d.value);
+      
+      // Create vibrant color palette
+      const colorPalette = [
+        '#4a76ff', '#ff6b6b', '#51cf66', '#ffd93d', '#a78bfa', 
+        '#fb7185', '#60a5fa', '#34d399', '#fbbf24', '#c084fc',
+        '#f472b6', '#38bdf8', '#6ee7b7', '#fdba74', '#e879f9',
+        '#fb923c', '#67e8f9', '#86efac', '#fca5a5', '#d8b4fe'
+      ];
+      const colors = filteredData.map((_, i) => colorPalette[i % colorPalette.length]);
+
+      if (chart) chart.destroy();
+      chart = new Chart(els.chartCanvas, {
+        type: 'doughnut',
+        data: {
+          labels,
+          datasets: [{
+            label: 'Total Plays',
+            data: values,
+            backgroundColor: colors,
+            borderColor: '#1e293b',
+            borderWidth: 2
+          }]
+        },
+        options: {
+          responsive: true,
+          maintainAspectRatio: false,
+          plugins: {
+            legend: { 
+              labels: { color: 'rgba(255,255,255,0.8)', font: { size: 10 } },
+              position: 'right',
+              maxHeight: 400
+            },
+            tooltip: {
+              callbacks: {
+                label: (ctx) => {
+                  const total = values.reduce((a, b) => a + b, 0);
+                  const percentage = ((ctx.parsed / total) * 100).toFixed(1);
+                  return ` ${ctx.label}: ${ctx.parsed.toLocaleString()} plays (${percentage}%)`;
+                }
+              }
+            }
+          }
+        }
+      });
+    }
+
+    function updateComparisonChart(series, cfg) {
+      els.chartTitle.textContent = 'Character Comparison';
+      els.chartSubtitle.textContent = cfg?.slug || '';
+      
+      const selectedChars = Array.from(els.comparisonSelect.selectedOptions).map(opt => opt.value);
+      
+      if (selectedChars.length < 2) {
+        els.emptyState.classList.toggle('hidden', false);
+        if (chart) chart.destroy();
+        return;
+      }
+      
+      const datasets = [];
+      const colorPalette = [
+        '#4a76ff', '#ff6b6b', '#51cf66', '#ffd93d', '#a78bfa', '#fb7185'
+      ];
+      
+      selectedChars.forEach((name, idx) => {
+        const allPoints = series[name] || [];
+        const points = filterDataByDateRange(allPoints).slice().sort((a,b) => new Date(a.t) - new Date(b.t));
+        const data = points.map(p => ({ x: new Date(p.t), y: Number(p.c ?? p.d ?? 0) }));
+        
+        const color = colorPalette[idx % colorPalette.length];
+        datasets.push({
+          label: name,
+          data,
+          borderColor: color,
+          backgroundColor: color + '20',
+          borderWidth: 3,
+          pointRadius: 3,
+          pointHoverRadius: 5,
+          tension: 0.3,
+          fill: false
+        });
+      });
+      
+      els.emptyState.classList.toggle('hidden', datasets.length > 0);
+      
+      if (chart) chart.destroy();
+      chart = new Chart(els.chartCanvas, {
+        type: 'line',
+        data: { datasets },
+        options: {
+          responsive: true,
+          maintainAspectRatio: false,
+          interaction: {
+            mode: 'index',
+            intersect: false,
+          },
+          scales: {
+            x: {
+              type: 'time',
+              time: { tooltipFormat: 'PPpp' },
+              grid: { color: 'rgba(255,255,255,0.06)' },
+              ticks: { color: 'rgba(255,255,255,0.7)' }
+            },
+            y: {
+              beginAtZero: true,
+              grid: { color: 'rgba(255,255,255,0.06)' },
+              ticks: { color: 'rgba(255,255,255,0.7)' },
+              title: {
+                display: true,
+                text: 'Cumulative Plays',
+                color: 'rgba(255,255,255,0.8)'
+              }
+            }
+          },
+          plugins: {
+            legend: { 
+              labels: { color: 'rgba(255,255,255,0.8)', font: { size: 12 } },
+              position: 'top'
+            },
+            tooltip: {
+              callbacks: {
+                label: (ctx) => ` ${ctx.dataset.label}: ${ctx.parsed.y.toLocaleString()} plays`
+              }
+            }
+          }
+        }
+      });
+    }
+
+    function updateStatsPanel(series, cfg) {
+      if (!series || Object.keys(series).length === 0) {
+        els.statsPanel.classList.add('hidden');
+        return;
+      }
+      
+      els.statsPanel.classList.remove('hidden');
+      
+      // Calculate stats
+      const characterData = [];
+      const characterSlopes = [];
+      
+      for (const [name, allPoints] of Object.entries(series)) {
+        const points = filterDataByDateRange(allPoints);
+        if (points.length === 0) continue;
+        
+        const sortedPoints = points.slice().sort((a,b) => new Date(b.t) - new Date(a.t));
+        const latestValue = Number(sortedPoints[0].c ?? 0);
+        characterData.push({ name, value: latestValue });
+        
+        // Calculate slope for growth rate
+        if (points.length >= 2) {
+          const sortedForSlope = points.slice().sort((a,b) => new Date(a.t) - new Date(b.t));
+          const n = sortedForSlope.length;
+          let sumX = 0, sumY = 0, sumXY = 0, sumX2 = 0;
+          
+          sortedForSlope.forEach((point, idx) => {
+            const x = idx;
+            const y = Number(point.c ?? 0);
+            sumX += x;
+            sumY += y;
+            sumXY += x * y;
+            sumX2 += x * x;
+          });
+          
+          const slope = (n * sumXY - sumX * sumY) / (n * sumX2 - sumX * sumX);
+          characterSlopes.push({ name, slope, latestValue });
+        }
+      }
+      
+      // Total characters
+      els.statTotalChars.textContent = characterData.length;
+      
+      // Total plays
+      const totalPlays = characterData.reduce((sum, c) => sum + c.value, 0);
+      els.statTotalPlays.textContent = totalPlays.toLocaleString();
+      
+      // Most popular
+      if (characterData.length > 0) {
+        characterData.sort((a, b) => b.value - a.value);
+        els.statMostPopular.textContent = characterData[0].name;
+        els.statMostPopularValue.textContent = characterData[0].value.toLocaleString() + ' plays';
+      }
+      
+      // Fastest growing
+      if (characterSlopes.length > 0) {
+        characterSlopes.sort((a, b) => b.slope - a.slope);
+        els.statFastestGrowing.textContent = characterSlopes[0].name;
+        els.statFastestGrowingValue.textContent = '+' + characterSlopes[0].slope.toFixed(1) + ' plays/point';
+      }
+      
+      // Average plays per character
+      const avgPlays = characterData.length > 0 ? Math.round(totalPlays / characterData.length) : 0;
+      els.statAvgPlays.textContent = avgPlays.toLocaleString();
+    }
+
+    function populateComparisonSelect(series) {
+      els.comparisonSelect.innerHTML = '';
+      const names = Object.keys(series).sort();
+      for (const name of names) {
+        const opt = document.createElement('option');
+        opt.value = name;
+        opt.textContent = name;
+        els.comparisonSelect.appendChild(opt);
+      }
     }
 
     // Events
@@ -649,6 +971,8 @@
     els.viewMode.addEventListener('change', () => {
       const viewMode = els.viewMode.value;
       els.singleCharacterSection.style.display = viewMode === 'single' ? 'block' : 'none';
+      els.comparisonSection.style.display = viewMode === 'comparison' ? 'block' : 'none';
+      els.topNSection.style.display = (viewMode === 'allLines' || viewMode === 'slope' || viewMode === 'pie') ? 'block' : 'none';
       
       const slug = els.configSelect.value;
       const cfg = (autoIndex.configs || []).find(c => c.slug === slug);
@@ -662,8 +986,20 @@
         const data = points.map(p => ({ x: new Date(p.t), y: Number(p.c ?? p.d ?? 0) }));
         updateChart(data, cfg, name);
       } else {
-        // Show all characters or slope view
+        // Show all characters or other views
         updateChart([], cfg);
+      }
+    });
+    
+    els.comparisonSelect.addEventListener('change', () => {
+      if (currentCfg && els.viewMode.value === 'comparison') {
+        updateChart([], currentCfg);
+      }
+    });
+    
+    els.topNSelect.addEventListener('change', () => {
+      if (currentCfg) {
+        updateChart([], currentCfg);
       }
     });
     
