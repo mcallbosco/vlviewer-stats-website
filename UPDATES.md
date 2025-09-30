@@ -1,0 +1,75 @@
+# Website Updates
+
+## New Features Added
+
+### 1. View Modes
+The website now includes 4 different visualization modes:
+
+- **Single Character**: The original view showing cumulative plays over time for a single character
+- **All Characters**: Bar chart showing total plays for all characters (ranked by popularity)
+- **All Characters (Lines)**: Multi-line chart showing rate of change (plays per hour) for all characters over time
+- **Slope Chart (Trends)**: Bar chart showing growth rate (linear regression slope) for each character
+
+### 2. Date Range Selector
+Added a date range filter that works across all view modes:
+
+- **Start Date**: Filter data from this date onwards
+- **End Date**: Filter data up to this date
+- **Reset Range**: Button to clear the date filters and show all data
+
+The date inputs automatically set their min/max values based on the available data in the selected config.
+
+### 3. All Characters Line Chart Details
+The new "All Characters (Lines)" view shows the rate of change over time:
+
+- **Normalized Timestamps**: Collects all unique timestamps across all characters and fills in missing data points
+- **Zero-Delta Assumption**: If a character has no data at a timestamp, it assumes delta=0 (carries forward the last cumulative value)
+- **Rate Calculation**: Calculates plays per hour between consecutive data points
+- Each character gets a unique color from a 20-color palette
+- Shows all characters on the same chart for easy comparison
+- Helps identify which characters are gaining or losing popularity over time
+
+This normalization ensures fair comparison - characters without activity during a time period will show 0 rate of change, rather than having gaps in the chart.
+
+### 4. Dynamic UI
+- The character selector is automatically hidden when viewing "All Characters" modes
+- Date range filtering applies to all visualization modes
+- Changing the date range automatically refreshes the current view
+
+## Technical Implementation
+
+### Data Filtering
+- `filterDataByDateRange()`: Filters time series data based on selected date range
+- `updateDateRangeLimits()`: Sets date input constraints based on available data
+
+### Visualization Functions
+- `updateSingleCharacterChart()`: Original single character view
+- `updateAllCharactersChart()`: Bar chart of total plays
+- `updateAllCharactersLineChart()`: Multi-line rate of change chart
+- `updateSlopeChart()`: Growth rate comparison
+
+### Rate of Change Calculation
+The "All Characters (Lines)" view calculates the rate of change as:
+
+1. **Timestamp Normalization**: First, collect all unique timestamps from all characters
+2. **Fill Missing Data**: For each character, if they don't have data at a timestamp, carry forward the last cumulative value (delta = 0)
+3. **Calculate Rate**: For each normalized time period:
+```javascript
+const timeDiff = (new Date(currPoint.t) - new Date(prevPoint.t)) / (1000 * 60 * 60); // hours
+const valueDiff = currPoint.c - prevPoint.c;
+const rate = timeDiff > 0 ? valueDiff / timeDiff : 0; // plays per hour
+```
+
+This normalization ensures that:
+- All characters have data points at all timestamps
+- Missing activity periods correctly show as 0 rate of change
+- Characters can be fairly compared on the same timeline
+
+## Usage
+
+1. Select a config from the dropdown
+2. Choose your preferred view mode
+3. (Optional) Set a date range to focus on a specific time period
+4. For single character view, select a character from the dropdown
+
+The visualizations update automatically when you change any of these settings.
