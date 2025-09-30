@@ -449,14 +449,8 @@
       const labels = characterData.map(d => d.name);
       const values = characterData.map(d => d.value);
       
-      // Create color gradient based on popularity
-      const colors = values.map((v, i) => {
-        const ratio = i / Math.max(1, values.length - 1);
-        const hue = 220 + (ratio * 60); // Blue to cyan gradient
-        const saturation = 80 - (ratio * 30);
-        const lightness = 60 - (ratio * 20);
-        return `hsl(${hue}, ${saturation}%, ${lightness}%)`;
-      });
+      // Use character-specific colors with fallback to gradient
+      const colors = getColorPalette(labels, cfg);
 
       if (chart) chart.destroy();
       chart = new Chart(els.chartCanvas, {
@@ -467,7 +461,7 @@
             label: 'Total Plays',
             data: values,
             backgroundColor: colors,
-            borderColor: colors.map(c => c.replace('60%', '70%')),
+            borderColor: colors.map(c => c + 'cc'), // Add slight transparency to border
             borderWidth: 1
           }]
         },
@@ -544,12 +538,7 @@
       }
       
       const datasets = [];
-      const colorPalette = [
-        '#4a76ff', '#ff6b6b', '#51cf66', '#ffd93d', '#a78bfa', 
-        '#fb7185', '#60a5fa', '#34d399', '#fbbf24', '#c084fc',
-        '#f472b6', '#38bdf8', '#6ee7b7', '#fdba74', '#e879f9',
-        '#fb923c', '#67e8f9', '#86efac', '#fca5a5', '#d8b4fe'
-      ];
+      const colors = getColorPalette(topCharacters, cfg);
       
       let colorIndex = 0;
       for (const [name, points] of Object.entries(filteredSeries)) {
@@ -589,7 +578,7 @@
         }
         
         if (rateData.length > 0) {
-          const color = colorPalette[colorIndex % colorPalette.length];
+          const color = colors[colorIndex % colors.length];
           datasets.push({
             label: name,
             data: rateData,
@@ -784,14 +773,8 @@
       const labels = filteredData.map(d => d.name);
       const values = filteredData.map(d => d.value);
       
-      // Create vibrant color palette
-      const colorPalette = [
-        '#4a76ff', '#ff6b6b', '#51cf66', '#ffd93d', '#a78bfa', 
-        '#fb7185', '#60a5fa', '#34d399', '#fbbf24', '#c084fc',
-        '#f472b6', '#38bdf8', '#6ee7b7', '#fdba74', '#e879f9',
-        '#fb923c', '#67e8f9', '#86efac', '#fca5a5', '#d8b4fe'
-      ];
-      const colors = filteredData.map((_, i) => colorPalette[i % colorPalette.length]);
+      // Use character-specific colors
+      const colors = getColorPalette(labels, cfg);
 
       if (chart) chart.destroy();
       chart = new Chart(els.chartCanvas, {
@@ -842,16 +825,14 @@
       }
       
       const datasets = [];
-      const colorPalette = [
-        '#4a76ff', '#ff6b6b', '#51cf66', '#ffd93d', '#a78bfa', '#fb7185'
-      ];
+      const colors = getColorPalette(selectedChars, cfg);
       
       selectedChars.forEach((name, idx) => {
         const allPoints = series[name] || [];
         const points = filterDataByDateRange(allPoints).slice().sort((a,b) => new Date(a.t) - new Date(b.t));
         const data = points.map(p => ({ x: new Date(p.t), y: Number(p.c ?? p.d ?? 0) }));
         
-        const color = colorPalette[idx % colorPalette.length];
+        const color = colors[idx];
         datasets.push({
           label: name,
           data,
@@ -988,6 +969,146 @@
       }
     }
 
+    function getCharacterImagePath(characterName, cfg) {
+      // Return the character image path if available
+      if (!cfg || !cfg.icons_dir) return null;
+      
+      // Normalize the character name to match image filenames
+      // This mapping handles common name differences
+      const nameMap = {
+        'abrams': 'bull',
+        'bebop': 'bebop',
+        'billy': 'gunslinger',
+        'grey talon': 'archer',
+        'dynamo': 'gigawatt',
+        'fathom': 'digger',
+        'haze': 'haze',
+        'holliday': 'skyrunner',
+        'infernus': 'inferno',
+        'ivy': 'tengu',
+        'kelvin': 'kelvin',
+        'krill': 'shiv',
+        'lady geist': 'spectre',
+        'lash': 'lash',
+        'mcginnis': 'engineer',
+        'mirage': 'mirage',
+        'paradox': 'chrono',
+        'pocket': 'synth',
+        'seven': 'targetdummy',
+        'shiv': 'shiv',
+        'vindicta': 'hornet',
+        'viscous': 'viscous',
+        'warden': 'warden',
+        'wraith': 'wraith',
+        'yamato': 'yamato',
+        'magician': 'magician',
+        'wrecker': 'wrecker',
+        'trapper': 'trapper',
+        'boho': 'bookworm',
+        'calico': 'kali',
+        'doorman': 'doorman',
+        'drifter': 'drifter',
+        'mina': 'nano',
+        'newscaster': 'newscaster',
+        'operative': 'operative',
+        'paige': 'vampirebat',
+        'patron female': 'patronfemale',
+        'patron male': 'patronmale',
+        'priest': 'priest',
+        'shopkeeper_hotdog': 'shopkeeper_hotdog',
+        'sinclair (henry)': 'rutger',
+        'sinclair (savannah)': 'swan',
+        'spirit_jar': 'spirit_jar',
+        'victor': 'vandal'
+      };
+      
+      const normalizedName = nameMap[characterName.toLowerCase()] || characterName.toLowerCase().replace(/\s+/g, '');
+      return `${cfg.icons_dir}/${normalizedName}.png`;
+    }
+
+    // Character-specific color palette based on character themes
+    // These colors are extracted/inspired by character designs
+    function getCharacterColor(characterName) {
+      const colorMap = {
+        'abrams': '#d97706', // orange/amber for Bull/Abrams
+        'bebop': '#8b5cf6', // purple for Bebop
+        'billy': '#f59e0b', // amber for Gunslinger/Billy
+        'grey talon': '#10b981', // green for Archer/Grey Talon
+        'dynamo': '#3b82f6', // blue for Dynamo/Gigawatt
+        'fathom': '#06b6d4', // cyan for Fathom/Digger
+        'haze': '#ec4899', // pink for Haze
+        'holliday': '#f97316', // orange for Holliday
+        'infernus': '#ef4444', // red for Infernus
+        'ivy': '#22c55e', // green for Ivy
+        'kelvin': '#0ea5e9', // sky blue for Kelvin
+        'krill': '#64748b', // slate for Krill
+        'lady geist': '#a855f7', // purple for Lady Geist
+        'lash': '#8b5cf6', // purple for Lash
+        'mcginnis': '#f59e0b', // amber for McGinnis
+        'mirage': '#f97316', // orange for Mirage
+        'paradox': '#6366f1', // indigo for Paradox
+        'pocket': '#14b8a6', // teal for Pocket
+        'seven': '#84cc16', // lime for Seven
+        'shiv': '#dc2626', // red for Shiv
+        'vindicta': '#ef4444', // red for Vindicta
+        'viscous': '#10b981', // green for Viscous
+        'warden': '#0891b2', // cyan for Warden
+        'wraith': '#8b5cf6', // purple for Wraith
+        'yamato': '#ec4899', // pink for Yamato
+        'magician': '#a855f7', // purple for Magician
+        'wrecker': '#eab308', // yellow for Wrecker
+        'trapper': '#22c55e', // green for Trapper
+        'boho': '#f97316', // orange for Boho
+        'calico': '#ec4899', // pink for Calico
+        'doorman': '#64748b', // slate for Doorman
+        'drifter': '#0ea5e9', // sky blue for Drifter
+        'mina': '#f43f5e', // rose for Mina
+        'newscaster': '#3b82f6', // blue for Newscaster
+        'operative': '#64748b', // slate for Operative
+        'paige': '#a855f7', // purple for Paige
+        'patron female': '#f59e0b', // amber
+        'patron male': '#0891b2', // cyan
+        'priest': '#fbbf24', // yellow for Priest
+        'shopkeeper_hotdog': '#f97316', // orange
+        'sinclair (henry)': '#8b5cf6', // purple
+        'sinclair (savannah)': '#ec4899', // pink
+        'spirit_jar': '#14b8a6', // teal
+        'victor': '#dc2626' // red for Victor
+      };
+      
+      const lowerName = characterName.toLowerCase();
+      return colorMap[lowerName] || null;
+    }
+
+    // Get color palette for charts, using character colors when available
+    function getColorPalette(characterNames, cfg) {
+      if (!characterNames || characterNames.length === 0) {
+        // Default color palette
+        return [
+          '#4a76ff', '#ff6b6b', '#51cf66', '#ffd93d', '#a78bfa', 
+          '#fb7185', '#60a5fa', '#34d399', '#fbbf24', '#c084fc',
+          '#f472b6', '#38bdf8', '#6ee7b7', '#fdba74', '#e879f9',
+          '#fb923c', '#67e8f9', '#86efac', '#fca5a5', '#d8b4fe'
+        ];
+      }
+      
+      // Use character-specific colors when available
+      return characterNames.map(name => {
+        const charColor = getCharacterColor(name);
+        if (charColor) return charColor;
+        
+        // Fallback to default palette
+        const defaultPalette = [
+          '#4a76ff', '#ff6b6b', '#51cf66', '#ffd93d', '#a78bfa', 
+          '#fb7185', '#60a5fa', '#34d399', '#fbbf24', '#c084fc',
+          '#f472b6', '#38bdf8', '#6ee7b7', '#fdba74', '#e879f9',
+          '#fb923c', '#67e8f9', '#86efac', '#fca5a5', '#d8b4fe'
+        ];
+        const idx = characterNames.indexOf(name);
+        return defaultPalette[idx % defaultPalette.length];
+      });
+    }
+
     function updateRankings(series, cfg, viewMode) {
       // Show rankings for comparison views
       const shouldShowRankings = ['all', 'allLines', 'slope', 'pie'].includes(viewMode);
@@ -1036,7 +1157,7 @@
       els.rankingsList.innerHTML = '';
       displayRankings.forEach((item, idx) => {
         const div = document.createElement('div');
-        div.className = 'flex items-center justify-between p-2 bg-slate-800/50 rounded text-xs';
+        div.className = 'flex items-center gap-2 p-2 bg-slate-800/50 rounded text-xs';
         
         const rankBadge = document.createElement('span');
         rankBadge.className = 'flex-shrink-0 w-6 h-6 rounded-full flex items-center justify-center font-bold text-xs ' +
@@ -1046,8 +1167,22 @@
            'bg-slate-700 text-slate-300');
         rankBadge.textContent = idx + 1;
         
+        // Add character image if available
+        const imagePath = getCharacterImagePath(item.name, cfg);
+        if (imagePath) {
+          const img = document.createElement('img');
+          img.src = imagePath;
+          img.className = 'w-8 h-8 rounded-full object-cover flex-shrink-0';
+          img.alt = item.name;
+          img.onerror = function() { this.style.display = 'none'; };
+          div.appendChild(rankBadge);
+          div.appendChild(img);
+        } else {
+          div.appendChild(rankBadge);
+        }
+        
         const nameSpan = document.createElement('span');
-        nameSpan.className = 'flex-1 mx-2 truncate';
+        nameSpan.className = 'flex-1 truncate';
         nameSpan.textContent = item.name;
         
         const playsSpan = document.createElement('span');
@@ -1058,7 +1193,6 @@
         growthSpan.className = 'ml-2 ' + (item.growthRate >= 0 ? 'text-green-400' : 'text-red-400');
         growthSpan.textContent = (item.growthRate >= 0 ? '+' : '') + item.growthRate.toFixed(1);
         
-        div.appendChild(rankBadge);
         div.appendChild(nameSpan);
         div.appendChild(playsSpan);
         div.appendChild(growthSpan);
