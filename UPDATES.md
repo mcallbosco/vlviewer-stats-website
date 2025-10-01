@@ -1,14 +1,59 @@
 # Website Updates
 
-## New Features Added
+## Latest Features (New!)
+
+### Enhanced Data Visualization Options
+
+#### 1. Summary Statistics Panel
+A new statistics panel displays key metrics about the data:
+- **Total Characters**: Number of characters with data in the selected config
+- **Total Plays**: Sum of all plays across all characters
+- **Most Popular**: Character with the highest total plays
+- **Fastest Growing**: Character with the highest growth rate (slope)
+- **Avg per Character**: Average plays per character
+
+The stats panel appears automatically when viewing any visualization mode and updates based on the selected date range.
+
+#### 2. Market Share (Pie Chart) View
+A new donut chart visualization showing the relative popularity of characters:
+- Visual representation of each character's share of total plays
+- Vibrant color palette for easy distinction
+- Tooltips show exact play counts and percentage of total
+- Works with the Top N filter to show only the most popular characters
+
+#### 3. Character Comparison Mode
+Select multiple characters (2-6) to compare their cumulative play trends:
+- Multi-select list (hold Ctrl/Cmd to select multiple)
+- Side-by-side line chart comparison
+- Each character gets a distinct color
+- Perfect for analyzing relative popularity over time
+
+#### 4. Top N Filter
+Available for the following views:
+- All Characters (Lines)
+- Slope Chart (Trends)
+- Market Share (Pie)
+
+Filter options:
+- All Characters
+- Top 5
+- Top 10 (default)
+- Top 15
+- Top 20
+
+This filter helps focus on the most popular characters and reduces visual clutter in complex charts.
+
+## Previous Features
 
 ### 1. View Modes
-The website now includes 4 different visualization modes:
+The website includes 6 different visualization modes:
 
 - **Single Character**: The original view showing cumulative plays over time for a single character
 - **All Characters**: Bar chart showing total plays for all characters (ranked by popularity)
 - **All Characters (Lines)**: Multi-line chart showing rate of change (plays per hour) for all characters over time
 - **Slope Chart (Trends)**: Bar chart showing growth rate (linear regression slope) for each character
+- **Market Share (Pie)**: Donut chart showing relative popularity percentages
+- **Compare Characters**: Multi-select comparison of 2-6 characters' cumulative trends
 
 ### 2. Date Range Selector
 Added a date range filter that works across all view modes:
