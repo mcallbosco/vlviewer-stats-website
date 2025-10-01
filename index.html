@@ -721,7 +721,7 @@
     }
 
     async function updateAllCharactersLineChart(series, cfg) {
-      els.chartTitle.textContent = 'All Items - Rate of Change Over Time';
+      els.chartTitle.textContent = 'All Items - Plays in Period Over Time';
       els.chartSubtitle.textContent = cfg?.slug || '';
       
       // First, get top N characters by total plays
@@ -777,34 +777,32 @@
           if (pointMap.has(timestamp)) {
             const point = pointMap.get(timestamp);
             lastCumulative = Number(point.c ?? lastCumulative);
-            normalizedPoints.push({ t: timestamp, c: lastCumulative });
+            normalizedPoints.push({ t: timestamp, c: lastCumulative, d: Number(point.d ?? 0) });
           } else {
             // Missing data point - use last cumulative value (delta = 0)
-            normalizedPoints.push({ t: timestamp, c: lastCumulative });
+            normalizedPoints.push({ t: timestamp, c: lastCumulative, d: 0 });
           }
         }
         
-        // Calculate rate of change with normalized data
-        const rateData = [];
+        // Use delta (plays in that period) instead of rate
+        const deltaData = [];
         for (let i = 1; i < normalizedPoints.length; i++) {
           const prevPoint = normalizedPoints[i - 1];
           const currPoint = normalizedPoints[i];
           
-          const timeDiff = (new Date(currPoint.t) - new Date(prevPoint.t)) / (1000 * 60 * 60); // hours
           const valueDiff = currPoint.c - prevPoint.c;
-          const rate = timeDiff > 0 ? valueDiff / timeDiff : 0; // plays per hour
           
-          rateData.push({
+          deltaData.push({
             x: new Date(currPoint.t),
-            y: rate
+            y: valueDiff
           });
         }
         
-        if (rateData.length > 0) {
+        if (deltaData.length > 0) {
           const color = colors[colorIndex % colors.length];
           datasets.push({
             label: name,
-            data: rateData,
+            data: deltaData,
             borderColor: color,
             backgroundColor: color + '20',
             borderWidth: 2,
@@ -843,7 +841,7 @@
               ticks: { color: 'rgba(255,255,255,0.7)' },
               title: {
                 display: true,
-                text: 'Plays per Hour',
+                text: 'Plays in Period',
                 color: 'rgba(255,255,255,0.8)'
               }
             }
@@ -860,7 +858,7 @@
                   // Sort tooltip items by value (descending)
                   tooltipItems.sort((a, b) => b.parsed.y - a.parsed.y);
                 },
-                label: (ctx) => ` ${ctx.dataset.label}: ${ctx.parsed.y.toFixed(2)} plays/hour`
+                label: (ctx) => ` ${ctx.dataset.label}: ${ctx.parsed.y.toLocaleString()} plays`
               }
             }
           },
@@ -868,7 +866,7 @@
             if (activeElements.length > 0) {
               const dataIndex = activeElements[0].index;
               const timestamp = datasets[0].data[dataIndex].x;
-              showLeaderboardAtTime(series, cfg, timestamp, 'rate');
+              showLeaderboardAtTime(series, cfg, timestamp, 'delta');
             }
           }
         }
@@ -1404,6 +1402,18 @@
               break;
             }
           }
+        } else if (mode === 'delta') {
+          // For delta mode, calculate the plays in that period
+          for (let i = 1; i < sortedPoints.length; i++) {
+            const currTime = new Date(sortedPoints[i].t).getTime();
+            if (currTime <= targetTime) {
+              const prevPoint = sortedPoints[i - 1];
+              const currPoint = sortedPoints[i];
+              value = (Number(currPoint.c ?? 0)) - (Number(prevPoint.c ?? 0));
+            } else {
+              break;
+            }
+          }
         } else {
           // For cumulative mode, find the last value at or before timestamp
           for (const point of sortedPoints) {
@@ -1469,6 +1479,8 @@
         valueSpan.className = 'text-brand-400 font-mono';
         if (mode === 'rate') {
           valueSpan.textContent = item.value.toFixed(2) + ' /hr';
+        } else if (mode === 'delta') {
+          valueSpan.textContent = item.value.toLocaleString() + ' plays';
         } else {
           valueSpan.textContent = item.value.toLocaleString();
         }
