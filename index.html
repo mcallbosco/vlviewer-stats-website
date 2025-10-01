@@ -145,7 +145,22 @@
           </button>
         </div>
       </div>
-      <p class="mt-2 text-xs text-slate-400">Filter data by date range (leave empty for all data).</p>
+      <div class="mt-3">
+        <label for="granularitySlider" class="block text-sm mb-2 text-slate-300">
+          Data Granularity: <span id="granularityLabel" class="text-brand-400 font-mono">30 min</span>
+        </label>
+        <input type="range" id="granularitySlider" min="0" max="6" value="0" step="1" class="w-full h-2 bg-slate-800 rounded-lg appearance-none cursor-pointer accent-brand-500" />
+        <div class="flex justify-between text-xs text-slate-400 mt-1">
+          <span>30 min</span>
+          <span>1 hr</span>
+          <span>3 hr</span>
+          <span>6 hr</span>
+          <span>12 hr</span>
+          <span>1 day</span>
+          <span>7 days</span>
+        </div>
+      </div>
+      <p class="mt-2 text-xs text-slate-400">Filter data by date range and adjust data granularity (aggregation level).</p>
     </section>
 
     <section class="bg-slate-900/60 border border-white/10 rounded-lg p-4">
@@ -181,6 +196,8 @@
       startDate: document.getElementById('startDate'),
       endDate: document.getElementById('endDate'),
       resetDateRange: document.getElementById('resetDateRange'),
+      granularitySlider: document.getElementById('granularitySlider'),
+      granularityLabel: document.getElementById('granularityLabel'),
       chartCanvas: document.getElementById('chart'),
       chartTitle: document.getElementById('chartTitle'),
       chartSubtitle: document.getElementById('chartSubtitle'),
@@ -463,16 +480,87 @@
       }
     }
 
+    // Granularity settings: value -> [minutes, label]
+    const granularitySettings = {
+      0: [30, '30 min'],
+      1: [60, '1 hr'],
+      2: [180, '3 hr'],
+      3: [360, '6 hr'],
+      4: [720, '12 hr'],
+      5: [1440, '1 day'],
+      6: [10080, '7 days']
+    };
+
+    function aggregateDataByGranularity(points) {
+      const granularityValue = parseInt(els.granularitySlider.value);
+      if (granularityValue === 0) return points; // No aggregation for 30 min (original)
+      
+      const [intervalMinutes] = granularitySettings[granularityValue];
+      const intervalMs = intervalMinutes * 60 * 1000;
+      
+      if (points.length === 0) return points;
+      
+      // Sort points by time
+      const sortedPoints = points.slice().sort((a, b) => new Date(a.t) - new Date(b.t));
+      
+      const aggregated = [];
+      let currentBucket = null;
+      let bucketStartTime = null;
+      let deltaSum = 0;
+      let lastCumulative = null;
+      
+      for (const point of sortedPoints) {
+        const pointTime = new Date(point.t).getTime();
+        
+        // Determine bucket start time (floor to interval)
+        const bucketStart = Math.floor(pointTime / intervalMs) * intervalMs;
+        
+        if (bucketStartTime === null || bucketStart !== bucketStartTime) {
+          // Save previous bucket if exists
+          if (currentBucket !== null) {
+            aggregated.push(currentBucket);
+          }
+          
+          // Start new bucket
+          bucketStartTime = bucketStart;
+          currentBucket = {
+            t: new Date(bucketStartTime).toISOString(),
+            d: point.d ?? 0,
+            ...(point.c !== undefined && { c: point.c })
+          };
+          deltaSum = point.d ?? 0;
+          lastCumulative = point.c;
+        } else {
+          // Add to current bucket
+          deltaSum += (point.d ?? 0);
+          currentBucket.d = deltaSum;
+          if (point.c !== undefined) {
+            lastCumulative = point.c;
+            currentBucket.c = point.c;
+          }
+        }
+      }
+      
+      // Save last bucket
+      if (currentBucket !== null) {
+        aggregated.push(currentBucket);
+      }
+      
+      return aggregated;
+    }
+
     function filterDataByDateRange(points) {
-      if (!els.startDate.value && !els.endDate.value) return points;
+      if (!els.startDate.value && !els.endDate.value) return aggregateDataByGranularity(points);
       
       const startTime = els.startDate.value ? new Date(els.startDate.value).getTime() : -Infinity;
       const endTime = els.endDate.value ? new Date(els.endDate.value + 'T23:59:59').getTime() : Infinity;
       
-      return points.filter(p => {
+      const filtered = points.filter(p => {
         const t = new Date(p.t).getTime();
         return t >= startTime && t <= endTime;
       });
+      
+      return aggregateDataByGranularity(filtered);
     }
 
     function handleCharacterChange(series, cfg) {
@@ -1339,6 +1427,23 @@
     els.resetDateRange.addEventListener('click', () => {
       els.startDate.value = '';
       els.endDate.value = '';
+      if (currentCfg) {
+        const viewMode = els.viewMode.value;
+        if (viewMode === 'single') {
+          handleCharacterChange(currentSeries, currentCfg);
+        } else {
+          updateChart([], currentCfg);
+        }
+      }
+    });
+
+    els.granularitySlider.addEventListener('input', () => {
+      const value = parseInt(els.granularitySlider.value);
+      const [_, label] = granularitySettings[value];
+      els.granularityLabel.textContent = label;
+    });
+
+    els.granularitySlider.addEventListener('change', () => {
       if (currentCfg) {
         const viewMode = els.viewMode.value;
         if (viewMode === 'single') {
