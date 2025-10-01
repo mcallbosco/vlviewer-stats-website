@@ -43,7 +43,8 @@
     "sinclair (henry)": "rutger",
     "sinclair (savannah)": "swan",
     "spirit_jar": "spirit_jar",
-    "victor": "vandal"
+    "victor": "vandal",
+    "viper": "yakuza"
   },
   "colorMapping": {
     "abrams": "#d97706",
@@ -89,6 +90,7 @@
     "sinclair (henry)": "#8b5cf6",
     "sinclair (savannah)": "#ec4899",
     "spirit_jar": "#14b8a6",
-    "victor": "#dc2626"
+    "victor": "#dc2626",
+    "viper": "#10b981"
   }
 }
