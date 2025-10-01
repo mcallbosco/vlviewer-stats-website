@@ -853,18 +853,9 @@
               maxHeight: 100
             },
             tooltip: {
+              itemSort: (a, b) => b.parsed.y - a.parsed.y,
               callbacks: {
-                beforeBody: function(tooltipItems) {
-                  // Sort tooltip items by value (descending)
-                  tooltipItems.sort((a, b) => b.parsed.y - a.parsed.y);
-                },
-                label: (ctx) => ` ${ctx.dataset.label}: ${ctx.parsed.y.toLocaleString()} plays`,
-                labelColor: function(ctx) {
-                  return {
-                    borderColor: ctx.dataset.borderColor,
-                    backgroundColor: ctx.dataset.borderColor
-                  };
-                }
+                label: (ctx) => ` ${ctx.dataset.label}: ${ctx.parsed.y.toLocaleString()} plays`
               }
             }
           },
@@ -1121,18 +1112,9 @@
               position: 'top'
             },
             tooltip: {
+              itemSort: (a, b) => b.parsed.y - a.parsed.y,
               callbacks: {
-                beforeBody: function(tooltipItems) {
-                  // Sort tooltip items by value (descending)
-                  tooltipItems.sort((a, b) => b.parsed.y - a.parsed.y);
-                },
-                label: (ctx) => ` ${ctx.dataset.label}: ${ctx.parsed.y.toLocaleString()} plays`,
-                labelColor: function(ctx) {
-                  return {
-                    borderColor: ctx.dataset.borderColor,
-                    backgroundColor: ctx.dataset.borderColor
-                  };
-                }
+                label: (ctx) => ` ${ctx.dataset.label}: ${ctx.parsed.y.toLocaleString()} plays`
               }
             }
           },
