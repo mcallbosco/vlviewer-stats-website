@@ -856,8 +856,19 @@
             },
             tooltip: {
               callbacks: {
+                beforeBody: function(tooltipItems) {
+                  // Sort tooltip items by value (descending)
+                  tooltipItems.sort((a, b) => b.parsed.y - a.parsed.y);
+                },
                 label: (ctx) => ` ${ctx.dataset.label}: ${ctx.parsed.y.toFixed(2)} plays/hour`
               }
+            }
+          },
+          onClick: (event, activeElements) => {
+            if (activeElements.length > 0) {
+              const dataIndex = activeElements[0].index;
+              const timestamp = datasets[0].data[dataIndex].x;
+              showLeaderboardAtTime(series, cfg, timestamp, 'rate');
             }
           }
         }
@@ -1107,8 +1118,19 @@
             },
             tooltip: {
               callbacks: {
+                beforeBody: function(tooltipItems) {
+                  // Sort tooltip items by value (descending)
+                  tooltipItems.sort((a, b) => b.parsed.y - a.parsed.y);
+                },
                 label: (ctx) => ` ${ctx.dataset.label}: ${ctx.parsed.y.toLocaleString()} plays`
               }
+            }
+          },
+          onClick: (event, activeElements) => {
+            if (activeElements.length > 0) {
+              const dataIndex = activeElements[0].index;
+              const timestamp = datasets[0].data[dataIndex].x;
+              showLeaderboardAtTime(series, cfg, timestamp, 'cumulative');
             }
           }
         }
@@ -1351,6 +1373,108 @@
         div.appendChild(nameSpan);
         div.appendChild(playsSpan);
         div.appendChild(growthSpan);
+        els.rankingsList.appendChild(div);
+      });
+    }
+
+    function showLeaderboardAtTime(series, cfg, timestamp, mode = 'cumulative') {
+      // Calculate values at the specific timestamp
+      const leaderboard = [];
+      const targetTime = new Date(timestamp).getTime();
+      
+      for (const [name, allPoints] of Object.entries(series)) {
+        const points = filterDataByDateRange(allPoints);
+        if (points.length === 0) continue;
+        
+        // Find the value at or before the clicked timestamp
+        const sortedPoints = points.slice().sort((a, b) => new Date(a.t) - new Date(b.t));
+        let value = 0;
+        
+        if (mode === 'rate') {
+          // For rate mode, calculate the rate at that point
+          for (let i = 1; i < sortedPoints.length; i++) {
+            const currTime = new Date(sortedPoints[i].t).getTime();
+            if (currTime <= targetTime) {
+              const prevPoint = sortedPoints[i - 1];
+              const currPoint = sortedPoints[i];
+              const timeDiff = (new Date(currPoint.t) - new Date(prevPoint.t)) / (1000 * 60 * 60); // hours
+              const valueDiff = (Number(currPoint.c ?? 0)) - (Number(prevPoint.c ?? 0));
+              value = timeDiff > 0 ? valueDiff / timeDiff : 0;
+            } else {
+              break;
+            }
+          }
+        } else {
+          // For cumulative mode, find the last value at or before timestamp
+          for (const point of sortedPoints) {
+            if (new Date(point.t).getTime() <= targetTime) {
+              value = Number(point.c ?? point.d ?? 0);
+            } else {
+              break;
+            }
+          }
+        }
+        
+        if (value > 0 || mode === 'cumulative') {
+          leaderboard.push({ name, value });
+        }
+      }
+      
+      // Sort by value descending
+      leaderboard.sort((a, b) => b.value - a.value);
+      
+      // Update rankings section
+      els.rankingsSection.classList.remove('hidden');
+      const dateStr = new Date(timestamp).toLocaleString();
+      const header = els.rankingsSection.querySelector('h3');
+      header.textContent = `Leaderboard at ${dateStr}`;
+      
+      // Apply top N filter if available
+      const topN = parseInt(els.topNSelect.value) || 0;
+      const displayRankings = topN > 0 ? leaderboard.slice(0, topN) : leaderboard.slice(0, 20);
+      
+      // Update rankings display
+      els.rankingsList.innerHTML = '';
+      displayRankings.forEach((item, idx) => {
+        const div = document.createElement('div');
+        div.className = 'flex items-center gap-2 p-2 bg-slate-800/50 rounded text-xs';
+        
+        const rankBadge = document.createElement('span');
+        rankBadge.className = 'flex-shrink-0 w-6 h-6 rounded-full flex items-center justify-center font-bold text-xs ' +
+          (idx === 0 ? 'bg-yellow-500 text-slate-900' : 
+           idx === 1 ? 'bg-gray-400 text-slate-900' :
+           idx === 2 ? 'bg-amber-600 text-slate-900' :
+           'bg-slate-700 text-slate-300');
+        rankBadge.textContent = idx + 1;
+        
+        // Add character image if available
+        const imagePath = getCharacterImagePath(item.name, cfg);
+        if (imagePath) {
+          const img = document.createElement('img');
+          img.src = imagePath;
+          img.className = 'w-8 h-8 rounded-full object-cover flex-shrink-0';
+          img.alt = item.name;
+          img.onerror = function() { this.style.display = 'none'; };
+          div.appendChild(rankBadge);
+          div.appendChild(img);
+        } else {
+          div.appendChild(rankBadge);
+        }
+        
+        const nameSpan = document.createElement('span');
+        nameSpan.className = 'flex-1 truncate';
+        nameSpan.textContent = item.name;
+        
+        const valueSpan = document.createElement('span');
+        valueSpan.className = 'text-brand-400 font-mono';
+        if (mode === 'rate') {
+          valueSpan.textContent = item.value.toFixed(2) + ' /hr';
+        } else {
+          valueSpan.textContent = item.value.toLocaleString();
+        }
+        
+        div.appendChild(nameSpan);
+        div.appendChild(valueSpan);
         els.rankingsList.appendChild(div);
       });
     }
