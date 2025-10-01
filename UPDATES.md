@@ -2,6 +2,32 @@
 
 ## Latest Features (New!)
 
+### Data Granularity Slider
+
+A new granularity slider allows users to control the aggregation level of the dataset, providing flexibility in viewing data at different time scales:
+
+**Available Granularity Options:**
+- **30 min** (default) - Original data resolution, no aggregation
+- **1 hr** - Aggregates data into 1-hour buckets
+- **3 hr** - Aggregates data into 3-hour buckets
+- **6 hr** - Aggregates data into 6-hour buckets
+- **12 hr** - Aggregates data into 12-hour buckets
+- **1 day** - Aggregates data into daily buckets
+- **7 days** - Aggregates data into weekly buckets
+
+**How it Works:**
+- The slider is located in the date range section
+- Data points within each time bucket are combined by summing deltas
+- The last cumulative value in each bucket is preserved
+- Works seamlessly with all visualization modes and date range filters
+- Real-time label updates show the current granularity setting
+
+**Use Cases:**
+- View detailed short-term trends with 30 min or 1 hr granularity
+- Analyze medium-term patterns with 3 hr, 6 hr, or 12 hr buckets
+- Examine long-term trends with daily or weekly aggregation
+- Reduce noise in data by using coarser granularity
+
 ### Enhanced Data Visualization Options
 
 #### 1. Summary Statistics Panel

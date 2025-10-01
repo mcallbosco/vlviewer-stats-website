@@ -145,7 +145,22 @@
           </button>
         </div>
       </div>
-      <p class="mt-2 text-xs text-slate-400">Filter data by date range (leave empty for all data).</p>
+      <div class="mt-3">
+        <label for="granularitySlider" class="block text-sm mb-2 text-slate-300">
+          Data Granularity: <span id="granularityLabel" class="text-brand-400 font-mono">30 min</span>
+        </label>
+        <input type="range" id="granularitySlider" min="0" max="6" value="0" step="1" class="w-full h-2 bg-slate-800 rounded-lg appearance-none cursor-pointer accent-brand-500" />
+        <div class="flex justify-between text-xs text-slate-400 mt-1">
+          <span>30 min</span>
+          <span>1 hr</span>
+          <span>3 hr</span>
+          <span>6 hr</span>
+          <span>12 hr</span>
+          <span>1 day</span>
+          <span>7 days</span>
+        </div>
+      </div>
+      <p class="mt-2 text-xs text-slate-400">Filter data by date range and adjust data granularity (aggregation level).</p>
     </section>
 
     <section class="bg-slate-900/60 border border-white/10 rounded-lg p-4">
@@ -181,6 +196,8 @@
       startDate: document.getElementById('startDate'),
       endDate: document.getElementById('endDate'),
       resetDateRange: document.getElementById('resetDateRange'),
+      granularitySlider: document.getElementById('granularitySlider'),
+      granularityLabel: document.getElementById('granularityLabel'),
       chartCanvas: document.getElementById('chart'),
       chartTitle: document.getElementById('chartTitle'),
       chartSubtitle: document.getElementById('chartSubtitle'),
@@ -463,16 +480,87 @@
       }
     }
 
+    // Granularity settings: value -> [minutes, label]
+    const granularitySettings = {
+      0: [30, '30 min'],
+      1: [60, '1 hr'],
+      2: [180, '3 hr'],
+      3: [360, '6 hr'],
+      4: [720, '12 hr'],
+      5: [1440, '1 day'],
+      6: [10080, '7 days']
+    };
+
+    function aggregateDataByGranularity(points) {
+      const granularityValue = parseInt(els.granularitySlider.value);
+      if (granularityValue === 0) return points; // No aggregation for 30 min (original)
+      
+      const [intervalMinutes] = granularitySettings[granularityValue];
+      const intervalMs = intervalMinutes * 60 * 1000;
+      
+      if (points.length === 0) return points;
+      
+      // Sort points by time
+      const sortedPoints = points.slice().sort((a, b) => new Date(a.t) - new Date(b.t));
+      
+      const aggregated = [];
+      let currentBucket = null;
+      let bucketStartTime = null;
+      let deltaSum = 0;
+      let lastCumulative = null;
+      
+      for (const point of sortedPoints) {
+        const pointTime = new Date(point.t).getTime();
+        
+        // Determine bucket start time (floor to interval)
+        const bucketStart = Math.floor(pointTime / intervalMs) * intervalMs;
+        
+        if (bucketStartTime === null || bucketStart !== bucketStartTime) {
+          // Save previous bucket if exists
+          if (currentBucket !== null) {
+            aggregated.push(currentBucket);
+          }
+          
+          // Start new bucket
+          bucketStartTime = bucketStart;
+          currentBucket = {
+            t: new Date(bucketStartTime).toISOString(),
+            d: point.d ?? 0,
+            ...(point.c !== undefined && { c: point.c })
+          };
+          deltaSum = point.d ?? 0;
+          lastCumulative = point.c;
+        } else {
+          // Add to current bucket
+          deltaSum += (point.d ?? 0);
+          currentBucket.d = deltaSum;
+          if (point.c !== undefined) {
+            lastCumulative = point.c;
+            currentBucket.c = point.c;
+          }
+        }
+      }
+      
+      // Save last bucket
+      if (currentBucket !== null) {
+        aggregated.push(currentBucket);
+      }
+      
+      return aggregated;
+    }
+
     function filterDataByDateRange(points) {
-      if (!els.startDate.value && !els.endDate.value) return points;
+      if (!els.startDate.value && !els.endDate.value) return aggregateDataByGranularity(points);
       
       const startTime = els.startDate.value ? new Date(els.startDate.value).getTime() : -Infinity;
       const endTime = els.endDate.value ? new Date(els.endDate.value + 'T23:59:59').getTime() : Infinity;
       
-      return points.filter(p => {
+      const filtered = points.filter(p => {
         const t = new Date(p.t).getTime();
         return t >= startTime && t <= endTime;
       });
+      
+      return aggregateDataByGranularity(filtered);
     }
 
     function handleCharacterChange(series, cfg) {
@@ -633,7 +721,7 @@
     }
 
     async function updateAllCharactersLineChart(series, cfg) {
-      els.chartTitle.textContent = 'All Items - Rate of Change Over Time';
+      els.chartTitle.textContent = 'All Items - Plays in Period Over Time';
       els.chartSubtitle.textContent = cfg?.slug || '';
       
       // First, get top N characters by total plays
@@ -689,34 +777,32 @@
           if (pointMap.has(timestamp)) {
             const point = pointMap.get(timestamp);
             lastCumulative = Number(point.c ?? lastCumulative);
-            normalizedPoints.push({ t: timestamp, c: lastCumulative });
+            normalizedPoints.push({ t: timestamp, c: lastCumulative, d: Number(point.d ?? 0) });
           } else {
             // Missing data point - use last cumulative value (delta = 0)
-            normalizedPoints.push({ t: timestamp, c: lastCumulative });
+            normalizedPoints.push({ t: timestamp, c: lastCumulative, d: 0 });
           }
         }
         
-        // Calculate rate of change with normalized data
-        const rateData = [];
+        // Use delta (plays in that period) instead of rate
+        const deltaData = [];
         for (let i = 1; i < normalizedPoints.length; i++) {
           const prevPoint = normalizedPoints[i - 1];
           const currPoint = normalizedPoints[i];
           
-          const timeDiff = (new Date(currPoint.t) - new Date(prevPoint.t)) / (1000 * 60 * 60); // hours
           const valueDiff = currPoint.c - prevPoint.c;
-          const rate = timeDiff > 0 ? valueDiff / timeDiff : 0; // plays per hour
           
-          rateData.push({
+          deltaData.push({
             x: new Date(currPoint.t),
-            y: rate
+            y: valueDiff
           });
         }
         
-        if (rateData.length > 0) {
+        if (deltaData.length > 0) {
           const color = colors[colorIndex % colors.length];
           datasets.push({
             label: name,
-            data: rateData,
+            data: deltaData,
             borderColor: color,
             backgroundColor: color + '20',
             borderWidth: 2,
@@ -755,7 +841,7 @@
               ticks: { color: 'rgba(255,255,255,0.7)' },
               title: {
                 display: true,
-                text: 'Plays per Hour',
+                text: 'Plays in Period',
                 color: 'rgba(255,255,255,0.8)'
               }
             }
@@ -767,9 +853,17 @@
               maxHeight: 100
             },
             tooltip: {
+              itemSort: (a, b) => b.parsed.y - a.parsed.y,
               callbacks: {
-                label: (ctx) => ` ${ctx.dataset.label}: ${ctx.parsed.y.toFixed(2)} plays/hour`
+                label: (ctx) => ` ${ctx.dataset.label}: ${ctx.parsed.y.toLocaleString()} plays`
               }
+            }
+          },
+          onClick: (event, activeElements) => {
+            if (activeElements.length > 0) {
+              const dataIndex = activeElements[0].index;
+              const timestamp = datasets[0].data[dataIndex].x;
+              showLeaderboardAtTime(series, cfg, timestamp, 'delta');
             }
           }
         }
@@ -1018,9 +1112,17 @@
               position: 'top'
             },
             tooltip: {
+              itemSort: (a, b) => b.parsed.y - a.parsed.y,
               callbacks: {
                 label: (ctx) => ` ${ctx.dataset.label}: ${ctx.parsed.y.toLocaleString()} plays`
               }
+            }
+          },
+          onClick: (event, activeElements) => {
+            if (activeElements.length > 0) {
+              const dataIndex = activeElements[0].index;
+              const timestamp = datasets[0].data[dataIndex].x;
+              showLeaderboardAtTime(series, cfg, timestamp, 'cumulative');
             }
           }
         }
@@ -1267,6 +1369,122 @@
       });
     }
 
+    function showLeaderboardAtTime(series, cfg, timestamp, mode = 'cumulative') {
+      // Calculate values at the specific timestamp
+      const leaderboard = [];
+      const targetTime = new Date(timestamp).getTime();
+      
+      for (const [name, allPoints] of Object.entries(series)) {
+        const points = filterDataByDateRange(allPoints);
+        if (points.length === 0) continue;
+        
+        // Find the value at or before the clicked timestamp
+        const sortedPoints = points.slice().sort((a, b) => new Date(a.t) - new Date(b.t));
+        let value = 0;
+        
+        if (mode === 'rate') {
+          // For rate mode, calculate the rate at that point
+          for (let i = 1; i < sortedPoints.length; i++) {
+            const currTime = new Date(sortedPoints[i].t).getTime();
+            if (currTime <= targetTime) {
+              const prevPoint = sortedPoints[i - 1];
+              const currPoint = sortedPoints[i];
+              const timeDiff = (new Date(currPoint.t) - new Date(prevPoint.t)) / (1000 * 60 * 60); // hours
+              const valueDiff = (Number(currPoint.c ?? 0)) - (Number(prevPoint.c ?? 0));
+              value = timeDiff > 0 ? valueDiff / timeDiff : 0;
+            } else {
+              break;
+            }
+          }
+        } else if (mode === 'delta') {
+          // For delta mode, calculate the plays in that period
+          for (let i = 1; i < sortedPoints.length; i++) {
+            const currTime = new Date(sortedPoints[i].t).getTime();
+            if (currTime <= targetTime) {
+              const prevPoint = sortedPoints[i - 1];
+              const currPoint = sortedPoints[i];
+              value = (Number(currPoint.c ?? 0)) - (Number(prevPoint.c ?? 0));
+            } else {
+              break;
+            }
+          }
+        } else {
+          // For cumulative mode, find the last value at or before timestamp
+          for (const point of sortedPoints) {
+            if (new Date(point.t).getTime() <= targetTime) {
+              value = Number(point.c ?? point.d ?? 0);
+            } else {
+              break;
+            }
+          }
+        }
+        
+        if (value > 0 || mode === 'cumulative') {
+          leaderboard.push({ name, value });
+        }
+      }
+      
+      // Sort by value descending
+      leaderboard.sort((a, b) => b.value - a.value);
+      
+      // Update rankings section
+      els.rankingsSection.classList.remove('hidden');
+      const dateStr = new Date(timestamp).toLocaleString();
+      const header = els.rankingsSection.querySelector('h3');
+      header.textContent = `Leaderboard at ${dateStr}`;
+      
+      // Apply top N filter if available
+      const topN = parseInt(els.topNSelect.value) || 0;
+      const displayRankings = topN > 0 ? leaderboard.slice(0, topN) : leaderboard.slice(0, 20);
+      
+      // Update rankings display
+      els.rankingsList.innerHTML = '';
+      displayRankings.forEach((item, idx) => {
+        const div = document.createElement('div');
+        div.className = 'flex items-center gap-2 p-2 bg-slate-800/50 rounded text-xs';
+        
+        const rankBadge = document.createElement('span');
+        rankBadge.className = 'flex-shrink-0 w-6 h-6 rounded-full flex items-center justify-center font-bold text-xs ' +
+          (idx === 0 ? 'bg-yellow-500 text-slate-900' : 
+           idx === 1 ? 'bg-gray-400 text-slate-900' :
+           idx === 2 ? 'bg-amber-600 text-slate-900' :
+           'bg-slate-700 text-slate-300');
+        rankBadge.textContent = idx + 1;
+        
+        // Add character image if available
+        const imagePath = getCharacterImagePath(item.name, cfg);
+        if (imagePath) {
+          const img = document.createElement('img');
+          img.src = imagePath;
+          img.className = 'w-8 h-8 rounded-full object-cover flex-shrink-0';
+          img.alt = item.name;
+          img.onerror = function() { this.style.display = 'none'; };
+          div.appendChild(rankBadge);
+          div.appendChild(img);
+        } else {
+          div.appendChild(rankBadge);
+        }
+        
+        const nameSpan = document.createElement('span');
+        nameSpan.className = 'flex-1 truncate';
+        nameSpan.textContent = item.name;
+        
+        const valueSpan = document.createElement('span');
+        valueSpan.className = 'text-brand-400 font-mono';
+        if (mode === 'rate') {
+          valueSpan.textContent = item.value.toFixed(2) + ' /hr';
+        } else if (mode === 'delta') {
+          valueSpan.textContent = item.value.toLocaleString() + ' plays';
+        } else {
+          valueSpan.textContent = item.value.toLocaleString();
+        }
+        
+        div.appendChild(nameSpan);
+        div.appendChild(valueSpan);
+        els.rankingsList.appendChild(div);
+      });
+    }
+
     // Events
     els.configSelect.addEventListener('change', handleConfigChange);
     els.dataTypeSelect.addEventListener('change', loadDataType);
@@ -1339,6 +1557,23 @@
     els.resetDateRange.addEventListener('click', () => {
       els.startDate.value = '';
       els.endDate.value = '';
+      if (currentCfg) {
+        const viewMode = els.viewMode.value;
+        if (viewMode === 'single') {
+          handleCharacterChange(currentSeries, currentCfg);
+        } else {
+          updateChart([], currentCfg);
+        }
+      }
+    });
+
+    els.granularitySlider.addEventListener('input', () => {
+      const value = parseInt(els.granularitySlider.value);
+      const [_, label] = granularitySettings[value];
+      els.granularityLabel.textContent = label;
+    });
+
+    els.granularitySlider.addEventListener('change', () => {
       if (currentCfg) {
         const viewMode = els.viewMode.value;
         if (viewMode === 'single') {
