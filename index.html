@@ -858,7 +858,13 @@
                   // Sort tooltip items by value (descending)
                   tooltipItems.sort((a, b) => b.parsed.y - a.parsed.y);
                 },
-                label: (ctx) => ` ${ctx.dataset.label}: ${ctx.parsed.y.toLocaleString()} plays`
+                label: (ctx) => ` ${ctx.dataset.label}: ${ctx.parsed.y.toLocaleString()} plays`,
+                labelColor: function(ctx) {
+                  return {
+                    borderColor: ctx.dataset.borderColor,
+                    backgroundColor: ctx.dataset.borderColor
+                  };
+                }
               }
             }
           },
@@ -1120,7 +1126,13 @@
                   // Sort tooltip items by value (descending)
                   tooltipItems.sort((a, b) => b.parsed.y - a.parsed.y);
                 },
-                label: (ctx) => ` ${ctx.dataset.label}: ${ctx.parsed.y.toLocaleString()} plays`
+                label: (ctx) => ` ${ctx.dataset.label}: ${ctx.parsed.y.toLocaleString()} plays`,
+                labelColor: function(ctx) {
+                  return {
+                    borderColor: ctx.dataset.borderColor,
+                    backgroundColor: ctx.dataset.borderColor
+                  };
+                }
               }
             }
           },
