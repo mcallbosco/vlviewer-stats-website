@@ -563,11 +563,15 @@
       return aggregateDataByGranularity(filtered);
     }
 
-    // Helper function to get time display format based on data range
+    // Helper function to get time display format based on data range and granularity
     function getTimeDisplayFormats(data) {
       if (!data || data.length === 0) {
         return { tooltipFormat: 'PPpp' };
       }
+      
+      // Get current granularity setting
+      const granularityValue = parseInt(els.granularitySlider.value);
+      const [intervalMinutes] = granularitySettings[granularityValue];
       
       // Find min and max timestamps
       let minTime = Infinity;
@@ -582,7 +586,52 @@
       const rangeMs = maxTime - minTime;
       const rangeDays = rangeMs / (1000 * 60 * 60 * 24);
       
-      // Determine appropriate format based on time range
+      // Determine appropriate format based on granularity and time range
+      // For daily or weekly granularity (>= 1 day), don't show time component
+      if (intervalMinutes >= 1440) {
+        // Daily or weekly granularity
+        if (rangeDays < 60) {
+          return {
+            tooltipFormat: 'PPpp',
+            displayFormats: {
+              day: 'MMM d',
+              week: 'MMM d'
+            }
+          };
+        } else {
+          return {
+            tooltipFormat: 'PPpp',
+            displayFormats: {
+              week: 'MMM d',
+              month: 'MMM yyyy'
+            }
+          };
+        }
+      }
+      
+      // For hourly granularity (>= 3 hours), use appropriate time unit
+      if (intervalMinutes >= 180) {
+        // 3+ hour granularity
+        if (rangeDays < 7) {
+          return {
+            tooltipFormat: 'PPpp',
+            displayFormats: {
+              day: 'MMM d',
+              hour: 'MMM d, HH:mm'
+            }
+          };
+        } else {
+          return {
+            tooltipFormat: 'PPpp',
+            displayFormats: {
+              day: 'MMM d',
+              week: 'MMM d'
+            }
+          };
+        }
+      }
+      
+      // For finer granularity (< 3 hours), use time range to determine format
       if (rangeDays < 1) {
         // Less than a day: show time
         return {
