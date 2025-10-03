@@ -563,6 +563,115 @@
       return aggregateDataByGranularity(filtered);
     }
 
+    // Helper function to get time display format based on data range and granularity
+    function getTimeDisplayFormats(data) {
+      if (!data || data.length === 0) {
+        return { tooltipFormat: 'PPpp' };
+      }
+      
+      // Get current granularity setting
+      const granularityValue = parseInt(els.granularitySlider.value);
+      const [intervalMinutes] = granularitySettings[granularityValue];
+      
+      // Find min and max timestamps
+      let minTime = Infinity;
+      let maxTime = -Infinity;
+      
+      data.forEach(point => {
+        const time = point.x ? point.x.getTime() : new Date(point.t).getTime();
+        if (time < minTime) minTime = time;
+        if (time > maxTime) maxTime = time;
+      });
+      
+      const rangeMs = maxTime - minTime;
+      const rangeDays = rangeMs / (1000 * 60 * 60 * 24);
+      
+      // Determine appropriate format based on granularity and time range
+      // For daily or weekly granularity (>= 1 day), don't show time component
+      if (intervalMinutes >= 1440) {
+        // Daily or weekly granularity
+        if (rangeDays < 60) {
+          return {
+            tooltipFormat: 'PPpp',
+            displayFormats: {
+              day: 'MMM d',
+              week: 'MMM d'
+            }
+          };
+        } else {
+          return {
+            tooltipFormat: 'PPpp',
+            displayFormats: {
+              week: 'MMM d',
+              month: 'MMM yyyy'
+            }
+          };
+        }
+      }
+      
+      // For hourly granularity (>= 3 hours), use appropriate time unit
+      if (intervalMinutes >= 180) {
+        // 3+ hour granularity
+        if (rangeDays < 7) {
+          return {
+            tooltipFormat: 'PPpp',
+            displayFormats: {
+              day: 'MMM d',
+              hour: 'MMM d, HH:mm'
+            }
+          };
+        } else {
+          return {
+            tooltipFormat: 'PPpp',
+            displayFormats: {
+              day: 'MMM d',
+              week: 'MMM d'
+            }
+          };
+        }
+      }
+      
+      // For finer granularity (< 3 hours), use time range to determine format
+      if (rangeDays < 1) {
+        // Less than a day: show time
+        return {
+          tooltipFormat: 'PPpp',
+          displayFormats: {
+            hour: 'HH:mm',
+            minute: 'HH:mm'
+          }
+        };
+      } else if (rangeDays < 7) {
+        // Less than a week: show day and time
+        return {
+          tooltipFormat: 'PPpp',
+          displayFormats: {
+            day: 'MMM d, HH:mm',
+            hour: 'MMM d, HH:mm'
+          }
+        };
+      } else if (rangeDays < 30) {
+        // Less than a month: show date
+        return {
+          tooltipFormat: 'PPpp',
+          displayFormats: {
+            day: 'MMM d',
+            week: 'MMM d'
+          }
+        };
+      } else {
+        // More than a month: show month/date
+        return {
+          tooltipFormat: 'PPpp',
+          displayFormats: {
+            day: 'MMM d',
+            week: 'MMM d',
+            month: 'MMM yyyy'
+          }
+        };
+      }
+    }
+
     function handleCharacterChange(series, cfg) {
       const name = els.characterSelect.value;
       const allPoints = (series[name] || []).slice().sort((a,b) => new Date(a.t) - new Date(b.t));
@@ -618,6 +727,8 @@
         tension: 0.25,
       };
 
+      const timeFormats = getTimeDisplayFormats(data);
+
       if (chart) chart.destroy();
       chart = new Chart(els.chartCanvas, {
         type: 'line',
@@ -628,7 +739,7 @@
           scales: {
             x: {
               type: 'time',
-              time: { tooltipFormat: 'PPpp' },
+              time: timeFormats,
               grid: { color: 'rgba(255,255,255,0.06)' },
               ticks: { color: 'rgba(255,255,255,0.7)' }
             },
@@ -817,6 +928,9 @@
       
       els.emptyState.classList.toggle('hidden', datasets.length > 0);
       
+      // Get time formats based on first dataset (they all share same timestamps)
+      const timeFormats = datasets.length > 0 ? getTimeDisplayFormats(datasets[0].data) : { tooltipFormat: 'PPpp' };
+      
       if (chart) chart.destroy();
       chart = new Chart(els.chartCanvas, {
         type: 'line',
@@ -831,7 +945,7 @@
           scales: {
             x: {
               type: 'time',
-              time: { tooltipFormat: 'PPpp' },
+              time: timeFormats,
               grid: { color: 'rgba(255,255,255,0.06)' },
               ticks: { color: 'rgba(255,255,255,0.7)' }
             },
@@ -1077,6 +1191,9 @@
       
       els.emptyState.classList.toggle('hidden', datasets.length > 0);
       
+      // Get time formats based on first dataset
+      const timeFormats = datasets.length > 0 ? getTimeDisplayFormats(datasets[0].data) : { tooltipFormat: 'PPpp' };
+      
       if (chart) chart.destroy();
       chart = new Chart(els.chartCanvas, {
         type: 'line',
@@ -1091,7 +1208,7 @@
           scales: {
             x: {
               type: 'time',
-              time: { tooltipFormat: 'PPpp' },
+              time: timeFormats,
               grid: { color: 'rgba(255,255,255,0.06)' },
               ticks: { color: 'rgba(255,255,255,0.7)' }
             },
