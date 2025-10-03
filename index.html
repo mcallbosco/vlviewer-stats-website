@@ -590,20 +590,22 @@
       // For daily or weekly granularity (>= 1 day), don't show time component
       if (intervalMinutes >= 1440) {
         // Daily or weekly granularity
-        if (rangeDays < 60) {
+        if (intervalMinutes >= 10080) {
+          // 7 days - use week unit
           return {
+            unit: 'week',
             tooltipFormat: 'PPpp',
             displayFormats: {
-              day: 'MMM d',
-              week: 'MMM d'
+              week: 'MMM d, yyyy'
             }
           };
         } else {
+          // 1 day - use day unit
           return {
+            unit: 'day',
             tooltipFormat: 'PPpp',
             displayFormats: {
-              week: 'MMM d',
-              month: 'MMM yyyy'
+              day: 'MMM d'
             }
           };
         }
@@ -611,62 +613,54 @@
       
       // For hourly granularity (>= 3 hours), use appropriate time unit
       if (intervalMinutes >= 180) {
-        // 3+ hour granularity
-        if (rangeDays < 7) {
-          return {
-            tooltipFormat: 'PPpp',
-            displayFormats: {
-              day: 'MMM d',
-              hour: 'MMM d, HH:mm'
-            }
-          };
-        } else {
-          return {
-            tooltipFormat: 'PPpp',
-            displayFormats: {
-              day: 'MMM d',
-              week: 'MMM d'
-            }
-          };
-        }
+        // 3+ hour granularity - use hour unit
+        return {
+          unit: 'hour',
+          tooltipFormat: 'PPpp',
+          displayFormats: {
+            hour: 'MMM d, HH:mm'
+          }
+        };
       }
       
       // For finer granularity (< 3 hours), use time range to determine format
       if (rangeDays < 1) {
-        // Less than a day: show time
-        return {
-          tooltipFormat: 'PPpp',
-          displayFormats: {
-            hour: 'HH:mm',
-            minute: 'HH:mm'
-          }
-        };
+        // Less than a day: show time with minute or hour unit
+        if (intervalMinutes >= 60) {
+          // 1 hour or more - use hour unit
+          return {
+            unit: 'hour',
+            tooltipFormat: 'PPpp',
+            displayFormats: {
+              hour: 'HH:mm'
+            }
+          };
+        } else {
+          // Less than 1 hour - use minute unit
+          return {
+            unit: 'minute',
+            tooltipFormat: 'PPpp',
+            displayFormats: {
+              minute: 'HH:mm'
+            }
+          };
+        }
       } else if (rangeDays < 7) {
-        // Less than a week: show day and time
+        // Less than a week: show day and time with hour unit
         return {
+          unit: 'hour',
           tooltipFormat: 'PPpp',
           displayFormats: {
-            day: 'MMM d, HH:mm',
             hour: 'MMM d, HH:mm'
           }
         };
-      } else if (rangeDays < 30) {
-        // Less than a month: show date
-        return {
-          tooltipFormat: 'PPpp',
-          displayFormats: {
-            day: 'MMM d',
-            week: 'MMM d'
-          }
-        };
       } else {
-        // More than a month: show month/date
+        // More than a week: use day unit
         return {
+          unit: 'day',
           tooltipFormat: 'PPpp',
           displayFormats: {
-            day: 'MMM d',
-            week: 'MMM d',
-            month: 'MMM yyyy'
+            day: 'MMM d'
           }
         };
       }
